@@ -1,0 +1,1435 @@
+            /* NAO MEXA AQUI  */
+            
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+                background-blend-mode: overlay;
+                text-decoration: none;
+                box-sizing: border-box;
+            }
+            /* NAO SEI PRA Q SERVE  -   html   background-color: #26529D; */
+            
+            body {
+                margin: 0;
+                padding: 0;
+                position: relative;
+                align-items: center;
+                display: flexbox;
+                background-image: url(../img/446.jpg);
+                background-color: rgb(126, 65, 25);
+            }
+            /* Cor original da pagina - background-color: rgb(244, 247, 250); */
+            
+            .menu-mobile {
+                display: none;
+            }
+            
+            @media (max-width: 300px) {
+                * {
+                    display: -ms-inline-grid;
+                    margin: 0;
+                    padding: 0;
+                }
+                header {
+                    display: -ms-flexbox;
+                    align-items: center;
+                }
+                body {
+                    display: flexbox;
+                    align-items: flex-start;
+                    position: relative;
+                    float: inline-start;
+                    border-radius: 5px;
+                }
+            }
+            
+            @media (max-width: 600px) {
+                * {
+                    display: -ms-flexbox;
+                    margin: 0;
+                    padding: 0;
+                    background-blend-mode: darken;
+                }
+                header {
+                    display: -ms-flexbox;
+                    align-items: center;
+                    background-image: none;
+                    background-color: #333;
+                }
+                body {
+                    display: -ms-flexbox;
+                    margin: 0;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    background-image: none;
+                    background-color: #333;
+                }
+                /* MENU MOBILE */
+                .menu-mobile {
+                    display: block;
+                }
+                .centralizar-texto-corpo-mobile {
+                    justify-items: center;
+                    width: 90vw;
+                    background-color: #333;
+                }
+                /* Style the navigation menu */
+                .topnav {
+                    width: 100vmin;
+                    overflow: hidden;
+                    background-color: #333;
+                    position: relative;
+                    list-style: none;
+                }
+                /* Hide the links inside the navigation menu (except for logo/home) */
+                .topnav #myLinks #myLinks2 {
+                    display: none;
+                }
+                /* Style navigation menu links */
+                .topnav a {
+                    color: white;
+                    padding: 0;
+                    font-size: 18px;
+                    display: block;
+                }
+                /* Style the hamburger menu */
+                .topnav a.icon {
+                    background: rgb(80, 80, 80);
+                    display: flex;
+                    position: relative;
+                    right: 0;
+                    top: 0;
+                }
+                /* Add a grey background color on mouse-over */
+                .topnav a:hover {
+                    background-color: rgba(221, 221, 221, 0.924);
+                    color: rgb(0, 0, 0);
+                }
+                /* Style the active link (or home/logo) */
+                .active {
+                    background-color: #26529D;
+                    color: white;
+                    font-size: 20px;
+                    padding: 5px;
+                }
+                /* FIM - MENU MOBILE */
+                .mobile-corpo {
+                    display: none;
+                }
+                .menu-h-mobile {
+                    margin-top: 2%;
+                    position: relative;
+                    align-items: center;
+                    background-color: #888888;
+                    border-radius: 15px;
+                }
+                /* SUMIR COM AS LOGOS, TEXTOS RODAPE E MENU VERSAO SITE */
+                .logo-ngeaalc {
+                    display: inline-table;
+                }
+                .apagar-texto-rodape {
+                    display: block;
+                    opacity: 0%;
+                }
+                .logos {
+                    width: 0;
+                    height: 0;
+                    visibility: hidden;
+                }
+                .dp-menu {
+                    display: none;
+                }
+                .menu-principal {
+                    width: 0;
+                    height: 0;
+                    visibility: hidden;
+                }
+                .topo {
+                    visibility: hidden;
+                }
+                /* FIM - SUMIR COM AS LOGOS */
+                /* FIM - TEXTO DO CORPO */
+                .texto-titulo {
+                    font-size: 20vmin;
+                    font-family: 'Caesar Dressing', cursive;
+                    margin-left: 30%;
+                }
+                .texto-corpo {
+                    font-size: larger;
+                }
+                .titulo-principal {
+                    font-size: larger;
+                }
+                /* FIM - TEXTO DO CORPO */
+                /* FIM - RODAPE + TEXTO DE RODAPE */
+                .menu-r {
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .menu-r-texto {
+                    display: none;
+                }
+                .texto-rodape {
+                    display: flex;
+                    margin-left: 15vmin;
+                    margin-right: 15vmin;
+                }
+                /* FIM - RODAPE + TEXTO DE RODAPE */
+                /* FIM - SUMIR COM AS LOGOS */
+                #campo-titulo {
+                    display: contents;
+                    align-items: center;
+                    justify-items: center;
+                    /* text-align: center; */
+                    /* align-items: center; */
+                    margin-bottom: 0.5em;
+                    color: rgb(255, 255, 255);
+                    display: contents;
+                }
+                .caixa {
+                    display: contents;
+                    background-color: #333;
+                    margin: 3.5%;
+                    margin-left: 0;
+                    margin-right: 0;
+                    text-align: center;
+                    align-items: center;
+                    border: box-shadow 2px 2px 2px #333;
+                }
+                .grupo .campo .campo-label {
+                    display: inline-flex;
+                    align-items: flex-start;
+                    justify-items: flex-start;
+                }
+            }
+            /* CABEÇA DA PAGINA INICIAL */
+            
+            #titulo {
+                font-size: 15vmin;
+            }
+            
+            .menu-principal {
+                margin: 0;
+                padding: 0;
+                z-index: 9;
+            }
+            
+            .fundo-inicio {
+                margin: 0;
+                padding: 0;
+                background-image: url(../img/446.jpg);
+                background-color: rgb(128, 69, 52);
+            }
+            
+            .nome-site {
+                color: #d1e1fb;
+                font-size: xx-large;
+                align-items: center;
+                text-align: center;
+                width: 70vw;
+            }
+            
+            .mobile-corpo {
+                display: inline-flex;
+                justify-items: center;
+                position: relative;
+                width: min-content;
+                height: min-content;
+                text-align: center;
+                align-items: center;
+            }
+            
+            .logos {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 0.5%;
+                margin: 0;
+                /* background-image: url(../img/background\ -\ 4.png);
+                background-repeat: round; */
+                background-color: rgb(244, 247, 250);
+            }
+            /* Logo da Pagina Principal Inicial */
+            
+            .logo-ngeaalc {
+                width: 150px;
+                height: 78px;
+                display: flex;
+                position: relative;
+                align-items: center;
+                margin-right: 1.5rem;
+            }
+            
+            .logo-ngeaalc:hover {
+                opacity: 90%;
+            }
+            
+            .container1 {
+                display: block;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+            
+            .container2 {
+                display: block;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+            
+            .container3 {
+                display: block;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+            
+            .inicio-3-inline {
+                display: inline-block;
+                position: center;
+                margin-bottom: 10vh;
+                margin-top: 3vh;
+                border-radius: 15px;
+            }
+            
+            .inicio-3-inline-ajuste {
+                display: inline-flex;
+                width: 35vh;
+                height: 30vh;
+            }
+            
+            .inicio-3-inline-ajuste-2 {
+                width: 40vmin;
+                height: 40vmin;
+                justify-content: space-between;
+            }
+            
+            .inicio-3-inline-esquerda {
+                width: 40vmin;
+                height: 40vmin;
+                float: inline-start;
+                background-color: #fbdbbb;
+                background-color: #c85314;
+                border-radius: 5px;
+            }
+            
+            .inicio-3-inline-centro {
+                margin-top: -3px;
+                width: 40vmin;
+                height: 40vmin;
+                justify-content: center;
+                background-color: #600808;
+                border-radius: 5px;
+            }
+            
+            .inicio-3-inline-direita {
+                width: 40vmin;
+                height: 40vmin;
+                float: inline-end;
+                background-color: #5d2b2b;
+                border-radius: 5px;
+            }
+            
+            .titulo-slide {
+                color: #333;
+                font-family: sans-serif;
+                font-size: 25px;
+                font-weight: lighter;
+            }
+            
+            .frase-slide {
+                color: #333;
+                font-size: 15px;
+            }
+            
+            .tamanho-slide {
+                margin-top: 5px;
+                width: 100%;
+                height: 50%;
+            }
+            
+            .tamanho-slide-2 {
+                margin-top: 5px;
+                width: 100%;
+                height: 100%;
+            }
+            /* FIM - Logo da Pagina Principal Inicial */
+            /* Logo da UNEB da Pagina Principal Inicial */
+            
+            .logo-uneb {
+                width: 137px;
+                height: 72px;
+                margin-left: 1.5rem;
+                position: relative;
+                display: flex;
+                align-items: left;
+            }
+            
+            .barras-principal {
+                display: grid;
+                align-items: center;
+                position: relative;
+                width: 5vw;
+                height: 5vh;
+            }
+            
+            .logo-uneb:hover {
+                opacity: 90%;
+            }
+            
+            .texto-nome-principal {
+                font-size: 2.3vh;
+                color: #333;
+                /*color: rgb(200, 86, 4);*/
+            }
+            
+            .texto-nome {
+                font-size: .9vh;
+                color: #333;
+            }
+            /* FIM - Logo da UNEB da Pagina Principal Inicial */
+            
+            .centralizar-texto-corpo {
+                display: flexbox;
+                margin-inline: 15%;
+                width: 70vw;
+                background-color: rgb(244, 247, 250);
+            }
+            
+            .centralizar-texto-corpo-inico {
+                display: flexbox;
+                margin-inline: 15%;
+                width: 70vw;
+                background-color: rgb(244, 247, 250);
+            }
+            
+            .menu-carousel {
+                margin-left: 3vh;
+                margin-right: 3vh;
+            }
+            
+            .menu-carousel-2 {
+                margin-left: 3vh;
+                margin-right: 3vh;
+            }
+            
+            .menu-carousel-3 {
+                margin-left: 3vh;
+                margin-right: 3vh;
+            }
+            
+            .menu-carousel-4 {
+                margin-left: 3vh;
+                margin-right: 3vh;
+                background-color: rgb(229, 239, 248);
+            }
+            /* TEXTO PRINCIPAL da Pagina Principal Inicial */
+            
+            .titulo-principal {
+                text-decoration: rgb(173, 74, 4);
+                text-decoration-line: underline;
+                position: relative;
+                font-size: 5vmin;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                z-index: 0;
+                color: #333;
+                margin-top: 3%;
+            }
+            /* FIM - TEXTO PRINCIPAL da Pagina Principal Inicial */
+            
+            .texto-titulo {
+                margin-top: 3%;
+                font-style: oblique;
+                font-size: 5vmin;
+                display: flex;
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                color: #333;
+            }
+            
+            .texto-corpo {
+                margin-top: 3%;
+                margin: 10vmin;
+                background-position: center;
+                font: optional;
+                font-size: 3vmin;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #333;
+            }
+            /* Texto do Menu Principal Inicial */
+            
+            .texto-menu-opcoes {
+                color: #ffffff;
+                font-size: large;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-align: center;
+                position: relative;
+            }
+            /* CORPO DA PAGINA INICIAL */
+            
+            #veja-mais-barra {
+                margin: 20px;
+                display: flex;
+                text-align: center;
+                align-self: center;
+                border: solid #333;
+            }
+            /* Menu Principal Inicial com DropDown*/
+            
+            .dp-menu {
+                list-style-type: none;
+                padding: 10px;
+                width: 70vw;
+                text-align: center;
+                align-items: center;
+                background-color: rgb(244, 247, 250);
+                justify-content: center;
+            }
+            
+            .dp-menu ul li {
+                display: inline-block;
+                text-align: center;
+                align-items: center;
+            }
+            
+            .dp-menu ul li a {
+                border-radius: 5px;
+                display: block;
+                color: rgb(255, 255, 255);
+                padding: 5px;
+                text-decoration: none;
+                transition: all .8s;
+                border: transparent;
+            }
+            
+            .dp-menu ul ul {
+                border-radius: 5px;
+                display: none;
+                left: 0;
+                position: absolute;
+            }
+            
+            .dp-menu ul li:hover ul {
+                display: grid;
+                background-color: #e4a583;
+            }
+            
+            .dp-menu ul ul li a {
+                background-color: #eb905f;
+                display: block;
+            }
+            /* FIM - Menu Principal Inicial com DropDown*/
+            /* Menu Principal Inicial */
+            
+            .menu-h {
+                margin-top: 3%;
+                display: inline-block;
+                position: relative;
+                align-items: center;
+                background-color: #c85314;
+                color: #d1e1fb;
+                border-radius: 10px;
+                z-index: 99;
+            }
+            
+            .menu-h ul li {
+                display: inline;
+            }
+            
+            .menu-h ul li a {
+                padding: 10px;
+                display: inline-block;
+                text-decoration: none;
+                transition: background .3s;
+                border: none;
+                border-radius: 5px;
+                margin-left: -20px;
+            }
+            
+            .menu-h li a:hover {
+                margin: 5px;
+                color: rgb(0, 0, 0);
+                background-color: #e4a583;
+            }
+            /* FIM - Menu Principal Inicial */
+            /* Linhas-de-pesquisa */
+            
+            .caixa-linhas-de-pesquisa {
+                margin-top: 3vh;
+                margin-left: 5vh;
+                margin-right: 5vh;
+                display: inline-block;
+                justify-content: left;
+                align-items: center;
+                color: #333;
+            }
+            
+            .caixa-membros-linhas-de-pesquisa {
+                display: grid;
+                margin-bottom: 2vh;
+                font-size: 2vh;
+                justify-content: left;
+            }
+            
+            .membros-linhas-de-pesquisa {
+                color: #333;
+                margin-top: .5vh;
+                margin-bottom: .5vh;
+            }
+            
+            .numero-linhas-de-pesquisa-1 {
+                font-size: 3vh;
+                margin-top: 3vh;
+                margin-bottom: 1vh;
+                margin-left: 23vh;
+                margin-right: 23vh;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .numero-linhas-de-pesquisa-2 {
+                font-size: 3vh;
+                margin-top: 3vh;
+                margin-bottom: 1vh;
+                margin-left: 12vh;
+                margin-right: 12vh;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .numero-linhas-de-pesquisa-3 {
+                font-size: 3vh;
+                margin-top: 3vh;
+                margin-bottom: 1vh;
+                margin-left: 10vh;
+                margin-right: 10vh;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .numero-linhas-de-pesquisa-4 {
+                font-size: 3vh;
+                margin-top: 3vh;
+                margin-bottom: 1vh;
+                margin-left: 10vh;
+                margin-right: 10vh;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .dir-linhas-de-pesquisa {
+                margin-top: 1vh;
+                margin-bottom: 3vh;
+                display: block;
+                justify-content: space-evenly;
+            }
+            
+            .dir-linhas-de-pesquisa-direita {
+                float: right;
+                margin-right: 10vh;
+            }
+            
+            .dir-linhas-de-pesquisa-esquerda {
+                float: left;
+                margin-left: 10vh;
+            }
+            
+            .texto-titulo-linhas-de-pesquisa {
+                align-items: flex-start;
+                margin-top: 3%;
+                margin-left: 5vh;
+                margin-right: 5vh;
+                font-size: 2.5vh;
+                color: #333;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .texto-titulo-linhas-de-pesquisa-1 {
+                margin-top: 2%;
+                margin-bottom: 2%;
+                font-size: 3vh;
+                color: #333;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                text-decoration: rgb(173, 74, 4);
+                text-decoration-line: underline;
+                font-family: 'Caesar Dressing', cursive;
+            }
+            
+            .texto-corpo-linhas-de-pesquisa {
+                margin-top: 3%;
+                margin-bottom: 2vmin;
+                font-size: 2vmin;
+                justify-content: left;
+                align-items: center;
+                color: #333;
+            }
+            /* FIM - Linhas-de-pesquisa */
+            /* RODAPE DA PAGINA INICIAL */
+            /* Menu do Rodape */
+            /* Rodape - TOPO */
+            
+            .menu-r-topo {
+                text-emphasis-color: none;
+                padding: 10;
+                background-color: rgb(240, 169, 102);
+                text-align: center;
+                align-self: center;
+                color: rgb(0, 0, 0);
+            }
+            
+            .menu-r-topo:hover {
+                opacity: 80%;
+                background-color: #f8d4ab;
+                color: rgb(0, 0, 0);
+            }
+            
+            .texto-rodape-topo {
+                color: rgb(0, 0, 0);
+                padding: 5px;
+                margin-left: 1%;
+                font-size: 1.3vh;
+            }
+            
+            .texto-rodape-topo:hover {
+                color: #26529D;
+            }
+            /* FIM - Rodape - TOPO */
+            
+            .menu-r {
+                text-emphasis-color: none;
+                padding: 10;
+                background-color: #26529D;
+                background-color: #c85314;
+                text-align: left;
+                align-self: start;
+            }
+            
+            .menu-r-texto {
+                text-emphasis-color: none;
+                padding: 10;
+                background-color: #c85314;
+                justify-content: space-evenly;
+            }
+            
+            .menu-r li {
+                background-color: #26529D;
+                background-color: #c85314;
+                display: inline;
+            }
+            
+            .menu-r li a {
+                background-color: #26529D;
+                background-color: #c85314;
+                padding: 20px;
+                display: inline-block;
+                text-decoration: none;
+                transition: background .5s;
+            }
+            
+            .menu-r li a:hover {
+                background-color: rgb(63, 79, 92);
+            }
+            
+            .apagar-texto-rodape {
+                position: relative;
+            }
+            
+            .texto-rodape {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #333;
+                background-color: rgb(244, 247, 250);
+            }
+            
+            .texto-rodape-esquerda {
+                margin-top: .5vh;
+                margin-left: 1%;
+                font-size: large;
+                position: relative;
+                display: flex;
+                text-align: start;
+                align-self: flex-start;
+            }
+            
+            .texto-rodape-direita {
+                margin-top: .5vh;
+                margin-right: 1%;
+                position: relative;
+                display: flex;
+                font-size: large;
+                text-align: end;
+                align-self: flex-end;
+            }
+            /* Texto acima das redes sociais */
+            
+            .texto-rodape-redes-sociais {
+                font-size: 15px;
+                padding: 5px;
+                position: center;
+                color: rgb(255, 255, 255);
+            }
+            
+            .texto-rodape-endereco {
+                font-size: 15px;
+                margin-top: 5px;
+                position: relative;
+                float: left;
+                color: rgb(255, 255, 255);
+            }
+            
+            .texto-rodape-direita-inicio {
+                font-size: 1.8vh;
+                text-align: right;
+                color: rgb(255, 255, 255);
+            }
+            
+            .coluna-1-inicio {
+                display: inline-block;
+                position: relative;
+            }
+            
+            .coluna-1-inicio-1 {
+                display: grid;
+                margin-top: 2vh;
+            }
+            
+            .coluna-1-inicio-2 {
+                display: inline-grid;
+                margin-left: 2vh;
+            }
+            
+            .coluna-1-inicio-3 {
+                display: inline-grid;
+                margin-left: 2vh;
+            }
+            
+            .coluna-icone-inicio {
+                float: right;
+                margin-right: -1%;
+            }
+            
+            .icone-reuniao {
+                color: #c85314;
+                padding: 5px;
+                font-size: 35px;
+                text-align: center;
+            }
+            
+            .icone-calendario {
+                color: #e8e8e8;
+                margin-left: .6vh;
+                margin-right: .6vh;
+                padding: 5px;
+                font-size: 2vh;
+                text-align: center;
+            }
+            
+            .texto-calendario {
+                color: #ffffff;
+                font-size: 2vh;
+                padding: 5px;
+                margin-left: .6vh;
+                margin-right: .6vh;
+                text-align: center;
+                position: relative;
+            }
+            
+            .texto-calendario-principal {
+                position: relative;
+                font-size: 3vmin;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                z-index: 0;
+                color: #ffffff;
+                margin-top: .5vh;
+                background-color: #333;
+                border-radius: 5px;
+            }
+            
+            .calendario-h {
+                text-align: center;
+                position: relative;
+            }
+            
+            .calendario-h:hover {
+                opacity: 90%;
+                background-color: #de7841;
+                border-radius: 5px;
+            }
+            
+            .rodape-cor {
+                background-color: #c85314;
+            }
+            /* Redes sociais */
+            
+            .redes-sociais {
+                color: #ffffff;
+                padding: 5px;
+                margin-left: 1%;
+                font-size: 20px;
+                margin-bottom: 2px;
+            }
+            
+            .redes-sociais:hover {
+                border-radius: 15px;
+                background-color: #eb905f;
+                opacity: 80%;
+            }
+            /* Texto acima dos contatos */
+            /* Contato de email, dentre outros */
+            
+            .contato-icone {
+                color: #ffffff;
+                margin-top: .5%;
+                margin-left: 2.5vh;
+                font-size: 18px;
+            }
+            
+            .contato-icone-2 {
+                color: #ffffff;
+                margin-top: .5%;
+                margin-left: 7vh;
+                font-size: 18px;
+            }
+            
+            .contato-texto {
+                color: #ffffff;
+                padding: 5px;
+                font-size: 15px;
+            }
+            
+            .contato-icone:hover {
+                border-radius: 15px;
+                background-color: #eb905f;
+                opacity: 80%;
+            }
+            
+            .contato-icone-2:hover {
+                border-radius: 5px;
+                background-color: #eb905f;
+                opacity: 80%;
+            }
+            /* FIM - CONTATO E AFINS */
+            /* FIM - PAGINA INICIAL E AFINS */
+            /* PAGINA TESES */
+            
+            .centralizar-teses {
+                text-align: center;
+                align-items: center;
+                position: relative;
+            }
+            
+            .botao-teses {
+                padding: 20px;
+                margin-right: 15%;
+                text-align: center;
+                align-items: center;
+                position: relative;
+            }
+            
+            .botao-teses-opcoes:hover {
+                opacity: 80%;
+            }
+            
+            .botao-teses-opcoes:focus {
+                background-color: red;
+            }
+            
+            .botao-teses-opcoes {
+                text-decoration: none;
+                padding: auto;
+                font-size: auto;
+                display: grid;
+                background-color: #26529D;
+                color: rgb(255, 255, 255);
+                font-family: 'Arial';
+                border: solid rgb(0, 0, 0);
+                box-shadow: 2px 2px 2px rgb(71, 71, 71);
+            }
+            
+            .botao-teses-opcoes-original {
+                margin: 20%;
+                padding: 30px;
+                font-size: large;
+                background-color: #26529D;
+                color: rgb(255, 255, 255);
+                font-family: 'Arial';
+                border: solid rgb(0, 0, 0);
+                box-shadow: 2px 2px 2px rgb(71, 71, 71);
+            }
+            /* FIM - PAGINA TESES */
+            /* PAGINA MEMBROS E AFINS */
+            
+            .texto-membros {
+                color: #333;
+                display: grid;
+                margin: 50px;
+                font-size: 5vh;
+                align-items: center;
+                text-align: center;
+                position: relative;
+            }
+            
+            .texto-menu-membros {
+                color: #ffffff;
+                font-size: large;
+                padding: 15px;
+                text-align: center;
+                position: relative;
+            }
+            
+            .icone-menu-membros {
+                color: #ffffff;
+                padding: 12px;
+                text-align: center;
+                position: relative;
+            }
+            /* PAGINA MEMBROS - PESQUISADORES/ESTUDANTES/TECNICOS */
+            /* PAGINA PESQUISADORES */
+            
+            .titulo-corpo-doscente {
+                margin: 50px;
+                text-align: center;
+                align-items: center;
+                text-decoration: #26529D;
+            }
+            
+            .forma-colaboradores-img {
+                border-radius: 5px;
+                width: 150px;
+                height: 200px;
+            }
+            
+            .caixa-membros-internacionais {
+                display: inline-block;
+                margin-left: 2.5vh;
+                margin-right: 2.5vh;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative;
+            }
+            
+            .id-colaboradores {
+                display: inline-block;
+                margin-bottom: 2vh;
+                color: #333;
+                justify-content: space-between;
+            }
+            
+            .id-colaboradores-texto-1 {
+                font-size: 16px;
+                border-radius: 5px;
+                margin-top: 2vh;
+                font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+                display: inline-block;
+                text-align: left;
+            }
+            
+            .id-colaboradores-texto-2 {
+                font-size: 16px;
+                border-radius: 5px;
+                margin-top: 4.5vh;
+                font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+                display: inline-block;
+                text-align: left;
+            }
+            
+            .id-colaboradores-texto {
+                font-size: 16px;
+                border-radius: 5px;
+                margin-top: 4vh;
+                display: inline-block;
+                text-align: left;
+            }
+            
+            .margem-colaboradores {
+                margin-top: -180px;
+                margin-left: 160px;
+            }
+            
+            .margem-colaboradores-1 {
+                margin-top: -212px;
+                margin-left: 160px;
+            }
+            
+            .margem-colaboradores-2 {
+                margin-top: -200px;
+                margin-left: 160px;
+            }
+            
+            .texto-colaboradores {
+                display: grid;
+                background-color: rgb(83, 25, 2);
+                border-radius: 5px;
+                margin-left: 20px;
+                color: #ffffff;
+                box-shadow: 1px 1px 1px gray;
+                border: solid black;
+            }
+            
+            .texto-colaboradores-id {
+                font-size: 16px;
+                margin-bottom: .1%;
+                color: #333;
+            }
+            
+            .texto-colaboradores:hover {
+                display: flex;
+                margin-left: 1%;
+                background-color: rgb(83, 25, 2);
+                border-radius: 15px;
+            }
+            
+            .link-colaboradores {
+                font-weight: bolder;
+                text-decoration: wavy rgb(10, 20, 156);
+                color: rgb(114, 155, 209);
+            }
+            
+            .link-colaboradores:hover {
+                opacity: 80%;
+                background-color: rgb(202, 202, 202);
+                color: rgb(99, 24, 24);
+            }
+            
+            .link-colaboradores:focus {
+                font-weight: bolder;
+                color: rgb(156, 86, 235);
+            }
+            /* ESTILO DAS IMAGENS INTERNACIONAIS */
+            
+            .img-inter {
+                width: 25px;
+                height: 15px;
+                display: flex;
+                float: right;
+                margin-inline-end: 2.5%;
+            }
+            
+            .img-inter-angola {
+                width: 30px;
+                height: 20px;
+                display: flex;
+                float: right;
+                margin-inline-end: 2.5%;
+            }
+            /* FIM - PAGINA COLABORADORES - CORPO DOSCENTE */
+            /* FIM - PAGINA COLABORADORES */
+            /* PAGINA FALE CONOSCO */
+            /* ENVIO DE MENSAGEM PARA O GRUPO - IDE NAO DISPONIVEL - IMPLEMENTACAO FUTURA - PAGINA FALE CONOSCO */
+            
+            .caixa {
+                background-color: #b14c09;
+                margin: 3.5%;
+                margin-left: 10%;
+                margin-right: 10%;
+                border-radius: 10px;
+                text-align: center;
+                align-items: center;
+                border: box-shadow 2px 2px 2px #333;
+                display: block;
+            }
+            
+            fieldset {
+                margin-left: 10%;
+                border: 0;
+            }
+            
+            input,
+            select,
+            textarea,
+            button {
+                position: relative;
+                text-align: center;
+                align-items: center;
+                border-radius: 10px;
+            }
+            
+            .campo {
+                text-align: center;
+                align-items: center;
+                margin-bottom: 1em;
+            }
+            
+            .campo-label-2 {
+                display: block;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 0.5em;
+                color: #ffffff;
+                border-bottom: solid #333;
+            }
+            
+            .campo-label {
+                display: block;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 0.5em;
+                color: #ffffff;
+            }
+            
+            #campo-titulo {
+                text-align: center;
+                align-items: center;
+                margin-bottom: 0.5em;
+                color: #333;
+                display: block;
+                margin-top: 5%;
+                border-radius: 10px;
+            }
+            
+            fieldset.grupo .campo {
+                float: left;
+                margin: 2.5em;
+            }
+            
+            .campo input[type="text"],
+            .campo input[type="email"],
+            .campo select {
+                padding: 0.5em;
+                border: solid rgb(43, 43, 43);
+                box-shadow: 2px 2px 2px rgb(0, 0, 0);
+                display: block;
+                color: rgb(0, 0, 0);
+            }
+            
+            .campo textarea {
+                display: block;
+                text-align: center;
+                align-self: center;
+                padding: 40px;
+                font-size: 1vmin;
+                color: rgb(0, 0, 0);
+                border: solid rgb(43, 43, 43);
+                box-shadow: 1px 1px 1px rgb(7, 7, 7);
+                display: block;
+            }
+            
+            .campo select option {
+                padding-right: 1em;
+            }
+            
+            .campo input:focus,
+            .campo select:focus,
+            .campo textarea:focus {
+                background-color: rgb(255, 226, 159);
+            }
+            
+            .botao {
+                font-size: 1.2em;
+                background-color: rgb(29, 26, 31);
+                border: 10px;
+                margin-bottom: 1em;
+                color: rgb(255, 255, 255);
+                padding: 0.2em 0.6em;
+                box-shadow: 2px 2px 2px rgb(7, 7, 7);
+                margin-top: 10px;
+                position: relative;
+            }
+            
+            .botao:focus {
+                background-color: rgb(255, 0, 0);
+                box-shadow: 2px 2px 2px rgb(7, 7, 7);
+            }
+            
+            .centralizar-email {
+                display: inline-grid;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            
+            #checkbox {
+                display: inline-block;
+            }
+            /* FIM - PAGINA FALE CONOSCO */
+            /* PAGINA INSTITUICOES PARCEIRAS */
+            
+            .icone-parceiras-ufrj {
+                margin-top: 5%;
+                margin-bottom: -5%;
+                justify-content: center;
+                position: relative;
+                margin-inline: 55vmin;
+            }
+            
+            .icone-parceiras-ufes {
+                margin-bottom: -5%;
+                justify-content: center;
+                position: relative;
+                margin-inline: 60vmin;
+            }
+            /* FIM - PAGINA INSTITUICOES PARCEIRAS */
+            /* PAGINA  */
+            
+            .ano-publicacao {
+                background-color: #c85314;
+                margin: 5vh;
+                font-style: none;
+                border-radius: 10px;
+                list-style: none;
+            }
+            
+            .ano-publicacao-2 {
+                background-color: #e4a583;
+                font-style: none;
+                border-radius: 10px;
+                list-style: none;
+            }
+            
+            .ano-publicacao-dentro {
+                display: inline;
+                background-color: #e4a583;
+                font-style: none;
+                margin-left: 0vh;
+                margin-right: 0vh;
+                list-style: none;
+            }
+            
+            .ano-publicacao-dentro-2 {
+                background-color: #e4a583;
+                list-style: none;
+            }
+            
+            .texto-publicacao {
+                margin-top: 3vh;
+                margin-bottom: 3vh;
+                font: optional;
+                font-size: 3vh;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                margin-left: 5vh;
+                border-radius: 10px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                list-style: none;
+            }
+            
+            .texto-publicacao-2 {
+                font-style: none;
+                font: optional;
+                font-size: 3vh;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                border-radius: 10px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            
+            .texto-publicacao-itens {
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+                font: optional;
+                font-size: 3vh;
+                color: white;
+                margin-left: 1.5vh;
+                border-radius: 10px;
+            }
+            
+            .texto-publicacao-itens-2 {
+                font: optional;
+                font-size: 3vh;
+                color: white;
+                border-radius: 10px;
+            }
+            
+            .texto-publicacao:hover {
+                margin-left: 0vh;
+                margin-right: 0vh;
+                background-color: #d07e61;
+            }
+            
+            .texto-publicacao-2:hover {
+                margin-left: 0vh;
+                margin-right: 0vh;
+                font-size: 3.5vh;
+                color: #333;
+                background-color: #e4a583;
+            }
+            
+            .texto-publicacao-itens:hover {
+                margin-left: 5vh;
+                background-color: #c66744;
+            }
+            
+            .texto-publicacao-itens-2:hover {
+                margin-left: 0vh;
+            }
+            /* PUBLICAÇOES - MENU DE SELEÇÃO */
+            
+            .menu-h-publicacoes {
+                margin-top: 3%;
+                display: list-item;
+                position: absolute;
+                align-items: center;
+                background-color: #c85314;
+                color: #d1e1fb;
+                list-style: none;
+                border-radius: 10px;
+                z-index: 0;
+            }
+            
+            .menu-h-publicacoes ul li {
+                display: inline-block;
+                margin-left: 2vh;
+                margin-right: 2vh;
+            }
+            
+            .menu-h-publicacoes ul li a {
+                padding: 10px;
+                display: inline-block;
+                text-decoration: none;
+                transition: background .3s;
+                border: none;
+                border-radius: 5px;
+                margin-left: 2vh;
+                margin-right: 2vh;
+            }
+            
+            .menu-h-publicacoes li a:hover {
+                color: #d1e1fb;
+                background-color: #e4a583;
+                margin-left: 2vh;
+                margin-right: 2vh;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+            }
+            
+            .manutencao {
+                font-size: 1vh;
+                position: relative;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                margin-left: 28%;
+            }
+            
+            .texto-nome-manutencao {
+                font-size: 12vh;
+                position: relative;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                z-index: 0;
+                color: rgb(0, 0, 0);
+                margin-top: 3%;
+            }

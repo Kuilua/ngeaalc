@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icone da aba -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icone-aba/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="../img/icone-aba/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../img/icone-aba/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icone-aba/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icone-aba/favicon-16x16.png">
+    <!-- Icone da aba -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Animaçao dos elementos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Icone Hamburger -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icones do rodapé -->
+    <script src="https://kit.fontawesome.com/52549e7bf4.js" crossorigin="anonymous"></script>
+    <!-- Fonte Google - IBM -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap" rel="stylesheet">
+    <!-- Titulo da Pagina -->
+    <title class="titulo-principal">NGEAALC - UNEB</title>
+
+</head>
+
+<body>
+    <a name="topo"></a>
+
+    <div class="logos">
+        <!-- LOGO UNEB -->
+        <div class="animate__animated animate__zoomInUp">
+            <a href="https://portal.uneb.br/" target="_blank">
+                <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+        </div>
+        <!-- LOGO NGEAALC -->
+        <div class="animate__animated animate__zoomIn">
+            <a href="https://ngeaalc.uneb.br/" target="_blank">
+                <img class="logo-ngeaalc" src="../img/logos/logo.png" /> </a>
+        </div>
+        <!-- LOGO UNEB - INVISIVEL -->
+        <div class="animate__animated animate__zoomInUp logo-uneb-div">
+            <a href="https://portal.uneb.br/" target="_blank">
+                <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+        </div>
+    </div>
+
+    <div class="menu-mobile">
+        <!-- Menu Mobile -->
+        <div class="topnav">
+            <a href="#topo" class="active">NGEAALC</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <li class="texto-menu-opcoes">
+                    <a href="../index.html"> <i class="fas fa-home"></i></i>
+                        <p></p>Início</a>
+                </li>
+                <li class="texto-menu-opcoes"> <a href="..//teses/index.html"><i class="fas fa-book"></i><p></p>Teses</a>
+                </li>
+                <li class="texto-menu-opcoes"> <a href="../palestras.html"><i class="fas fa-chalkboard-teacher"></i><p></p>Palestras</a> </li>
+                <li class="texto-menu-opcoes"> <a href="../colaboradores/index.html"><i class="fas fa-users"></i><p></p>Colaboradores</a>
+                </li>
+                <li class="texto-menu-opcoes"> <a href="#"><i class="fas fa-newspaper"></i><p></p>Revista</a> </li>
+                <li class="texto-menu-opcoes"> <a href="../faleconosco.html"><i class="fas fa-mail-bulk"></i><p></p>Fale Conosco</a> </li>
+                </ul>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <header class="animate__animated animate__slideInLeft menu-principal">
+        <nav class="dp-menu">
+            <ul class="menu-h">
+                <li class="texto-menu-opcoes"> <a href="../index.html">Início</a> </li>
+                <li class="texto-menu-opcoes"> <a href="../teses/index.html">Teses</a>
+                    <ul>
+                        <li class="menu-h"><a href="../teses/2022.html">2022</a></li>
+                        <li class="menu-h"><a href="../teses/2021.html">2021</a></li>
+                        <li class="menu-h"><a href="../teses/2020.html">2020</a></li>
+                        <li class="menu-h"><a href="../teses/2019.html">2019</a></li>
+                        <li class="menu-h"><a href="../teses/2018.html">2018</a></li>
+                    </ul>
+                </li>
+                <li class="texto-menu-opcoes"> <a href="../palestras.html">Palestras</a> </li>
+                <li class="texto-menu-opcoes"> <a href="../colaboradores/index.html">Colaboradores</a>
+                    <ul>
+                        <li class="menu-h"><a href="../colaboradores/corpodoscente.html">Corpo Doscente</a></li>
+                        <li class="menu-h"><a href="../colaboradores/estudantes.html">Estudantes</a></li>
+                        <li class="menu-h"><a href="../colaboradores/tecnicos.html">Tecnicos(as)</a></li>
+                        <li class="menu-h"><a href="../colaboradores/internacionais.html">Internacionais</a></li>
+                    </ul>
+                </li>
+                <li class="texto-menu-opcoes"> <a href="#">Revista</a> </li>
+                <li class="texto-menu-opcoes"> <a href="../faleconosco.html">Fale Conosco</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+</body>
+
+<a href="#topo">
+    <p class="animate__animated animate__pulse menu-topo menu-topo-botao"> ^ </p>
+</a>
+
+<footer class="menu-r">
+    <a href="https://www.facebook.com/proreitoriadeextensao.uneb/?hc_ref=ARTVtgjhaHuvL793gDjVyW5eQWORQu11HvixEdUedCU_IbsdpsHBprYJ6g_8VZNp0c8&fref=nf&__xts__[0]=68.ARBe5w9C7bYVyZQbbdHe08VfL2mr8CXvmMmF8POuNUJoHwbUXQumkG2CakFb9ZVY8otbzt_uayL6wjVWbeza_n8G9Oe5FXHeelljGFJjSoy98sJ8e4mSNlXb0S0Y5HgutVuD432ge_Y79iJb6lIcji_9KyoLszkxMbGy5v2wqrG6i00iEZpONv96m_56yZryJ4wcD3lLRPCpHJeh7mvoEnUm3g8w9gLbugZe70JdlqT2sIeEI49tZ1KffWIP2WP6_aPbREXHeG-U3Wcn2SPB8cZhtEui4sT-K8bIRf2gLX2HPtUCU9qOwRU"
+        target="_blank"> <i class="fab fa-facebook redes-sociais"></i> </a>
+
+    <a href="" target="_blank"> <i class="fab fa-instagram redes-sociais"></i> </a>
+
+    <a href="" target="_blank"> <i class="fab fa-youtube redes-sociais"></i> </a>
+
+    <a href="" target="_blank"> <i class="fab fa-twitter redes-sociais"></i> </a>
+
+    <a href="mailto:@africanias.uneb.br" target="_blank"> <i class="far fa-envelope contato"></i> </a>
+
+</footer>
+
+<!--                                                  SESSAO DE COMENTARIOS - COPIE E COLE                                                                -->
+
+<footer class="menu-r-texto">
+    <div class="apagar-texto-rodape">
+        <label class="texto-rodape-redes-sociais">Redes Sociais</label>
+
+        <label class="texto-rodape-contato">Fale Conosco</label>
+    </div>
+</footer>
+
+<div class="texto-rodape">
+    <label class="texto-rodape-esquerda">Universidade do Estado da Bahia - © Todos os Direitos Reservados</label>
+    <label class="texto-rodape-direita">Universidade do Estado da Bahia - © Todos os Direitos Reservados</label>
+</div>
+
+</html>
