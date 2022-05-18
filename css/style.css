@@ -533,7 +533,7 @@
                 z-index: 0;
                 color: #333;
                 margin-top: 3%;
-                margin-left: -10vmin;
+                margin-left: -13vmin;
                 font-family: 'ROBOTO';
                 color: #c85314;
             }
@@ -948,6 +948,14 @@
                 color: #c85314;
             }
             
+            .scrool-calendario {
+                overflow: hidden;
+                overflow-y: scroll;
+                overflow-x: center;
+                padding: 15px;
+                background-color: #e8b16e;
+            }
+            
             .texto-calendario {
                 color: #000000;
                 font-size: 1.7vh;
@@ -959,7 +967,7 @@
             }
             
             .data-calendario {
-                background-color: #ffffff;
+                background-color: #eaf2f2;
                 color: #000000;
                 font-size: 2vh;
                 font-family: 'roboto';
