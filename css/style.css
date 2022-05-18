@@ -226,6 +226,7 @@
             }
             
             .nome-site {
+                margin-top: 2%;
                 color: #d1e1fb;
                 font-size: xx-large;
                 align-items: center;
@@ -247,7 +248,6 @@
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-                margin-top: 0.5%;
                 margin: 0;
                 /* background-image: url(../img/background\ -\ 4.png);
                 background-repeat: round; */
@@ -256,12 +256,13 @@
             /* Logo da Pagina Principal Inicial */
             
             .logo-ngeaalc {
-                width: 150px;
-                height: 78px;
+                margin-top: 5vh;
+                width: 222px;
+                height: 117px;
                 display: flex;
                 position: relative;
                 align-items: center;
-                margin-right: 1.5rem;
+                margin-right: 5rem;
             }
             
             .logo-ngeaalc:hover {
@@ -289,19 +290,28 @@
             .inicio-3-inline {
                 display: inline-block;
                 position: center;
+                margin-left: 10vh;
+                margin-right: -10vh;
                 margin-bottom: 10vh;
-                margin-top: 3vh;
+                margin-top: 2vh;
                 border-radius: 15px;
             }
             
             .inicio-3-inline-ajuste {
                 display: inline-flex;
-                width: 35vh;
-                height: 30vh;
+                width: 40vh;
+                height: 40vh;
             }
             
             .inicio-3-inline-ajuste-2 {
                 width: 40vmin;
+                height: 40vmin;
+                justify-content: space-evenly;
+            }
+            
+            .inicio-3-inline-ajuste-3 {
+                margin-top: 5%;
+                width: 60vmin;
                 height: 40vmin;
                 justify-content: space-between;
             }
@@ -320,16 +330,80 @@
                 width: 40vmin;
                 height: 40vmin;
                 justify-content: center;
-                background-color: #600808;
+                background-color: #e8b16e;
                 border-radius: 5px;
             }
             
             .inicio-3-inline-direita {
-                width: 40vmin;
-                height: 40vmin;
+                width: 0;
+                height: 33vmin;
                 float: inline-end;
-                background-color: #5d2b2b;
+                background-color: #c85314;
                 border-radius: 5px;
+            }
+            
+            .ab-1 {
+                margin-left: 20%;
+                color: white;
+                font-size: 12px;
+            }
+            
+            .ab-2 {
+                margin-left: 10%;
+                color: white;
+                font-size: 12px;
+            }
+            
+            .img-eventos {
+                justify-items: center;
+                border-radius: 5px;
+                border: solid #cecece;
+                margin-left: 13%;
+            }
+            
+            .texto-eventos {
+                font-size: 16px;
+                margin-top: -2%;
+                color: #333;
+            }
+            
+            .texto-eventos-1 {
+                font-size: 18px;
+                margin-top: 1%;
+                margin-bottom: 2%;
+                color: #333;
+            }
+            
+            .texto-eventos-2 {
+                font-size: 16px;
+                margin-top: -1.2%;
+                color: #333;
+                align-items: center;
+            }
+            
+            .texto-eventos-3 {
+                font-size: 18px;
+                margin-top: 2%;
+                margin-bottom: 5%;
+                color: #333;
+                align-items: center;
+            }
+            
+            .texto-corpo-eventos {
+                margin: 5vmin;
+                background-position: center;
+                font: optional;
+                font-size: 3vmin;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #333;
+            }
+            
+            .container4 {
+                display: block;
+                margin-left: 10%;
+                margin-right: 10%;
             }
             
             .titulo-slide {
@@ -359,9 +433,10 @@
             /* Logo da UNEB da Pagina Principal Inicial */
             
             .logo-uneb {
-                width: 137px;
-                height: 72px;
-                margin-left: 1.5rem;
+                width: 203px;
+                height: 106px;
+                margin-left: 5rem;
+                margin-top: 10%;
                 position: relative;
                 display: flex;
                 align-items: left;
@@ -380,14 +455,23 @@
             }
             
             .texto-nome-principal {
-                font-size: 2.3vh;
-                color: #333;
+                font-size: 2.5vh;
+                color: #c85314;
+                font-family: 'roboto';
+                /*color: rgb(200, 86, 4);*/
+            }
+            
+            .texto-nome-principal-1 {
+                font-size: 7vh;
+                color: #c85314;
+                font-family: 'roboto';
                 /*color: rgb(200, 86, 4);*/
             }
             
             .texto-nome {
                 font-size: .9vh;
-                color: #333;
+                color: #c85314;
+                font-family: 'roboto';
             }
             /* FIM - Logo da UNEB da Pagina Principal Inicial */
             
@@ -400,8 +484,8 @@
             
             .centralizar-texto-corpo-inico {
                 display: flexbox;
-                margin-inline: 15%;
-                width: 70vw;
+                margin-inline: 3vw;
+                width: 93vw;
                 background-color: rgb(244, 247, 250);
             }
             
@@ -428,8 +512,6 @@
             /* TEXTO PRINCIPAL da Pagina Principal Inicial */
             
             .titulo-principal {
-                text-decoration: rgb(173, 74, 4);
-                text-decoration-line: underline;
                 position: relative;
                 font-size: 5vmin;
                 display: grid;
@@ -438,6 +520,22 @@
                 z-index: 0;
                 color: #333;
                 margin-top: 3%;
+                font-family: 'ROBOTO';
+                color: #c85314;
+            }
+            
+            .titulo-principal-1 {
+                position: relative;
+                font-size: 4vmin;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                z-index: 0;
+                color: #333;
+                margin-top: 3%;
+                margin-left: -10vmin;
+                font-family: 'ROBOTO';
+                color: #c85314;
             }
             /* FIM - TEXTO PRINCIPAL da Pagina Principal Inicial */
             
@@ -489,8 +587,10 @@
             
             .dp-menu {
                 list-style-type: none;
-                padding: 10px;
-                width: 70vw;
+                padding: 15px;
+                padding-left: 35px;
+                padding-right: 35px;
+                width: 92vw;
                 text-align: center;
                 align-items: center;
                 background-color: rgb(244, 247, 250);
@@ -548,7 +648,9 @@
             }
             
             .menu-h ul li a {
-                padding: 10px;
+                padding: 15px;
+                padding-left: 25px;
+                padding-right: 25px;
                 display: inline-block;
                 text-decoration: none;
                 transition: background .3s;
@@ -558,7 +660,7 @@
             }
             
             .menu-h li a:hover {
-                margin: 5px;
+                margin: 0px;
                 color: rgb(0, 0, 0);
                 background-color: #e4a583;
             }
@@ -592,8 +694,8 @@
                 font-size: 3vh;
                 margin-top: 3vh;
                 margin-bottom: 1vh;
-                margin-left: 23vh;
-                margin-right: 23vh;
+                margin-left: 45vh;
+                margin-right: 45vh;
                 justify-content: center;
                 align-items: center;
             }
@@ -602,8 +704,8 @@
                 font-size: 3vh;
                 margin-top: 3vh;
                 margin-bottom: 1vh;
-                margin-left: 12vh;
-                margin-right: 12vh;
+                margin-left: 35vh;
+                margin-right: 35vh;
                 justify-content: center;
                 align-items: center;
             }
@@ -612,8 +714,8 @@
                 font-size: 3vh;
                 margin-top: 3vh;
                 margin-bottom: 1vh;
-                margin-left: 10vh;
-                margin-right: 10vh;
+                margin-left: 30vh;
+                margin-right: 30vh;
                 justify-content: center;
                 align-items: center;
             }
@@ -633,16 +735,19 @@
                 margin-bottom: 3vh;
                 display: block;
                 justify-content: space-evenly;
+                font-family: 'ROBOTO';
             }
             
             .dir-linhas-de-pesquisa-direita {
                 float: right;
                 margin-right: 10vh;
+                font-size: 2vh;
             }
             
             .dir-linhas-de-pesquisa-esquerda {
                 float: left;
                 margin-left: 10vh;
+                font-size: 2vh;
             }
             
             .texto-titulo-linhas-de-pesquisa {
@@ -708,15 +813,23 @@
             .texto-rodape-topo:hover {
                 color: #26529D;
             }
+            
+            .menu-r-topo-1 {
+                text-emphasis-color: none;
+                padding: -30px;
+                background-color: rgb(240, 169, 102);
+                text-align: center;
+                align-self: center;
+                color: rgb(0, 0, 0);
+            }
             /* FIM - Rodape - TOPO */
             
             .menu-r {
                 text-emphasis-color: none;
-                padding: 10;
-                background-color: #26529D;
+                padding: 10px;
                 background-color: #c85314;
-                text-align: left;
-                align-self: start;
+                align-self: center;
+                margin-left: 15vh;
             }
             
             .menu-r-texto {
@@ -746,6 +859,7 @@
             }
             
             .apagar-texto-rodape {
+                margin-top: 1vh;
                 position: relative;
             }
             
@@ -758,9 +872,10 @@
             }
             
             .texto-rodape-esquerda {
-                margin-top: .5vh;
-                margin-left: 1%;
-                font-size: large;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+                margin-left: 2%;
+                font-size: 15px;
                 position: relative;
                 display: flex;
                 text-align: start;
@@ -768,11 +883,12 @@
             }
             
             .texto-rodape-direita {
-                margin-top: .5vh;
-                margin-right: 1%;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+                margin-right: 2%;
                 position: relative;
                 display: flex;
-                font-size: large;
+                font-size: 15px;
                 text-align: end;
                 align-self: flex-end;
             }
@@ -824,30 +940,32 @@
                 margin-right: -1%;
             }
             
-            .icone-reuniao {
+            .icone-projetos {
+                color: #ffffff;
+                padding: 0;
+                font-size: 50px;
+                text-align: center;
                 color: #c85314;
-                padding: 5px;
-                font-size: 35px;
-                text-align: center;
-            }
-            
-            .icone-calendario {
-                color: #e8e8e8;
-                margin-left: .6vh;
-                margin-right: .6vh;
-                padding: 5px;
-                font-size: 2vh;
-                text-align: center;
             }
             
             .texto-calendario {
-                color: #ffffff;
-                font-size: 2vh;
+                color: #000000;
+                font-size: 1.7vh;
                 padding: 5px;
-                margin-left: .6vh;
                 margin-right: .6vh;
                 text-align: center;
                 position: relative;
+                font-family: 'roboto';
+            }
+            
+            .data-calendario {
+                background-color: #ffffff;
+                color: #000000;
+                font-size: 2vh;
+                font-family: 'roboto';
+                text-align: center;
+                align-items: center;
+                margin-top: 10%;
             }
             
             .texto-calendario-principal {
@@ -864,7 +982,8 @@
             }
             
             .calendario-h {
-                text-align: center;
+                margin-top: 2%;
+                text-align: left;
                 position: relative;
             }
             
@@ -1036,7 +1155,7 @@
             .id-colaboradores-texto-1 {
                 font-size: 16px;
                 border-radius: 5px;
-                margin-top: 2vh;
+                margin-top: 4vh;
                 font-family: 'IBM Plex Sans Thai Looped', sans-serif;
                 display: inline-block;
                 text-align: left;
@@ -1045,7 +1164,7 @@
             .id-colaboradores-texto-2 {
                 font-size: 16px;
                 border-radius: 5px;
-                margin-top: 4.5vh;
+                margin-top: 5vh;
                 font-family: 'IBM Plex Sans Thai Looped', sans-serif;
                 display: inline-block;
                 text-align: left;
@@ -1054,7 +1173,7 @@
             .id-colaboradores-texto {
                 font-size: 16px;
                 border-radius: 5px;
-                margin-top: 4vh;
+                margin-top: 6vh;
                 display: inline-block;
                 text-align: left;
             }
@@ -1177,6 +1296,31 @@
                 border-bottom: solid #333;
             }
             
+            .campo-label-3 {
+                display: block;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 0.5em;
+                margin-left: -2em;
+                color: #ffffff;
+            }
+            
+            .campo-label-4 {
+                display: block;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 0.5em;
+                color: #ffffff;
+                margin-right: 25vmin;
+            }
+            
+            .img-contato {
+                float: left;
+                width: 70;
+                height: 35;
+                margin-left: 40vmin;
+            }
+            
             .campo-label {
                 display: block;
                 text-align: center;
@@ -1264,17 +1408,17 @@
             
             .icone-parceiras-ufrj {
                 margin-top: 5%;
-                margin-bottom: -5%;
+                margin-bottom: -4%;
                 justify-content: center;
                 position: relative;
-                margin-inline: 55vmin;
+                margin-inline: 80vmin;
             }
             
             .icone-parceiras-ufes {
-                margin-bottom: -5%;
+                margin-bottom: -4%;
                 justify-content: center;
                 position: relative;
-                margin-inline: 60vmin;
+                margin-inline: 88vmin;
             }
             /* FIM - PAGINA INSTITUICOES PARCEIRAS */
             /* PAGINA  */
@@ -1420,11 +1564,11 @@
                 display: grid;
                 justify-content: center;
                 align-items: center;
-                margin-left: 28%;
+                margin-left: 35%;
             }
             
             .texto-nome-manutencao {
-                font-size: 12vh;
+                font-size: 6vh;
                 position: relative;
                 display: grid;
                 justify-content: center;
