@@ -19,6 +19,25 @@
                 background-image: url(../img/446.jpg);
                 background-color: rgb(126, 65, 25);
             }
+            
+            body::-webkit-scrollbar {
+                width: 15px;
+                /* width of the entire scrollbar */
+            }
+            
+            body::-webkit-scrollbar-track {
+                background: rgb(255, 140, 0);
+                /* color of the tracking area */
+            }
+            
+            body::-webkit-scrollbar-thumb {
+                background-color: #eaf2f2;
+                /* color of the scroll thumb */
+                border-radius: 15px;
+                /* roundness of the scroll thumb */
+                border: 4px solid orange;
+                /* creates padding around scroll thumb */
+            }
             /* Cor original da pagina - background-color: rgb(244, 247, 250); */
             
             .menu-mobile {
@@ -953,6 +972,25 @@
                 overflow-y: scroll;
                 padding: 15px;
                 background-color: #e8b16e;
+            }
+            
+            .scrool-calendario::-webkit-scrollbar {
+                width: 12px;
+                /* width of the entire scrollbar */
+            }
+            
+            .scrool-calendario::-webkit-scrollbar-track {
+                background: orange;
+                /* color of the tracking area */
+            }
+            
+            .scrool-calendario::-webkit-scrollbar-thumb {
+                background-color: #eaf2f2;
+                /* color of the scroll thumb */
+                border-radius: 20px;
+                /* roundness of the scroll thumb */
+                border: 3px solid orange;
+                /* creates padding around scroll thumb */
             }
             
             .texto-calendario {
