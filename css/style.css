@@ -26,16 +26,16 @@
             }
             
             body::-webkit-scrollbar-track {
-                background: rgb(255, 140, 0);
+                background-color: rgb(240, 169, 102);
                 /* color of the tracking area */
             }
             
             body::-webkit-scrollbar-thumb {
                 background-color: #eaf2f2;
                 /* color of the scroll thumb */
-                border-radius: 15px;
+                border-radius: 10px;
                 /* roundness of the scroll thumb */
-                border: 4px solid orange;
+                border: 4px solid rgb(240, 169, 102);
                 /* creates padding around scroll thumb */
             }
             /* Cor original da pagina - background-color: rgb(244, 247, 250); */
@@ -61,6 +61,9 @@
                     float: inline-start;
                     border-radius: 5px;
                 }
+                .texto-calendario-mes {
+                    font-size: 150px;
+                }
             }
             
             @media (max-width: 600px) {
@@ -83,7 +86,16 @@
                     justify-content: center;
                     position: relative;
                     background-image: none;
-                    background-color: #333;
+                    background-color: rgb(168, 24, 24);
+                }
+                .inicio-3-inline-mobile {
+                    display: inline-block;
+                    position: center;
+                    margin-bottom: 5vh;
+                    margin-top: 5vh;
+                    margin-left: -1vh;
+                    width: 106vmin;
+                    height: 106vmin;
                 }
                 /* MENU MOBILE */
                 .menu-mobile {
@@ -98,7 +110,7 @@
                 .topnav {
                     width: 100vmin;
                     overflow: hidden;
-                    background-color: #333;
+                    background-color: rgb(51, 51, 51);
                     position: relative;
                     list-style: none;
                 }
@@ -128,7 +140,7 @@
                 }
                 /* Style the active link (or home/logo) */
                 .active {
-                    background-color: #26529D;
+                    background-color: #c05605;
                     color: white;
                     font-size: 20px;
                     padding: 5px;
@@ -149,8 +161,34 @@
                     display: inline-table;
                 }
                 .apagar-texto-rodape {
-                    display: block;
+                    display: none;
                     opacity: 0%;
+                }
+                .mostrar-texto-rodape {
+                    display: inline-block;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .redes-sociais-mobile {
+                    color: #ffffff;
+                    padding: 10px;
+                    font-size: 25px;
+                    margin-inline-start: 2vmin;
+                    margin-inline-end: 2vmin;
+                }
+                .apagar-texto-mobile {
+                    margin-top: 2vh;
+                    display: none;
+                }
+                .apagar-elementos-mobile {
+                    display: none;
+                }
+                .img-eventos-mobile {
+                    height: 200px;
+                    align-self: center;
+                    justify-self: center;
+                    justify-content: center;
+                    justify-items: center;
                 }
                 .logos {
                     width: 0;
@@ -193,9 +231,7 @@
                     display: none;
                 }
                 .texto-rodape {
-                    display: flex;
-                    margin-left: 15vmin;
-                    margin-right: 15vmin;
+                    display: inline-flex;
                 }
                 /* FIM - RODAPE + TEXTO DE RODAPE */
                 /* FIM - SUMIR COM AS LOGOS */
@@ -225,32 +261,46 @@
                     justify-items: flex-start;
                 }
             }
-            /* CABEÇA DA PAGINA INICIAL */
+            /* CABEÇA DA PAGINA INICIAL  -  OQ FICA OU NAO NAS PAGINAS NO PC */
             
-            #titulo {
-                font-size: 15vmin;
-            }
-            
-            .menu-principal {
-                margin: 0;
-                padding: 0;
-                z-index: 9;
-            }
-            
-            .fundo-inicio {
-                margin: 0;
-                padding: 0;
-                background-image: url(../img/446.jpg);
-                background-color: rgb(128, 69, 52);
-            }
-            
-            .nome-site {
-                margin-top: 2%;
-                color: #d1e1fb;
-                font-size: xx-large;
-                align-items: center;
-                text-align: center;
-                width: 70vw;
+            @media (min-width: 720px) {
+                #titulo {
+                    font-size: 15vmin;
+                }
+                .menu-principal {
+                    margin: 0;
+                    padding: 0;
+                    z-index: 9;
+                }
+                .fundo-inicio {
+                    margin: 0;
+                    padding: 0;
+                    background-image: url(../img/446.jpg);
+                    background-color: rgb(128, 69, 52);
+                }
+                .nome-site {
+                    margin-top: 2%;
+                    color: #d1e1fb;
+                    font-size: xx-large;
+                    align-items: center;
+                    text-align: center;
+                    width: 70vw;
+                }
+                .centralizar-texto-corpo {
+                    display: flexbox;
+                    margin-inline: 15%;
+                    width: 70vw;
+                    background-color: rgb(244, 247, 250);
+                }
+                .centralizar-texto-corpo-inico {
+                    display: flexbox;
+                    margin-inline: 3vw;
+                    width: 93vw;
+                    background-color: rgb(244, 247, 250);
+                }
+                .apagar-elementos-pc {
+                    display: none;
+                }
             }
             
             .mobile-corpo {
@@ -305,6 +355,7 @@
                 margin-left: 2%;
                 margin-right: 2%;
             }
+            /* Trio de elementos da Pagina Inicial */
             
             .inicio-3-inline {
                 display: inline-block;
@@ -318,8 +369,8 @@
             
             .inicio-3-inline-ajuste {
                 display: inline-flex;
-                width: 40vh;
-                height: 40vh;
+                width: 40vmin;
+                height: 40vmin;
             }
             
             .inicio-3-inline-ajuste-2 {
@@ -330,14 +381,14 @@
             
             .inicio-3-inline-ajuste-3 {
                 margin-top: 5%;
-                width: 60vmin;
-                height: 40vmin;
-                justify-content: space-between;
+                width: 65vmin;
+                height: 35vmin;
+                justify-content: space-evenly;
             }
             
             .inicio-3-inline-esquerda {
-                width: 40vmin;
-                height: 40vmin;
+                width: 40vh;
+                height: 40vh;
                 float: inline-start;
                 background-color: #fbdbbb;
                 background-color: #c85314;
@@ -346,23 +397,24 @@
             
             .inicio-3-inline-centro {
                 margin-top: -3px;
-                width: 40vmin;
-                height: 40vmin;
+                width: 40vh;
+                height: 40vh;
                 justify-content: center;
                 background-color: #e8b16e;
                 border-radius: 5px;
             }
             
             .inicio-3-inline-direita {
-                width: 0;
-                height: 33vmin;
+                width: 0vh;
+                height: 37vh;
                 float: inline-end;
                 background-color: #c85314;
                 border-radius: 5px;
             }
+            /* FIM - Trio de elementos da Pagina Inicial */
             
             .ab-1 {
-                margin-left: 20%;
+                margin-left: 13%;
                 color: white;
                 font-size: 12px;
             }
@@ -378,7 +430,15 @@
                 border-radius: 5px;
                 border: solid #cecece;
                 margin-top: 5vmin;
-                margin-left: 25vmin;
+            }
+            
+            .div-eventos {
+                position: relative;
+                font-size: 5vmin;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                z-index: 0;
             }
             
             .texto-eventos {
@@ -493,21 +553,13 @@
                 color: #c85314;
                 font-family: 'roboto';
             }
+            
+            .texto-nome-mobile {
+                font-size: 1vh;
+                color: #c85314;
+                font-family: 'Segoe UI';
+            }
             /* FIM - Logo da UNEB da Pagina Principal Inicial */
-            
-            .centralizar-texto-corpo {
-                display: flexbox;
-                margin-inline: 15%;
-                width: 70vw;
-                background-color: rgb(244, 247, 250);
-            }
-            
-            .centralizar-texto-corpo-inico {
-                display: flexbox;
-                margin-inline: 3vw;
-                width: 93vw;
-                background-color: rgb(244, 247, 250);
-            }
             
             .menu-carousel {
                 margin-left: 3vh;
@@ -883,6 +935,11 @@
                 position: relative;
             }
             
+            .apagar-texto-mobile {
+                margin-top: 3vh;
+                position: relative;
+            }
+            
             .texto-rodape {
                 display: flex;
                 justify-content: space-between;
@@ -981,7 +1038,7 @@
             }
             
             .scrool-calendario::-webkit-scrollbar-track {
-                background: orange;
+                background-color: #e8b16e;
                 /* color of the tracking area */
             }
             
@@ -990,7 +1047,7 @@
                 /* color of the scroll thumb */
                 border-radius: 20px;
                 /* roundness of the scroll thumb */
-                border: 3px solid orange;
+                border: 3px solid #ecaf64;
                 /* creates padding around scroll thumb */
             }
             
@@ -1371,6 +1428,14 @@
                 margin-bottom: 0.5em;
                 color: #ffffff;
                 margin-right: 25vmin;
+            }
+            
+            .campo-label-5 {
+                text-align: center;
+                align-items: center;
+                margin-bottom: 30px;
+                color: #ffffff;
+                margin-left: -2em;
             }
             
             .img-contato {
