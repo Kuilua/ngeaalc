@@ -11,8 +11,14 @@
     <link rel="apple-touch-icon" sizes="192x192" href="../img/icone-aba/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icone-aba/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/icone-aba/favicon-16x16.png">
-    <!-- Icone da aba -->
+    <!-- CSS ORIGINAL - NAO MEXA AQUI - Icone da aba -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Tamanho da guia no PC -->
+    <link rel="stylesheet" type="text/css" href="../css/pc-style.css">
+    <!-- Tamanho da guia no Mobile -->
+    <link rel="stylesheet" type="text/css" href="../css/mobile-style.css">
+    <!-- Tamanho da guia no Tablet -->
+    <link rel="stylesheet" type="text/css" href="../css/tablet-style.css">
     <!-- Animaçao dos elementos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Icone Hamburger -->
@@ -58,55 +64,62 @@
         <div class="menu-mobile">
             <!-- Menu Mobile -->
             <div class="topnav">
-                <a href="#topo" class="active texto-nome">NGEAALC</a>
+                <a href="index.html" class="active texto-nome-mobile">NGEAALC</a>
                 <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
+                <div id="myLinks-MenuPrincipal">
                     <li class="texto-menu-opcoes">
-                        <a href="../index.html"> <i class="fas fa-home"></i></i>
-                            <p></p>Butula</a>
+                        <a href="../index.html"><label class="texto-menu-mobile"> <i class="fas fa-home"></i><br> Butula</label></a>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><i class="fas fa-users icon" ></i><p></p>O Ngeaalc</a>
-                        <div id="myLinks2">
+                    <li class="texto-menu-opcoes">
+                        <a href="javascript:void(0);" onclick="MenuPrincipalNgeaalc()"> <label class="texto-menu-mobile"><i class="fas fa-users icon"></i> <br> O Ngeaalc</label></a>
+                        <div id="myLinks-MenuPrincipal-Ngeaalc">
                             <ul>
-                                <li class="menu-h-mobile"><a href="apresentacao.html">Apresentação</a></li>
-                                <li class="menu-h-mobile"><a href="pesquisadores.html">Pesquisadores</a></li>
-                                <li class="menu-h-mobile"><a href="estudantes.html">Estudantes</a></li>
-                                <li class="menu-h-mobile"><a href="tecnicos.html">Técnicos</a></li>
-                                <li class="menu-h-mobile"><a href="internacionais.html">Colaboradores Internacionais</a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/apresentacao.html"><label class="texto-menu-mobile">Apresentação</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/pesquisadores.html"><label class="texto-menu-mobile">Pesquisadores</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estudantes.html"><label class="texto-menu-mobile">Estudantes</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/tecnicos.html"><label class="texto-menu-mobile">Técnicos</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/internacionais.html"><label class="texto-menu-mobile">Colaboradores Internacionais</label></a></li>
 
-                                <li class="menu-h-mobile"><a href="estatuto.html">Estatuto</a></li>
-                                <li class="menu-h-mobile"><a href="regimento.html">Regimento</a></li>
-                                <li class="menu-h-mobile"><a href="linhas-de-pesquisas.html">Linhas de Pesquisas</a></li>
-                                <li class="menu-h-mobile"><a href="instituicoes-parceiras.html">Instituições Parceiras</a></li>
-                                <li class="menu-h-mobile"><a href="egresso.html">Egressos</a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estatuto.html"><label class="texto-menu-mobile">Estatuto</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/regimento.html"><label class="texto-menu-mobile">Regimento</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/linhas-de-pesquisas.html"><label class="texto-menu-mobile">Linhas de Pesquisas</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/instituicoes-parceiras.html"><label class="texto-menu-mobile">Instituições Parceiras</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/egresso.html"><label class="texto-menu-mobile">Egressos</label></a></li>
+
                             </ul>
                         </div>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="../producoes.html"><i class="fas fa-book"></i><p></p>Projetos</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="../eventos.html"><i class="fas fa-chalkboard-teacher"></i><p></p>Eventos</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="../revista.html"><i class="fas fa-newspaper"></i><p></p>Revista</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><i class="fas fa-chalkboard-teacher"></i><p></p>Publicações</a>
-                        <div id="myLinks3">
+                    <li class="texto-menu-opcoes"> <a href="../projetos.html"><label class="texto-menu-mobile"><i class="fas fa-book"></i> <br> Projetos</label></a> </li>
+                    <li class="texto-menu-opcoes"> <a href="../eventos.html"><label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Eventos</label></a> </li>
+                    <li class="texto-menu-opcoes"> <a href="../revista.html"><label class="texto-menu-mobile"><i class="fas fa-newspaper"></i> <br> Revista</label></a> </li>
+                    <li class="texto-menu-opcoes">
+                        <a href="javascript:void(0);" onclick="MenuPrincipalPublicacoes()"> <label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Publicações</label></a>
+                        <div id="myLinks-MenuPrincipal-Publicacoes">
                             <ul>
-                                <li class="menu-h-mobile"><a href="../publicacoes/artigos.html">Artigos</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/livros.html">Livros</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/teses.html">Teses</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html">Outras Produções</a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/artigos.html"><label class="texto-menu-mobile">Artigos</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/livros.html"><label class="texto-menu-mobile">Livros</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/teses.html"><label class="texto-menu-mobile">Teses</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html"><label class="texto-menu-mobile">Outras Produções</label></a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="../contato.html"><i class="fas fa-mail-bulk"></i><p></p>Contato</a> </li>
+
+                    <li class="texto-menu-opcoes"> <a href="../contato.html"><label class="texto-menu-mobile"><i class="fas fa-mail-bulk"></i> <br> Contato</label></a> </li>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                <a href="javascript:void(0);" class="icon" onclick="MenuPrincipalFuncao()">
+                    <i class="fa fa-bars barras-mobile"></i>
                 </a>
             </div>
         </div>
-
+        <!-- FUNCOES DO MENU -->
+        <!-- Links do Menu Principal - Função-Mãe -->
         <script>
-            function myFunction() {
-                var x = document.getElementById("myLinks");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Mãe
+            var x = document.getElementById("myLinks-MenuPrincipal").style.display = 'none';
+
+            function MenuPrincipalFuncao() {
+                var x = document.getElementById("myLinks-MenuPrincipal");
                 if (x.style.display === "block") {
                     x.style.display = "none";
                 } else {
@@ -114,10 +127,13 @@
                 }
             }
         </script>
-
+        <!-- Links do Menu Principal - Função-Ngeaalc -->
         <script>
-            function myFunction2() {
-                var y = document.getElementById("myLinks2");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Ngeaalc
+            var y = document.getElementById("myLinks-MenuPrincipal-Ngeaalc").style.display = 'none';
+
+            function MenuPrincipalNgeaalc() {
+                var y = document.getElementById("myLinks-MenuPrincipal-Ngeaalc");
                 if (y.style.display === "block") {
                     y.style.display = "none";
                 } else {
@@ -125,10 +141,13 @@
                 }
             }
         </script>
-
+        <!-- Links do Menu Principal - Função-Publicacoes -->
         <script>
-            function myFunction3() {
-                var z = document.getElementById("myLinks3");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Publicacoes
+            var z = document.getElementById("myLinks-MenuPrincipal-Publicacoes").style.display = 'none';
+
+            function MenuPrincipalPublicacoes() {
+                var z = document.getElementById("myLinks-MenuPrincipal-Publicacoes");
                 if (z.style.display === "block") {
                     z.style.display = "none";
                 } else {
@@ -136,43 +155,47 @@
                 }
             }
         </script>
-
-
+        <!-- FIM - FUNCOES DO MENU  -->
         <!-- Corpo da pagina - Adicionar Elementos AQUI -->
-        <div class="centralizar-texto-corpo-inico">
-            <br><br>
-            <div class="menu-r-topo-1">
+        <div class="centralizar-texto-corpo-inicio">
 
-                <label class="texto-rodape-topo">   </label>
+            <div class="apagar-elemento-mobile">
+                <br><br>
+                <div class="menu-r-topo-1 ">
 
-            </div>
-            <div class="logos">
-                <!-- LOGO UNEB -->
-                <div class="animate__animated animate__zoomInUp">
-                    <a href="https://portal.uneb.br/" target="_blank">
-                        <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+                    <label class="texto-rodape-topo">   </label>
+
                 </div>
-                <div class="nome-site">
-                    <label class="texto-nome-principal-1"> NGEAALC </label>
-                    <div>
-                        <label class="texto-nome-principal"> NÚCLEO DE</label>
-                        <label class="texto-nome-principal">ESTUDOS  </label>
-                        <label class="texto-nome-principal">AFRICANOS E </label>
-                        <label class="texto-nome-principal">AFRO-BRASILEIROS  EM </label>
-                        <label class="texto-nome-principal">LÍNGUAS </label> <label class="texto-nome-principal">E CULTURAS </label>
+                <div class="logos">
+                    <!-- LOGO UNEB -->
+                    <div class="animate__animated animate__zoomInUp">
+                        <a href="https://portal.uneb.br/" target="_blank">
+                            <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+                    </div>
+                    <div class="nome-site">
+                        <label class="texto-nome-principal-1"> NGEAALC </label>
+                        <div>
+                            <label class="texto-nome-principal"> NÚCLEO DE</label>
+                            <label class="texto-nome-principal">ESTUDOS  </label>
+                            <label class="texto-nome-principal">AFRICANOS E </label>
+                            <label class="texto-nome-principal">AFRO-BRASILEIROS  EM </label>
+                            <label class="texto-nome-principal">LÍNGUAS </label> <label class="texto-nome-principal">E CULTURAS </label>
+                        </div>
+                    </div>
+                    <!-- LOGO NGEAALC -->
+                    <div class="animate__animated animate__zoomIn">
+                        <a href="https://revistas.uneb.br/index.php/africanias/login?source=%2Findex.php%2Fafricanias" target="_blank">
+                            <img class="logo-ngeaalc" src="../img/logos/logo.png" /> </a>
                     </div>
                 </div>
-                <!-- LOGO NGEAALC -->
-                <div class="animate__animated animate__zoomIn">
-                    <a href="https://revistas.uneb.br/index.php/africanias/login?source=%2Findex.php%2Fafricanias" target="_blank">
-                        <img class="logo-ngeaalc" src="../img/logos/logo.png" /> </a>
+
+                <br><br><br><br>
+
+                <div class="menu-r-topo-1">
+
+                    <label class="texto-rodape-topo">   </label>
+
                 </div>
-            </div>
-            <br><br><br><br>
-            <div class="menu-r-topo-1">
-
-                <label class="texto-rodape-topo">   </label>
-
             </div>
 
             <div class="mobile-corpo">
@@ -181,294 +204,329 @@
                     <nav class="dp-menu">
                         <ul class="menu-h">
                             <li class="texto-menu-opcoes">
-                                <a href="../index.html"> <i class="fas fa-home"></i></i>
-                                    <p></p>Butula</a>
+                                <a href="../index.html"><label class="texto-menu-mobile"><i class="fas fa-home icon"></i> <br> Butula</label></a>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><i class="fas fa-users icon" ></i><p></p>O Ngeaalc</a>
+                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><label class="texto-menu-mobile"><i class="fas fa-users icon"></i> <br> O Ngeaalc</label></a>
                                 <div id="myLinks2">
                                     <ul>
-                                        <li class="menu-h-mobile"><a href="apresentacao.html">Apresentação</a></li>
-                                        <li class="menu-h-mobile"><a href="pesquisadores.html">Pesquisadores</a></li>
-                                        <li class="menu-h-mobile"><a href="estudantes.html">Estudantes</a></li>
-                                        <li class="menu-h-mobile"><a href="tecnicos.html">Técnicos</a></li>
-                                        <li class="menu-h-mobile"><a href="internacionais.html">Colaboradores Internacionais</a></li>
+                                        <li class="menu-h-mobile"><a href="apresentacao.html"><label class="texto-menu-mobile">Apresentação</label></a></li>
+                                        <li class="menu-h-mobile"><a href="pesquisadores.html"><label class="texto-menu-mobile">Pesquisadores</label></a></li>
+                                        <li class="menu-h-mobile"><a href="estudantes.html"><label class="texto-menu-mobile">Estudantes</label></a></li>
+                                        <li class="menu-h-mobile"><a href="tecnicos.html"><label class="texto-menu-mobile">Técnicos</label></a></li>
+                                        <li class="menu-h-mobile"><a href="internacionais.html"><label class="texto-menu-mobile">Colaboradores Internacionais</label></a></li>
 
-                                        <li class="menu-h-mobile"><a href="estatuto.html">Estatuto</a></li>
-                                        <li class="menu-h-mobile"><a href="regimento.html">Regimento</a></li>
-                                        <li class="menu-h-mobile"><a href="linhas-de-pesquisas.html">Linhas de Pesquisas</a></li>
-                                        <li class="menu-h-mobile"><a href="instituicoes-parceiras.html">Instituições Parceiras</a></li>
-                                        <li class="menu-h-mobile"><a href="egresso.html">Egressos</a></li>
+                                        <li class="menu-h-mobile"><a href="estatuto.html"><label class="texto-menu-mobile">Estatuto</label></a></li>
+                                        <li class="menu-h-mobile"><a href="regimento.html"><label class="texto-menu-mobile">Regimento</label></a></li>
+                                        <li class="menu-h-mobile"><a href="linhas-de-pesquisas.html"><label class="texto-menu-mobile">Linhas de Pesquisas</label></a></li>
+                                        <li class="menu-h-mobile"><a href="instituicoes-parceiras.html"><label class="texto-menu-mobile">Instituições Parceiras</label></a></li>
+                                        <li class="menu-h-mobile"><a href="egresso.html"><label class="texto-menu-mobile">Egressos</label></a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="../producoes.html"><i class="fas fa-book"></i><p></p>Projetos</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="../eventos.html"><i class="fas fa-chalkboard-teacher"></i><p></p>Eventos</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="../revista.html"><i class="fas fa-newspaper"></i><p></p>Revista</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><i class="fas fa-chalkboard-teacher"></i><p></p>Publicações</a>
+                            <li class="texto-menu-opcoes"> <a href="../projetos.html"><label class="texto-menu-mobile"><i class="fas fa-book"></i> <br> Projetos</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="../eventos.html"><label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Eventos</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="../revista.html"><label class="texto-menu-mobile"><i class="fab fa-readme"></i> <br> Revista</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><label class="texto-menu-mobile"><i class="fas fa-newspaper"></i> <br> Publicações</label></a>
                                 <div id="myLinks3">
                                     <ul>
-                                        <li class="menu-h-mobile"><a href="../publicacoes/artigos.html">Artigos</a></li>
-                                        <li class="menu-h-mobile"><a href="../publicacoes/livros.html">Livros</a></li>
-                                        <li class="menu-h-mobile"><a href="../publicacoes/teses.html">Teses</a></li>
-                                        <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html">Outras Produções</a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/artigos.html"><label class="texto-menu-mobile">Artigos</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/livros.html"><label class="texto-menu-mobile">Livros</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/teses.html"><label class="texto-menu-mobile">Teses</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html"><label class="texto-menu-mobile">Outras Produções</label></a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="../contato.html"><i class="fas fa-mail-bulk"></i><p></p>Contato</a> </li>
-            </div>
-            <label class="titulo-principal">Linhas de Pesquisas</label> <br>
-
-            <h2 class="texto-titulo-linhas-de-pesquisa">
-                As linhas de pesquisa representam temáticas aglutinadoras de estudos científicos. Visam delimitar o campo de conhecimento dentro de uma determinada realidade, podem determinar o que será investigado pelos/as pesquisadores/as em um contexto específico,
-                além de oferecer um direcionamento teórico e metodológico para o desenvolvimento de projetos e atividades. Compõem-se as seguintes linhas de pesquisa:
-            </h2>
-
-            <div class="caixa-linhas-de-pesquisa">
-                <label class="numero-linhas-de-pesquisa-1"> <strong> Linha de pesquisa (Lpq) 1: </strong> Culturas Negro-africanas no Brasil </label>
-
-                <div class="dir-linhas-de-pesquisa">
-                    <label class="dir-linhas-de-pesquisa-esquerda"> <strong> Coordenadora: </strong> Mille Caroline Rodrigues Fernandes</label>
-                    <label class="dir-linhas-de-pesquisa-direita"> <strong> Vice-Coordenadora: </strong>Anália Santana</label>
-
-                </div>
-                <br>
-                <label class="texto-corpo-linhas-de-pesquisa">  <strong>Descrição:</strong>   (TEXTO EM CONSTRUÇÃO...) </label>
-                <br><br>
-                <label class="texto-corpo-linhas-de-pesquisa"> <strong>Pesquisadores/as:  </strong>                  </label>
-                <br>
-                <div class="caixa-membros-linhas-de-pesquisa">
-                    <br>
-                    <label class="membros-linhas-de-pesquisa"> Abreu Castelo Vieira dos Paxe (Angola)</label>
-                    <label class="membros-linhas-de-pesquisa"> Arthur Ferreira de Jesus</label>
-                    <label class="membros-linhas-de-pesquisa"> Babatunde Lawal (Nigéria)</label>
-                    <label class="membros-linhas-de-pesquisa"> Boubakar Namory Keita (Angola)</label>
-                    <label class="membros-linhas-de-pesquisa"> César Costa Vitorino </label>
-                    <label class="membros-linhas-de-pesquisa"> Douglas Henrique Santana Santos </label>
-                    <label class="membros-linhas-de-pesquisa"> Ivana Cristina Santana</label>
-                    <label class="membros-linhas-de-pesquisa"> José Henrique de Freitas Santos </label>
-                    <label class="membros-linhas-de-pesquisa"> Jhon Wanderson Nogueira Santana </label>
-                    <label class="membros-linhas-de-pesquisa"> Maria Eunice Rosa de Jesus </label>
-                    <label class="membros-linhas-de-pesquisa"> Mbiavanga Fernando (Angola)</label>
-                    <label class="membros-linhas-de-pesquisa"> Nsimba Jose (Angola)</label>
-                    <label class="membros-linhas-de-pesquisa"> Raiane Cordeiro de Araujo </label>
-                    <label class="membros-linhas-de-pesquisa"> Tairone Acácio Couto </label>
-                    <label class="membros-linhas-de-pesquisa"> Yeda Antonita Pessoa de Castro </label>
-                </div>
+                            <li class="texto-menu-opcoes"> <a href="../contato.html"><label class="texto-menu-mobile"><i class="fas fa-mail-bulk"></i> <br> Contato</label></a> </li>
             </div>
 
-            <div class="caixa-linhas-de-pesquisa">
-                <h2 class="numero-linhas-de-pesquisa-2"> <strong>Linha de pesquisa (Lpq) 2: </strong>Línguas da Família Niger-Congo e Negroafricano</h2>
+            <label class="animate__animated animate__fadeInLeft titulo-principal-inicio-pc texto-titulo-mobile">Linhas de Pesquisas</label> <br>
+            <div class="esquedizar-elementos-mobile linhas-de-pesquisa-elementos-mobile">
+                <label class="texto-titulo-linhas-de-pesquisa-pc texto-titulo-linhas-de-pesquisa-mobile">
+                    As linhas de pesquisa representam temáticas aglutinadoras de estudos científicos. Visam delimitar o campo de conhecimento dentro de uma determinada realidade, podem determinar o que será investigado pelos/as pesquisadores/as em um contexto específico,
+                    além de oferecer um direcionamento teórico e metodológico para o desenvolvimento de projetos e atividades. Compõem-se as seguintes linhas de pesquisa:
+                </label>
 
-                <div class="dir-linhas-de-pesquisa">
-                    <label class="dir-linhas-de-pesquisa-esquerda">   <strong> Coordenadora: </strong> César Costa Vitorino </label>
-                    <label class="dir-linhas-de-pesquisa-direita">     <strong> Vice-Coordenadora: </strong>Lise Mary Arruda Dourado</label>
+                <div class="caixa-linhas-de-pesquisa-pc caixa-linhas-de-pesquisa-mobile">
+                    <div class="centralizar-elementos-mobile centralizar-elementos-pc">
+                        <label class="numero-linhas-de-pesquisa-1 numero-linhas-de-pesquisa-mobile"> <strong> Linha de pesquisa (Lpq) 1: </strong> Culturas Negro-africanas no Brasil </label>
+                    </div>
+                    <div class="dir-linhas-de-pesquisa-pc dir-linhas-de-pesquisa-mobile">
+                        <label class="dir-linhas-de-pesquisa-esquerda"> <strong> Coordenadora: </strong> Mille Caroline Rodrigues Fernandes</label><br>
+                        <label class="dir-linhas-de-pesquisa-direita"> <strong> Vice-Coordenadora: </strong>Anália Santana</label>
 
-                </div>
-                <br>
-                <label class="texto-corpo-linhas-de-pesquisa">  <strong>Descrição:</strong>   (TEXTO EM CONSTRUÇÃO...) </label>
-                <br><br>
-                <label class="texto-corpo-linhas-de-pesquisa"> <strong>Pesquisadores/as:  </strong>                  </label>
-                <br>
-                <div class="caixa-membros-linhas-de-pesquisa">
+                    </div>
                     <br>
-                    <label class="membros-linhas-de-pesquisa"> Abreu Castelo Vieira dos Paxe (Angola)</label>
-                    <label class="membros-linhas-de-pesquisa"> Abílio Manuel Marques de Mendonça</label>
-                    <label class="membros-linhas-de-pesquisa"> Ivo Ferreira de Jesus</label>
-                    <label class="membros-linhas-de-pesquisa"> Maria Eunice Rosa de Jesus </label>
-                    <label class="membros-linhas-de-pesquisa"> Mbiavanga Fernando (Angola)</label>
-                    <label class="membros-linhas-de-pesquisa"> Mille Caroline Rodrigues Fernandes</label>
-                    <label class="membros-linhas-de-pesquisa"> Nsimba Jose (Angola)</label>
-                    <label class="membros-linhas-de-pesquisa"> Yeda Antonita Pessoa de Castro </label>
-                </div>
-            </div>
-
-            <div class="caixa-linhas-de-pesquisa">
-                <label class="numero-linhas-de-pesquisa-3"> <strong> Linha de pesquisa (Lpq) 3: </strong> Patrimônio Cultural, Memória, História e Acervos </label>
-
-                <div class="dir-linhas-de-pesquisa">
-                    <label class="dir-linhas-de-pesquisa-esquerda"> <strong> Coordenadora: </strong> Hildete Santos Pita Costa </label>
-                    <label class="dir-linhas-de-pesquisa-direita"> <strong> Vice-Coordenadora: </strong> Edna Maria de Oliveira Ferreira </label>
-
-                </div>
-                <br>
-                <label class="texto-corpo-linhas-de-pesquisa">  <strong>Descrição:</strong>   (TEXTO EM CONSTRUÇÃO...) </label>
-                <br><br>
-                <label class="texto-corpo-linhas-de-pesquisa"> <strong>Pesquisadores/as:  </strong>                  </label>
-                <br>
-                <div class="caixa-membros-linhas-de-pesquisa">
+                    <label class="texto-corpo-linhas-de-pesquisa-pc texto-corpo-linhas-de-pesquisa-mobile">  <strong>Descrição:</strong>   (TEXTO EM CONSTRUÇÃO...) </label>
+                    <br><br>
+                    <label class="texto-corpo-linhas-de-pesquisa-pc texto-corpo-linhas-de-pesquisa-mobile"> <strong>Pesquisadores/as:  </strong>                  </label>
                     <br>
-                    <label class="membros-linhas-de-pesquisa"> Anália Santana</label>
-                    <label class="membros-linhas-de-pesquisa"> Arthur Ferreira de Jesus</label>
-                    <label class="membros-linhas-de-pesquisa"> Babatunde Lawal (Nigéria)</label>
-                    <label class="membros-linhas-de-pesquisa"> Boubakar Namory Keita (Angola)</label>
-                    <label class="membros-linhas-de-pesquisa"> César Costa Vitorino </label>
-                    <label class="membros-linhas-de-pesquisa"> Douglas Henrique Santana Santos </label>
-                    <label class="membros-linhas-de-pesquisa"> Fabiana de Jesus dos Santos </label>
-                    <label class="membros-linhas-de-pesquisa"> Filipe Augusto de Oliveira Costa</label>
-                    <label class="membros-linhas-de-pesquisa"> Tairone Acácio Couto </label>
-                    <label class="membros-linhas-de-pesquisa"> Tanísia Ferreira Nascimento </label>
-                    <label class="membros-linhas-de-pesquisa"> Yeda Antonita Pessoa de Castro </label>
+                    <div class="caixa-membros-linhas-de-pesquisa-pc caixa-membros-linhas-de-pesquisa-mobile">
+                        <br>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Abreu Castelo Vieira dos Paxe (Angola)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Arthur Ferreira de Jesus</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Babatunde Lawal (Nigéria)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Boubakar Namory Keita (Angola)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> César Costa Vitorino </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Douglas Henrique Santana Santos </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Ivana Cristina Santana</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> José Henrique de Freitas Santos </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Jhon Wanderson Nogueira Santana </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Maria Eunice Rosa de Jesus </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Mbiavanga Fernando (Angola)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Nsimba Jose (Angola)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Raiane Cordeiro de Araujo </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Tairone Acácio Couto </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Yeda Antonita Pessoa de Castro </label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="caixa-linhas-de-pesquisa">
-                <label class="numero-linhas-de-pesquisa-1"> <strong> Linha de pesquisa (Lpq) 4: </strong> Educação e Interseccionalidades </label>
+                <div class="caixa-linhas-de-pesquisa-pc caixa-linhas-de-pesquisa-mobile">
+                    <label class="numero-linhas-de-pesquisa-2 numero-linhas-de-pesquisa-mobile"><strong>Linha de pesquisa (Lpq) 2: </strong> Línguas da Família Niger-Congo e Negroafricano</label>
 
-                <div class="dir-linhas-de-pesquisa">
-                    <label class="dir-linhas-de-pesquisa-esquerda"> <strong> Coordenadora: </strong>  </label>
-                    <label class="dir-linhas-de-pesquisa-direita"> <strong> Vice-Coordenadora: </strong>  </label>
+                    <div class="dir-linhas-de-pesquisa-pc dir-linhas-de-pesquisa-mobile">
+                        <label class="dir-linhas-de-pesquisa-esquerda"> <strong> Coordenadora: </strong> César Costa Vitorino </label>
+                        <label class="dir-linhas-de-pesquisa-direita"> <strong> Vice-Coordenadora: </strong>Lise Mary Arruda Dourado</label>
 
-                </div>
-                <br>
-                <label class="texto-corpo-linhas-de-pesquisa">  <strong>Descrição:</strong>   (TEXTO EM CONSTRUÇÃO...) </label>
-                <br><br>
-                <label class="texto-corpo-linhas-de-pesquisa"> <strong>Pesquisadores/as:  </strong>                  </label>
-                <br>
-                <div class="caixa-membros-linhas-de-pesquisa">
+                    </div>
                     <br>
-                    <label class="membros-linhas-de-pesquisa"> Adriana dos Santos Marmori Lima</label>
-                    <label class="membros-linhas-de-pesquisa"> Francisco Ramallo (Argentina)</label>
-                    <label class="membros-linhas-de-pesquisa"> Helena Cosma da Graça Fonseca Veloso (Angola)</label>
-                    <label class="membros-linhas-de-pesquisa"> Márcia Lidiane Rodrigues Santana</label>
-                    <label class="membros-linhas-de-pesquisa"> Vânia Santos de Souza </label>
+                    <label class="texto-corpo-linhas-de-pesquisa-pc texto-corpo-linhas-de-pesquisa-mobile">  <strong>Descrição:</strong>   (TEXTO EM CONSTRUÇÃO...) </label>
+                    <br><br>
+                    <label class="texto-corpo-linhas-de-pesquisa-pc texto-corpo-linhas-de-pesquisa-mobile"> <strong>Pesquisadores/as:  </strong>                  </label>
+                    <br>
+                    <div class="caixa-membros-linhas-de-pesquisa-pc caixa-membros-linhas-de-pesquisa-mobile">
+                        <br>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Abreu Castelo Vieira dos Paxe (Angola)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Abílio Manuel Marques de Mendonça</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Ivo Ferreira de Jesus</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Maria Eunice Rosa de Jesus </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Mbiavanga Fernando (Angola)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Mille Caroline Rodrigues Fernandes</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Nsimba Jose (Angola)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Yeda Antonita Pessoa de Castro </label>
+                    </div>
+                </div>
+
+                <div class="caixa-linhas-de-pesquisa-pc">
+                    <label class="numero-linhas-de-pesquisa-3 numero-linhas-de-pesquisa-mobile"> <strong> Linha de pesquisa (Lpq) 3: </strong> Patrimônio Cultural, Memória, História e Acervos </label>
+
+                    <div class="dir-linhas-de-pesquisa-pc dir-linhas-de-pesquisa-mobile">
+                        <label class="dir-linhas-de-pesquisa-esquerda"> <strong> Coordenadora: </strong> Hildete Santos Pita Costa </label>
+                        <label class="dir-linhas-de-pesquisa-direita"> <strong> Vice-Coordenadora: </strong> Edna Maria de Oliveira Ferreira </label>
+
+                    </div>
+                    <br>
+                    <label class="texto-corpo-linhas-de-pesquisa-pc texto-corpo-linhas-de-pesquisa-mobile">  <strong>Descrição:</strong>   (TEXTO EM CONSTRUÇÃO...) </label>
+                    <br><br>
+                    <label class="texto-corpo-linhas-de-pesquisa-pc texto-corpo-linhas-de-pesquisa-mobile"> <strong>Pesquisadores/as:  </strong>                  </label>
+                    <br>
+                    <div class="caixa-membros-linhas-de-pesquisa-pc caixa-membros-linhas-de-pesquisa-mobile">
+                        <br>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Anália Santana</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Arthur Ferreira de Jesus</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Babatunde Lawal (Nigéria)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Boubakar Namory Keita (Angola)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> César Costa Vitorino </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Douglas Henrique Santana Santos </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Fabiana de Jesus dos Santos </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Filipe Augusto de Oliveira Costa</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Tairone Acácio Couto </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Tanísia Ferreira Nascimento </label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Yeda Antonita Pessoa de Castro </label>
+                    </div>
+                </div>
+
+                <div class="caixa-linhas-de-pesquisa-pc">
+                    <label class="numero-linhas-de-pesquisa-1 numero-linhas-de-pesquisa-mobile"> <strong> Linha de pesquisa (Lpq) 4: </strong> Educação e Interseccionalidades </label>
+
+                    <div class="dir-linhas-de-pesquisa">
+                        <label class="dir-linhas-de-pesquisa-esquerda"> <strong> Coordenadora: </strong>  </label>
+                        <label class="dir-linhas-de-pesquisa-direita"> <strong> Vice-Coordenadora: </strong>  </label>
+
+                    </div>
+                    <br>
+                    <label class="texto-corpo-linhas-de-pesquisa-pc texto-corpo-linhas-de-pesquisa-mobile">  <strong>Descrição:</strong>   (TEXTO EM CONSTRUÇÃO...) </label>
+                    <br><br>
+                    <label class="texto-corpo-linhas-de-pesquisa-pc texto-corpo-linhas-de-pesquisa-mobile"> <strong>Pesquisadores/as:  </strong>                  </label>
+                    <br>
+                    <div class="caixa-membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile">
+                        <br>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Adriana dos Santos Marmori Lima</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Francisco Ramallo (Argentina)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Helena Cosma da Graça Fonseca Veloso (Angola)</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Márcia Lidiane Rodrigues Santana</label>
+                        <label class="membros-linhas-de-pesquisa-pc membros-linhas-de-pesquisa-mobile"> Vânia Santos de Souza </label>
+                    </div>
                 </div>
             </div>
             <br>
-
+            <!-- DIV Volte ao Topo -->
             <div class="rodape-cor">
                 <footer class="menu-r-topo">
-
-                    <script>
-                        var btn = document.querySelector("#back-to-top");
-
-                        btn.addEventListener("click", function() {
-                            window.scrollTo(0, 0);
-                        });
-                    </script>
-
-                    <a id="back-to-top" href=""> <label class="texto-rodape-topo"> <i class="fas fa-caret-up"></i> Volte ao Topo </label> </a>
-
+                    <!-- Barra Volte ao Topo -->
+                    <a href="#"> <label class="texto-rodape-topo"> <i class="fas fa-caret-up"></i> Volte ao Topo </label> </a>
                 </footer>
             </div>
             <!--                                                  ICONES DO RODAPE                                                                -->
             <div class="rodape-cor">
-                <footer class="menu-r coluna-1-inicio">
+                <div class="apagar-elementos-mobile">
+                    <div class="centralizar-elementos-pc">
+                        <footer class="menu-r coluna-1-inicio">
+                            <!-- Container das Colunas Rodape -->
+                            <div class="container">
+                                <!-- Propriedade Coluna - Endereço -->
+                                <div class="row justify-content-md-center">
+                                    <!-- Coluna - Endereço -->
+                                    <div class="col col-lg-4 esquedizar-elementos-pc">
+                                        <label class="texto-rodape-endereco">Endereço</label>
+                                        <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
+                                        <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula </label>
+                                        <label class="texto-rodape-endereco">Salvador-BA</label>
+                                        <label class="texto-rodape-endereco">CEP: 41.150-000</label>
+                                    </div>
+                                    <!-- Coluna 2 - Reuniões -->
+                                    <div class="col col-lg-2">
+                                        <!-- Propriedade Coluna - Reuniões -->
+                                        <div class="row">
+                                            <!-- Propriedade para deixar em diferentes linhas - Reuniões -->
+                                            <div class="col col-lg-10">
+                                                <!-- Coluna - Reuniões -->
+                                                <label class="texto-rodape-endereco">Reuniões</label>
+                                                <label class="texto-rodape-endereco">Terças: 14 às 16 horas </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 3 - Telefone -->
+                                    <div class="col-lg-1 centralizar-elementos-pc">
+                                        <!-- Propriedade Coluna - Telefone -->
+                                        <div class="apagar-texto-rodape">
+                                            <!-- Coluna - Telefone -->
+                                            <label class="texto-rodape-direita contato-texto">Telefone</label>
+                                            <!-- Propriedade para deixar em diferentes linhas - Telefone -->
+                                            <div class="row">
+                                                <div class="col col-md-2">
+                                                    <a href="" target="_blank"> <i class="fas fa-phone contato-icone"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 4 - Mapa de Localização -->
+                                    <div class="col col-lg-2">
+                                        <div class="apagar-texto-rodape">
+                                            <label class="texto-rodape-direita contato-texto">Mapa de Localização</label>
+                                            <div class="row">
+                                                <div class="col col-md-2">
+                                                    <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map contato-icone-2"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 5 - Redes Sociais -->
+                                    <div class="col col-lg-2 esquedizar-elementos-pc">
+                                        <!-- DIV para apagar texto do rodape no PC, apenas -->
+                                        <div class="apagar-texto-rodape">
+                                            <label class="texto-rodape-redes-sociais">Redes Sociais</label>
+                                        </div>
+                                        <!-- Linha 1 - Redes Sociais -->
+                                        <div class="row">
+                                            <!-- Coluna - Facebook -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Instagram -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Youtube -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais"></i> </a>
+                                            </div>
+                                        </div>
+                                        <!-- Linha 2 - Redes Sociais -->
+                                        <div class="row">
+                                            <!-- Coluna - Twitter -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Flickr -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Email -->
+                                            <div class="col col-lg-2">
+                                                <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais"></i> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!--  ICONES DAS REDES SOCIAS - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc centralizar-elementos-mobile">
+                    <div class=" col-form-label-sm">
+                        <!-- Icone, apenas Mobile - Facebook -->
+                        <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Instagram -->
+                        <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Youtube -->
+                        <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Twitter -->
+                        <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais-mobile"></i> </a>
 
+                        <!-- Icone, apenas Mobile - Flickr -->
+                        <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Email -->
+                        <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Mapa de Localização -->
+                        <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Telefone -->
+                        <a href="" target="_blank"> <i class="fas fa-phone redes-sociais-mobile"></i> </a>
+                    </div>
+                </div>
+                <!--  Reuniões - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc centralizar-elementos-mobile fundo-reuniao">
+                    <!-- Coluna 2 - Reuniões -->
                     <div class="container">
-
-                        <div class="row justify-content-md-center">
-
-                            <div class="col col-lg-4"><label class="texto-rodape-endereco">Endereço</label>
+                        <!-- Propriedade Coluna - Reuniões -->
+                        <div class="row">
+                            <!-- Propriedade para deixar em diferentes linhas - Reuniões -->
+                            <div class=" col-lg-auto">
+                                <!-- Coluna - Reuniões -->
+                                <label class="texto-rodape-reuniao"> &nbsp; Reuniões - Terças: 14 às 16 horas &nbsp; &nbsp; </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  Endereço - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc">
+                    <div class="container">
+                        <!-- Propriedade Coluna - Endereço -->
+                        <div class="row">
+                            <!-- Coluna - Endereço -->
+                            <div class="col col-lg-auto centralizar-elementos-mobile">
                                 <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
-                                <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula </label>
-                                <div class="col col-lg-4">
-                                    <label class="texto-rodape-endereco">Salvador-BA</label></div>
+                                <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula / Salvador-BA</label>
                                 <label class="texto-rodape-endereco">CEP: 41.150-000</label>
                             </div>
-
-                            <div class="col col-auto"></div>
-
-                            <div class="col col-lg-2">
-                                <div class="row">
-
-                                    <div class="col col-lg-9">
-
-                                        <label class="texto-rodape-endereco">Reuniões</label>
-
-                                        <label class="texto-rodape-endereco">   </label>
-
-                                        <label class="texto-rodape-endereco">Terças: 14 às 16 horas </label>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-1">
-
-                                <div class="apagar-texto-rodape">
-
-                                    <label class="texto-rodape-direita contato-texto">Telefone</label>
-                                    <div class="row">
-
-                                        <div class="col col-lg-2">
-                                            <a href="" target="_blank"> <i class="fas fa-phone contato-icone"></i> </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col col-lg-2">
-
-                                <div class="apagar-texto-rodape">
-                                    <label class="texto-rodape-direita contato-texto">Mapa de Localização</label>
-                                    <div class="row">
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map contato-icone-2"></i> </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col col-xs-pull-2">
-
-                                <div class="apagar-texto-rodape">
-                                    <label class="texto-rodape-redes-sociais">Redes Sociais</label>
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col col-lg-2">
-                                        <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais"></i> </a>
-                                    </div>
-                                    <div class="col col-lg-2">
-                                        <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais"></i> </a>
-                                    </div>
-                                    <div class="col col-lg-2">
-                                        <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais"></i> </a>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col col-lg-2">
-                                        <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais"></i> </a>
-                                    </div>
-                                    <div class="col col-lg-2">
-                                        <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais"></i> </a>
-                                    </div>
-                                    <div class="col col-lg-2">
-                                        <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-
                     </div>
-
+                </div>
+                <!--                                            TEXTO ABAIXO DO RODAPE - MOBILE                                                             -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc">
+                    <div class="texto-rodape">
+                        <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href="https://github.com/Kuilua"> Tatakae </a></strong></label>
+                        <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
+                    </div>
+                </div>
+                <!--                                            TEXTO ABAIXO DO RODAPE                                                              -->
+                <div class="apagar-elementos-mobile">
+                    <div class="texto-rodape">
+                        <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href="https://github.com/Kuilua"> Tatakae </a></strong></label>
+                        <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
+                    </div>
+                </div>
             </div>
-            <br>
-            <div class="texto-rodape">
-                <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href=" "> Tatakae </a></strong></label>
-                <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
-
-            </div>
-            <br>
-            <!--                                                  ICONES DO RODAPE                                                                -->
-
         </div>
-
-
-        <!--                                            TEXTO ABAIXO DO RODAPE                                                              -->
-
-    </div>
 </body>
 
 </html>

@@ -7,3 +7,32 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+
+
+function MenuPrincipalFuncao() {
+    var x = document.getElementById("myLinks-MenuPrincipal");
+    if (window.getComputedStyle(x).display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
+function MenuPrincipalNgeaalc() {
+    var y = document.getElementById("myLinks-MenuPrincipal-Ngeaalc");
+    if (window.getComputedStyle(y).display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+}
+
+function MenuPrincipalPublicacoes() {
+    var z = document.getElementById("myLinks-MenuPrincipal-Publicacoes");
+    if (window.getComputedStyle(z).display === "none") {
+        z.style.display = "block";
+    } else {
+        z.style.display = "none";
+    }
+}

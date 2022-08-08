@@ -1,0 +1,707 @@
+            /* CABEÇA DA PAGINA INICIAL  -  OQ FICA OU NAO NAS PAGINAS NO PC */
+            
+            @media (max-width: 1280px) and (max-height: 720px) {
+                body::-webkit-scrollbar {
+                    width: 15px;
+                    /* width of the entire scrollbar */
+                }
+                body::-webkit-scrollbar-track {
+                    background-color: rgb(102, 240, 139);
+                    /* color of the tracking area */
+                }
+                body::-webkit-scrollbar-thumb {
+                    background-color: #144646;
+                    /* color of the scroll thumb */
+                    border-radius: 10px;
+                    /* roundness of the scroll thumb */
+                    border: 4px solid rgb(240, 102, 102);
+                    /* creates padding around scroll thumb */
+                }
+                body {
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    align-items: center;
+                    display: flexbox;
+                    background-image: url(../img/446.jpg);
+                    background-color: rgb(102, 25, 126);
+                }
+            }
+            
+            @media (min-width: 726px) {
+                body {
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    align-items: center;
+                    display: flexbox;
+                    background-image: url(../img/446.jpg);
+                    background-color: rgb(126, 65, 25);
+                }
+                body::-webkit-scrollbar {
+                    width: 15px;
+                    /* width of the entire scrollbar */
+                }
+                body::-webkit-scrollbar-track {
+                    background-color: rgb(240, 169, 102);
+                    /* color of the tracking area */
+                }
+                body::-webkit-scrollbar-thumb {
+                    background-color: #eaf2f2;
+                    /* color of the scroll thumb */
+                    border-radius: 10px;
+                    /* roundness of the scroll thumb */
+                    border: 4px solid rgb(240, 169, 102);
+                    /* creates padding around scroll thumb */
+                }
+                .centralizar-elementos-pc {
+                    text-align: start;
+                    text-align: center;
+                }
+                .esquedizar-elementos-pc {
+                    text-align: start;
+                }
+                .direitizar-elementos-pc {
+                    text-align: end;
+                }
+                #titulo {
+                    font-size: 15vmin;
+                }
+                .menu-principal {
+                    margin: 0;
+                    padding: 0;
+                    z-index: 9;
+                }
+                .fundo-inicio {
+                    margin: 0;
+                    padding: 0;
+                    background-image: url(../img/446.jpg);
+                    background-color: rgb(128, 69, 52);
+                }
+                .nome-site {
+                    margin-top: 2%;
+                    color: #d1e1fb;
+                    font-size: xx-large;
+                    align-items: center;
+                    text-align: center;
+                    width: 70vw;
+                }
+                .centralizar-texto-corpo {
+                    display: flexbox;
+                    margin-inline: 15%;
+                    width: 70vw;
+                    background-color: rgb(244, 247, 250);
+                }
+                .centralizar-texto-corpo-inicio {
+                    display: flexbox;
+                    margin-inline: 3vw;
+                    width: 93vw;
+                    background-color: rgb(244, 247, 250);
+                }
+                .apagar-elementos-pc {
+                    display: none;
+                }
+                .img-colaboradores {
+                    border-radius: 5px;
+                    width: 150;
+                    height: 200;
+                }
+                .mobile-corpo {
+                    display: inline-flex;
+                    justify-items: center;
+                    position: relative;
+                    width: min-content;
+                    height: min-content;
+                    text-align: center;
+                    align-items: center;
+                }
+                .logos {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 0;
+                    /* background-image: url(../img/background\ -\ 4.png);
+                    background-repeat: round; */
+                    background-color: rgb(244, 247, 250);
+                }
+                /* Logo da Pagina Principal Inicial */
+                .logo-ngeaalc {
+                    margin-top: 5vh;
+                    width: 222px;
+                    height: 117px;
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    margin-right: 5rem;
+                }
+                .logo-ngeaalc:hover {
+                    opacity: 90%;
+                }
+                .container1 {
+                    display: block;
+                    margin-left: 2%;
+                    margin-right: 2%;
+                }
+                .container2 {
+                    display: block;
+                    margin-left: 2%;
+                    margin-right: 2%;
+                }
+                .container3 {
+                    display: block;
+                    margin-left: 2%;
+                    margin-right: 2%;
+                }
+                .container-apresentacao {
+                    display: block;
+                    align-items: center;
+                    margin-left: 4rem;
+                    margin-right: 4rem;
+                }
+                /* Trio de elementos da Pagina Inicial */
+                .inicio-3-inline {
+                    display: block;
+                    margin-top: 2rem;
+                    border-radius: 15px;
+                    margin-left: -15rem;
+                }
+                .inicio-3-inline-ajuste {
+                    display: inline-flex;
+                    width: 35rem;
+                    height: 35rem;
+                }
+                .inicio-3-inline-ajuste-2 {
+                    width: 35rem;
+                    height: 35rem;
+                }
+                .inicio-3-inline-ajuste-3 {
+                    margin-top: 5%;
+                    width: 50rem;
+                    height: 40rem;
+                }
+                .inicio-3-inline-esquerda {
+                    width: 35rem;
+                    height: 35rem;
+                    background-color: #c85314;
+                    border-radius: 5px;
+                }
+                .inicio-3-inline-centro {
+                    margin-top: -3px;
+                    width: 33rem;
+                    height: 33rem;
+                    justify-content: center;
+                    background-color: #e8b16e;
+                    border-radius: 5px;
+                }
+                .inicio-3-inline-direita {
+                    width: 30rem;
+                    height: 30rem;
+                    background-color: #c85314;
+                    border-radius: 5px;
+                }
+                /* FIM - Trio de elementos da Pagina Inicial */
+                /* TEXTOS DAS PAGINAS - TITULOS/CORPO/OUTROS */
+                .titulo-principal-inicio-pc {
+                    position: relative;
+                    font-size: 4rem;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 0;
+                    color: #333;
+                    margin-top: 3%;
+                    margin-inline-start: -4rem;
+                    margin-inline-end: -1rem;
+                    font-family: 'ROBOTO';
+                    color: #c85314;
+                }
+                .texto-titulo-pc {
+                    color: #c85314;
+                    display: grid;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    font-size: 3.5rem;
+                    font-family: 'roboto';
+                    align-items: center;
+                    text-align: center;
+                    position: relative;
+                }
+                .texto-corpo-pc {
+                    color: #333;
+                    display: grid;
+                    margin: 2rem;
+                    font-size: 2.5rem;
+                    align-items: center;
+                    text-align: center;
+                    position: relative;
+                }
+                /* FIM - TEXTOS DAS PAGINAS - TITULOS/CORPO/OUTROS */
+                /* PAGINA MEMBROS E AFINS */
+                .texto-membros {
+                    color: #c85314;
+                    display: grid;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    font-size: 2.5rem;
+                    font-family: 'roboto';
+                    align-items: center;
+                    text-align: center;
+                    position: relative;
+                }
+                .texto-menu-membros {
+                    color: #ffffff;
+                    font-size: large;
+                    padding: 15px;
+                    text-align: center;
+                    position: relative;
+                }
+                .icone-menu-membros {
+                    color: #ffffff;
+                    padding: 12px;
+                    text-align: center;
+                    position: relative;
+                }
+                /* PAGINA MEMBROS - PESQUISADORES/ESTUDANTES/TECNICOS */
+                /* PAGINA PESQUISADORES */
+                .titulo-corpo-doscente {
+                    margin: 50px;
+                    text-align: center;
+                    align-items: center;
+                    text-decoration: #26529D;
+                }
+                .caixa-membros-internacionais {
+                    display: inline-block;
+                    margin-left: 2.5vh;
+                    margin-right: 2.5vh;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    position: relative;
+                }
+                .id-colaboradores {
+                    display: inline-block;
+                    margin-bottom: 2rem;
+                    color: #333;
+                    justify-content: space-between;
+                }
+                .container-colaboradores-pc {
+                    height: 195px;
+                }
+                .margem-colaboradores-resumo {
+                    font-size: 1.5rem;
+                    display: inline-block;
+                    text-align: left;
+                }
+                .margem-colaboradores-resumo-1 {
+                    font-size: 16px;
+                    border-radius: 5px;
+                    margin-top: 5rem;
+                    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+                    display: inline-block;
+                    text-align: left;
+                }
+                .margem-colaboradores-resumo-2 {
+                    font-size: 16px;
+                    border-radius: 5px;
+                    margin-top: 3.1rem;
+                    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+                    display: inline-block;
+                    text-align: left;
+                }
+                .id-colaboradores-texto-3 {
+                    font-size: 16px;
+                    border-radius: 5px;
+                    margin-top: 2.8rem;
+                    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+                    display: inline-block;
+                    text-align: left;
+                }
+                .membros-caixa {
+                    border-radius: 5px;
+                    margin-top: 1rem;
+                    display: inline;
+                    text-align: left;
+                }
+                .margem-colaboradores {
+                    margin-top: -185px;
+                    margin-left: 160px;
+                }
+                .margem-colaboradores-1 {
+                    margin-top: -212px;
+                    margin-left: 160px;
+                }
+                .margem-colaboradores-2 {
+                    margin-top: -190px;
+                    margin-left: 160px;
+                }
+                .margem-colaboradores-3 {
+                    margin-top: -197px;
+                    margin-bottom: -35px;
+                    margin-left: 160px;
+                }
+                .margem-colaboradores-4 {
+                    margin-top: -182px;
+                    margin-bottom: -5px;
+                    margin-left: 160px;
+                }
+                .texto-colaboradores {
+                    display: grid;
+                    background-color: rgb(83, 25, 2);
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    color: #ffffff;
+                    box-shadow: 1px 1px 1px gray;
+                    border: solid black;
+                }
+                .texto-colaboradores-pesquisadores-pc {
+                    font-size: 1.5rem;
+                    margin-bottom: .3rem;
+                    color: #333;
+                }
+                .texto-colaboradores:hover {
+                    display: flex;
+                    margin-left: 1%;
+                    background-color: rgb(83, 25, 2);
+                    border-radius: 15px;
+                }
+                .link-colaboradores {
+                    font-weight: bolder;
+                    text-decoration: wavy rgb(10, 20, 156);
+                    color: rgb(114, 155, 209);
+                }
+                .link-colaboradores:hover {
+                    opacity: 80%;
+                    background-color: rgb(202, 202, 202);
+                    color: rgb(99, 24, 24);
+                    border-radius: 10px;
+                }
+                .link-colaboradores:focus {
+                    font-weight: bolder;
+                    color: rgb(156, 86, 235);
+                    border-radius: 10px;
+                }
+                /* ESTILO DAS IMAGENS INTERNACIONAIS */
+                .img-inter {
+                    width: 25px;
+                    height: 15px;
+                    display: flex;
+                    float: right;
+                    margin-inline-end: 2.5%;
+                }
+                .img-inter-angola {
+                    width: 30px;
+                    height: 20px;
+                    display: flex;
+                    float: right;
+                    margin-inline-end: 2.5%;
+                }
+                /* FIM - PAGINA COLABORADORES - CORPO DOSCENTE */
+                /* FIM - PAGINA COLABORADORES */
+                /*  PAGINA APRESENTAÇAO */
+                .texto-fundadores {
+                    font-size: 1.5rem;
+                    margin-top: .5rem;
+                    margin-left: 1.5rem;
+                    color: #333;
+                }
+                .texto-apresentacao {
+                    align-items: center;
+                    font-size: 2rem;
+                }
+                /* FIM - PAGINA APRESENTAÇAO */
+                /* PAGINA CONTATO */
+                .caixa-contato-dentro {
+                    font-size: 1.5rem;
+                    border-radius: 5px;
+                    margin-top: 1.5rem;
+                    margin-bottom: .5rem;
+                    display: inline-block;
+                    text-align: left;
+                }
+                .id-contato {
+                    display: inline-block;
+                    margin-bottom: 2rem;
+                    color: #333;
+                    justify-content: space-between;
+                }
+                .caixa-contato {
+                    background-color: #b14c09;
+                    margin: 2.5rem;
+                    margin-left: 20rem;
+                    margin-right: 20rem;
+                    margin-bottom: 1rem;
+                    border-radius: 10px;
+                    text-align: center;
+                    align-items: center;
+                    border: box-shadow 2px 2px 2px #333;
+                    display: block;
+                }
+                .texto-contato-titulo-pc {
+                    font-size: 2rem;
+                    display: block;
+                    text-align: center;
+                    align-items: center;
+                    margin-bottom: 0.5em;
+                    margin-top: 0.5em;
+                    color: #ffffff;
+                    border-bottom: solid #333;
+                }
+                .texto-contato-pc-1 {
+                    font-size: 1.7rem;
+                    display: inline-block;
+                    text-align: center;
+                    align-items: center;
+                    margin-bottom: 1.5em;
+                    color: #ffffff;
+                }
+                .texto-contato-pc-2 {
+                    font-size: 1.7rem;
+                    display: inline-block;
+                    text-align: center;
+                    align-items: center;
+                    margin-inline-start: 10rem;
+                    margin-top: .5em;
+                    margin-bottom: 1.5em;
+                    color: #ffffff;
+                    z-index: 999;
+                }
+                .texto-contato-pc-2:hover {
+                    opacity: 100%;
+                    background-color: #e48d68;
+                    border-radius: 5px;
+                }
+                .img-contato-pc {
+                    margin: 0;
+                    align-items: center;
+                    object-fit: cover;
+                    opacity: 70%;
+                    z-index: 0;
+                    margin-top: -1.5em;
+                    margin-bottom: 1.5em;
+                }
+                .telefone-contato-pc {
+                    text-align: center;
+                    align-items: center;
+                    margin-bottom: 0.5em;
+                    color: #ffffff;
+                    margin-right: 25vmin;
+                }
+                .telefone-contato-pc:hover {
+                    background-color: #eaf2f2;
+                    color: rgb(156, 86, 235);
+                    border-radius: 10px;
+                }
+                /* FIM - PAGINA CONTATO */
+                /* Linhas-de-pesquisa */
+                .caixa-linhas-de-pesquisa-pc {
+                    margin-top: 2rem;
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+                    color: #333;
+                }
+                .caixa-membros-linhas-de-pesquisa-pc {
+                    display: grid;
+                    margin-bottom: 2rem;
+                    font-size: 2rem;
+                    justify-content: left;
+                }
+                .membros-linhas-de-pesquisa-pc {
+                    color: #333;
+                    margin-top: .5rem;
+                    margin-bottom: .5rem;
+                    font-size: 2.5rem;
+                }
+                .numero-linhas-de-pesquisa-1 {
+                    font-size: 3rem;
+                    margin-top: 3rem;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .numero-linhas-de-pesquisa-2 {
+                    font-size: 3rem;
+                    margin-top: 3rem;
+                    margin-bottom: 1rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .numero-linhas-de-pesquisa-3 {
+                    font-size: 3rem;
+                    margin-top: 3rem;
+                    margin-bottom: 1rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .numero-linhas-de-pesquisa-4 {
+                    font-size: 3rem;
+                    margin-top: 3rem;
+                    margin-bottom: 1rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .dir-linhas-de-pesquisa-pc {
+                    margin-top: 1rem;
+                    margin-bottom: 3rem;
+                    display: block;
+                    justify-content: space-between;
+                    font-family: 'ROBOTO';
+                }
+                .dir-linhas-de-pesquisa-direita {
+                    float: right;
+                    font-size: 2rem;
+                }
+                .dir-linhas-de-pesquisa-esquerda {
+                    float: left;
+                    font-size: 2rem;
+                }
+                .texto-titulo-linhas-de-pesquisa-pc {
+                    align-items: flex-start;
+                    margin-top: 3%;
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+                    font-size: 2.5rem;
+                    color: #333;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .texto-titulo-linhas-de-pesquisa-1 {
+                    margin-top: 2%;
+                    margin-bottom: 2%;
+                    font-size: 3rem;
+                    color: #333;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: rgb(173, 74, 4);
+                    text-decoration-line: underline;
+                    font-family: 'Caesar Dressing', cursive;
+                }
+                .texto-corpo-linhas-de-pesquisa-pc {
+                    margin-top: 3%;
+                    margin-bottom: 2vmin;
+                    font-size: 2vmin;
+                    justify-content: left;
+                    align-items: center;
+                    color: #333;
+                }
+                /* FIM - Linhas-de-pesquisa */
+                /*  Eventos */
+                .img-eventos {
+                    justify-items: center;
+                    border-radius: 5px;
+                    border: solid #cecece;
+                    margin-top: 5vmin;
+                }
+                .div-eventos {
+                    position: relative;
+                    font-size: 5vmin;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 0;
+                }
+                .texto-eventos {
+                    font-size: 16px;
+                    margin-top: -1rem;
+                    margin-left: 7rem;
+                    color: #333;
+                }
+                .texto-eventos-4 {
+                    font-size: 16px;
+                    margin-top: -1rem;
+                    color: #333;
+                }
+                .texto-eventos-1 {
+                    font-size: 1.7rem;
+                    margin-top: .3rem;
+                    margin-bottom: 2%;
+                    margin-left: 7rem;
+                    color: #333;
+                }
+                .texto-eventos-2 {
+                    font-size: 16px;
+                    margin-top: -1.2%;
+                    margin-left: 4rem;
+                    color: #333;
+                    align-items: center;
+                }
+                .texto-eventos-3 {
+                    font-size: 18px;
+                    margin-top: 2%;
+                    margin-bottom: 5%;
+                    color: #333;
+                    align-items: center;
+                }
+                .texto-corpo-eventos {
+                    margin: 5vmin;
+                    background-position: center;
+                    font: optional;
+                    font-size: 3vmin;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #333;
+                }
+                .margem-eventos {
+                    margin-top: -185px;
+                    margin-left: 165px;
+                }
+                /* FIM - Eventos */
+                /* Regimento */
+                .texto-titulo-regimento-pc {
+                    text-align: center;
+                    display: grid;
+                    font-size: 3rem;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    color: rgb(0, 0, 0);
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+                .texto-corpo-regimento-pc {
+                    text-align: left;
+                    font-size: 2.2rem;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    color: rgb(0, 0, 0);
+                    font-style: italic;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+                .texto-indice-regimento-pc {
+                    text-align: left;
+                    font-size: 1.8rem;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    color: #b14c09;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+                .texto-estatuto-end {
+                    text-align: center;
+                    font-size: 2rem;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    color: #333;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+                .div-regimento {
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+                    display: grid;
+                }
+            }
+            /* FIM - Regimento */

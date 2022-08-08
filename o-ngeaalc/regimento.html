@@ -11,8 +11,14 @@
     <link rel="apple-touch-icon" sizes="192x192" href="../img/icone-aba/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icone-aba/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/icone-aba/favicon-16x16.png">
-    <!-- Icone da aba -->
+    <!-- CSS ORIGINAL - NAO MEXA AQUI - Icone da aba -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Tamanho da guia no PC -->
+    <link rel="stylesheet" type="text/css" href="../css/pc-style.css">
+    <!-- Tamanho da guia no Mobile -->
+    <link rel="stylesheet" type="text/css" href="../css/mobile-style.css">
+    <!-- Tamanho da guia no Tablet -->
+    <link rel="stylesheet" type="text/css" href="../css/tablet-style.css">
     <!-- Animaçao dos elementos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Icone Hamburger -->
@@ -58,55 +64,62 @@
         <div class="menu-mobile">
             <!-- Menu Mobile -->
             <div class="topnav">
-                <a href="#topo" class="active texto-nome">NGEAALC</a>
+                <a href="index.html" class="active texto-nome-mobile">NGEAALC</a>
                 <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
+                <div id="myLinks-MenuPrincipal">
                     <li class="texto-menu-opcoes">
-                        <a href="../index.html"> <i class="fas fa-home"></i></i>
-                            <p></p>Butula</a>
+                        <a href="../index.html"><label class="texto-menu-mobile"> <i class="fas fa-home"></i><br> Butula</label></a>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><i class="fas fa-users icon" ></i><p></p>O Ngeaalc</a>
-                        <div id="myLinks2">
+                    <li class="texto-menu-opcoes">
+                        <a href="javascript:void(0);" onclick="MenuPrincipalNgeaalc()"> <label class="texto-menu-mobile"><i class="fas fa-users icon"></i> <br> O Ngeaalc</label></a>
+                        <div id="myLinks-MenuPrincipal-Ngeaalc">
                             <ul>
-                                <li class="menu-h-mobile"><a href="apresentacao.html">Apresentação</a></li>
-                                <li class="menu-h-mobile"><a href="pesquisadores.html">Pesquisadores</a></li>
-                                <li class="menu-h-mobile"><a href="estudantes.html">Estudantes</a></li>
-                                <li class="menu-h-mobile"><a href="tecnicos.html">Técnicos</a></li>
-                                <li class="menu-h-mobile"><a href="internacionais.html">Colaboradores Internacionais</a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/apresentacao.html"><label class="texto-menu-mobile">Apresentação</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/pesquisadores.html"><label class="texto-menu-mobile">Pesquisadores</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estudantes.html"><label class="texto-menu-mobile">Estudantes</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/tecnicos.html"><label class="texto-menu-mobile">Técnicos</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/internacionais.html"><label class="texto-menu-mobile">Colaboradores Internacionais</label></a></li>
 
-                                <li class="menu-h-mobile"><a href="estatuto.html">Estatuto</a></li>
-                                <li class="menu-h-mobile"><a href="regimento.html">Regimento</a></li>
-                                <li class="menu-h-mobile"><a href="linhas-de-pesquisas.html">Linhas de Pesquisas</a></li>
-                                <li class="menu-h-mobile"><a href="instituicoes-parceiras.html">Instituições Parceiras</a></li>
-                                <li class="menu-h-mobile"><a href="egresso.html">Egressos</a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estatuto.html"><label class="texto-menu-mobile">Estatuto</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/regimento.html"><label class="texto-menu-mobile">Regimento</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/linhas-de-pesquisas.html"><label class="texto-menu-mobile">Linhas de Pesquisas</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/instituicoes-parceiras.html"><label class="texto-menu-mobile">Instituições Parceiras</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/egresso.html"><label class="texto-menu-mobile">Egressos</label></a></li>
+
                             </ul>
                         </div>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="../producoes.html"><i class="fas fa-book"></i><p></p>Projetos</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="../eventos.html"><i class="fas fa-chalkboard-teacher"></i><p></p>Eventos</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="../revista.html"><i class="fas fa-newspaper"></i><p></p>Revista</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><i class="fas fa-chalkboard-teacher"></i><p></p>Publicações</a>
-                        <div id="myLinks3">
+                    <li class="texto-menu-opcoes"> <a href="../projetos.html"><label class="texto-menu-mobile"><i class="fas fa-book"></i> <br> Projetos</label></a> </li>
+                    <li class="texto-menu-opcoes"> <a href="../eventos.html"><label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Eventos</label></a> </li>
+                    <li class="texto-menu-opcoes"> <a href="../revista.html"><label class="texto-menu-mobile"><i class="fas fa-newspaper"></i> <br> Revista</label></a> </li>
+                    <li class="texto-menu-opcoes">
+                        <a href="javascript:void(0);" onclick="MenuPrincipalPublicacoes()"> <label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Publicações</label></a>
+                        <div id="myLinks-MenuPrincipal-Publicacoes">
                             <ul>
-                                <li class="menu-h-mobile"><a href="../publicacoes/artigos.html">Artigos</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/livros.html">Livros</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/teses.html">Teses</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html">Outras Produções</a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/artigos.html"><label class="texto-menu-mobile">Artigos</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/livros.html"><label class="texto-menu-mobile">Livros</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/teses.html"><label class="texto-menu-mobile">Teses</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html"><label class="texto-menu-mobile">Outras Produções</label></a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="../contato.html"><i class="fas fa-mail-bulk"></i><p></p>Contato</a> </li>
+
+                    <li class="texto-menu-opcoes"> <a href="../contato.html"><label class="texto-menu-mobile"><i class="fas fa-mail-bulk"></i> <br> Contato</label></a> </li>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                <a href="javascript:void(0);" class="icon" onclick="MenuPrincipalFuncao()">
+                    <i class="fa fa-bars barras-mobile"></i>
                 </a>
             </div>
         </div>
-
+        <!-- FUNCOES DO MENU -->
+        <!-- Links do Menu Principal - Função-Mãe -->
         <script>
-            function myFunction() {
-                var x = document.getElementById("myLinks");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Mãe
+            var x = document.getElementById("myLinks-MenuPrincipal").style.display = 'none';
+
+            function MenuPrincipalFuncao() {
+                var x = document.getElementById("myLinks-MenuPrincipal");
                 if (x.style.display === "block") {
                     x.style.display = "none";
                 } else {
@@ -114,10 +127,13 @@
                 }
             }
         </script>
-
+        <!-- Links do Menu Principal - Função-Ngeaalc -->
         <script>
-            function myFunction2() {
-                var y = document.getElementById("myLinks2");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Ngeaalc
+            var y = document.getElementById("myLinks-MenuPrincipal-Ngeaalc").style.display = 'none';
+
+            function MenuPrincipalNgeaalc() {
+                var y = document.getElementById("myLinks-MenuPrincipal-Ngeaalc");
                 if (y.style.display === "block") {
                     y.style.display = "none";
                 } else {
@@ -125,10 +141,13 @@
                 }
             }
         </script>
-
+        <!-- Links do Menu Principal - Função-Publicacoes -->
         <script>
-            function myFunction3() {
-                var z = document.getElementById("myLinks3");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Publicacoes
+            var z = document.getElementById("myLinks-MenuPrincipal-Publicacoes").style.display = 'none';
+
+            function MenuPrincipalPublicacoes() {
+                var z = document.getElementById("myLinks-MenuPrincipal-Publicacoes");
                 if (z.style.display === "block") {
                     z.style.display = "none";
                 } else {
@@ -136,43 +155,47 @@
                 }
             }
         </script>
-
-
+        <!-- FIM - FUNCOES DO MENU  -->
         <!-- Corpo da pagina - Adicionar Elementos AQUI -->
-        <div class="centralizar-texto-corpo-inico">
-            <br><br>
-            <div class="menu-r-topo-1">
+        <div class="centralizar-texto-corpo-inicio">
 
-                <label class="texto-rodape-topo">   </label>
+            <div class="apagar-elemento-mobile">
+                <br><br>
+                <div class="menu-r-topo-1 ">
 
-            </div>
-            <div class="logos">
-                <!-- LOGO UNEB -->
-                <div class="animate__animated animate__zoomInUp">
-                    <a href="https://portal.uneb.br/" target="_blank">
-                        <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+                    <label class="texto-rodape-topo">   </label>
+
                 </div>
-                <div class="nome-site">
-                    <label class="texto-nome-principal-1"> NGEAALC </label>
-                    <div>
-                        <label class="texto-nome-principal"> NÚCLEO DE</label>
-                        <label class="texto-nome-principal">ESTUDOS  </label>
-                        <label class="texto-nome-principal">AFRICANOS E </label>
-                        <label class="texto-nome-principal">AFRO-BRASILEIROS  EM </label>
-                        <label class="texto-nome-principal">LÍNGUAS </label> <label class="texto-nome-principal">E CULTURAS </label>
+                <div class="logos">
+                    <!-- LOGO UNEB -->
+                    <div class="animate__animated animate__zoomInUp">
+                        <a href="https://portal.uneb.br/" target="_blank">
+                            <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+                    </div>
+                    <div class="nome-site">
+                        <label class="texto-nome-principal-1"> NGEAALC </label>
+                        <div>
+                            <label class="texto-nome-principal"> NÚCLEO DE</label>
+                            <label class="texto-nome-principal">ESTUDOS  </label>
+                            <label class="texto-nome-principal">AFRICANOS E </label>
+                            <label class="texto-nome-principal">AFRO-BRASILEIROS  EM </label>
+                            <label class="texto-nome-principal">LÍNGUAS </label> <label class="texto-nome-principal">E CULTURAS </label>
+                        </div>
+                    </div>
+                    <!-- LOGO NGEAALC -->
+                    <div class="animate__animated animate__zoomIn">
+                        <a href="https://revistas.uneb.br/index.php/africanias/login?source=%2Findex.php%2Fafricanias" target="_blank">
+                            <img class="logo-ngeaalc" src="../img/logos/logo.png" /> </a>
                     </div>
                 </div>
-                <!-- LOGO NGEAALC -->
-                <div class="animate__animated animate__zoomIn">
-                    <a href="https://revistas.uneb.br/index.php/africanias/login?source=%2Findex.php%2Fafricanias" target="_blank">
-                        <img class="logo-ngeaalc" src="../img/logos/logo.png" /> </a>
+
+                <br><br><br><br>
+
+                <div class="menu-r-topo-1">
+
+                    <label class="texto-rodape-topo">   </label>
+
                 </div>
-            </div>
-            <br><br><br><br>
-            <div class="menu-r-topo-1">
-
-                <label class="texto-rodape-topo">   </label>
-
             </div>
 
             <div class="mobile-corpo">
@@ -181,184 +204,518 @@
                     <nav class="dp-menu">
                         <ul class="menu-h">
                             <li class="texto-menu-opcoes">
-                                <a href="../index.html"> <i class="fas fa-home"></i></i>
-                                    <p></p>Butula</a>
+                                <a href="../index.html"><label class="texto-menu-mobile"><i class="fas fa-home icon"></i> <br> Butula</label></a>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><i class="fas fa-users icon" ></i><p></p>O Ngeaalc</a>
+                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><label class="texto-menu-mobile"><i class="fas fa-users icon"></i> <br> O Ngeaalc</label></a>
                                 <div id="myLinks2">
                                     <ul>
-                                        <li class="menu-h-mobile"><a href="apresentacao.html">Apresentação</a></li>
-                                        <li class="menu-h-mobile"><a href="pesquisadores.html">Pesquisadores</a></li>
-                                        <li class="menu-h-mobile"><a href="estudantes.html">Estudantes</a></li>
-                                        <li class="menu-h-mobile"><a href="tecnicos.html">Técnicos</a></li>
-                                        <li class="menu-h-mobile"><a href="internacionais.html">Colaboradores Internacionais</a></li>
+                                        <li class="menu-h-mobile"><a href="apresentacao.html"><label class="texto-menu-mobile">Apresentação</label></a></li>
+                                        <li class="menu-h-mobile"><a href="pesquisadores.html"><label class="texto-menu-mobile">Pesquisadores</label></a></li>
+                                        <li class="menu-h-mobile"><a href="estudantes.html"><label class="texto-menu-mobile">Estudantes</label></a></li>
+                                        <li class="menu-h-mobile"><a href="tecnicos.html"><label class="texto-menu-mobile">Técnicos</label></a></li>
+                                        <li class="menu-h-mobile"><a href="internacionais.html"><label class="texto-menu-mobile">Colaboradores Internacionais</label></a></li>
 
-                                        <li class="menu-h-mobile"><a href="estatuto.html">Estatuto</a></li>
-                                        <li class="menu-h-mobile"><a href="regimento.html">Regimento</a></li>
-                                        <li class="menu-h-mobile"><a href="linhas-de-pesquisas.html">Linhas de Pesquisas</a></li>
-                                        <li class="menu-h-mobile"><a href="instituicoes-parceiras.html">Instituições Parceiras</a></li>
-                                        <li class="menu-h-mobile"><a href="egresso.html">Egressos</a></li>
+                                        <li class="menu-h-mobile"><a href="estatuto.html"><label class="texto-menu-mobile">Estatuto</label></a></li>
+                                        <li class="menu-h-mobile"><a href="regimento.html"><label class="texto-menu-mobile">Regimento</label></a></li>
+                                        <li class="menu-h-mobile"><a href="linhas-de-pesquisas.html"><label class="texto-menu-mobile">Linhas de Pesquisas</label></a></li>
+                                        <li class="menu-h-mobile"><a href="instituicoes-parceiras.html"><label class="texto-menu-mobile">Instituições Parceiras</label></a></li>
+                                        <li class="menu-h-mobile"><a href="egresso.html"><label class="texto-menu-mobile">Egressos</label></a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="../producoes.html"><i class="fas fa-book"></i><p></p>Projetos</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="../eventos.html"><i class="fas fa-chalkboard-teacher"></i><p></p>Eventos</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="../revista.html"><i class="fas fa-newspaper"></i><p></p>Revista</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><i class="fas fa-chalkboard-teacher"></i><p></p>Publicações</a>
+                            <li class="texto-menu-opcoes"> <a href="../projetos.html"><label class="texto-menu-mobile"><i class="fas fa-book"></i> <br> Projetos</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="../eventos.html"><label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Eventos</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="../revista.html"><label class="texto-menu-mobile"><i class="fab fa-readme"></i> <br> Revista</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><label class="texto-menu-mobile"><i class="fas fa-newspaper"></i> <br> Publicações</label></a>
                                 <div id="myLinks3">
                                     <ul>
-                                        <li class="menu-h-mobile"><a href="../publicacoes/artigos.html">Artigos</a></li>
-                                        <li class="menu-h-mobile"><a href="../publicacoes/livros.html">Livros</a></li>
-                                        <li class="menu-h-mobile"><a href="../publicacoes/teses.html">Teses</a></li>
-                                        <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html">Outras Produções</a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/artigos.html"><label class="texto-menu-mobile">Artigos</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/livros.html"><label class="texto-menu-mobile">Livros</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/teses.html"><label class="texto-menu-mobile">Teses</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html"><label class="texto-menu-mobile">Outras Produções</label></a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="../contato.html"><i class="fas fa-mail-bulk"></i><p></p>Contato</a> </li>
+                            <li class="texto-menu-opcoes"> <a href="../contato.html"><label class="texto-menu-mobile"><i class="fas fa-mail-bulk"></i> <br> Contato</label></a> </li>
             </div>
 
-            <label class="texto-nome-manutencao"> EM </label>
-            <br>
-            <img class="manutencao" src="../img/plano-manutencao.webp" width="550">
-            <br>
-            <label class="texto-nome-manutencao"> MANUTENÇÃO </label>
+            <label class="animate__animated animate__fadeInLeft titulo-principal texto-titulo-mobile">REGIMENTO INTERNO</label>
 
-            <br>
+            <div class="div-regimento div-regimento-mobile">
 
+                <label class="texto-titulo-regimento-pc texto-titulo-regimento-mobile"> TÍTULO I <p></p> DA NATUREZA, SEDE, OBJETIVOS E DEFINIÇÕES </label>
+
+                <label class="texto-titulo-regimento-pc texto-titulo-regimento-mobile"> SEÇÃO 1 <p></p> Da Natureza e Sede </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 1º. </strong>O Núcleo do Grupo de Pesquisa, Ensino e Extensão de Estudos Africanos e Afrobrasileiros em Línguas e Culturas / NGEAALC, tem natureza interdisciplinar, destina-se a implementar ações acadêmicas, didático-pedagógicas,
+                técnicas, artísticas e culturais, nas áreas de Línguas da família Nígero-Congolesa e de Línguas Negroafricanas no Brasil. Propõe-se a atuar em cursos de extensão na esfera acadêmica, em atividades extramurais de pesquisa e ensino na formação
+                continuada de professores da rede municipal e estadual, em comunidades de terreiros, comunidades quilombolas e outras, em particular comunidades circunvizinhas à sede da UNEB, assim como para grupos da terceira idade, promovendo eventos,
+                encontros, seminários nacionais e internacionais para implementação da Lei 10.639/03, que dispõem sobre o Ensino da História da África e História da Cultura Afro-Brasileira .
+                </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 2º. </strong><strong>O NGEAALC</strong> tem sede no Campus 1 (Salvador) da UNEB, é vinculado à Pró-Reitoria de 
+                Extensão (PROEX) e ao Departamento de Ciências Humanas (DCH1). </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 3º. </strong><strong>O NGEAALC</strong> é composto por quatro Linhas de Pesquisas e possui uma Revista Eletrônica 
+                <strong>Africanias.com.</strong>
+                 </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile ">  Parágrafo Único: Linha de pesquisa (Lpq) 1: Culturas Negro-africanas no Brasil; Linha de 
+                    pesquisa (LPq) 2: Línguas da Família Niger-Congo e Negroafricano; Linha de pesquisa 
+                    (LPq) 3: Patrimônio Cultural, Memória, História e Acervos; Linha de pesquisa (LPq) 4: 
+                    Educação e Interseccionalidades.
+                     </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 4º. </strong><strong>O NUPE/ NGEAALC - Campus I </strong> obedecerá ao Estatuto e Regimento Interno da UNEB e
+                a todas as Leis e Normas concernentes às políticas de pesquisa, extensão e ensino do país 
+                e daquelas Instituições e Entidades, nacionais e internacionais, a que se conveniar. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile "> § 1º-  A duração do NGEAALC é indeterminada, podendo somente ser extinto mediante 
+                    manifestação e concordância de seus membros e membras efetivos. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile "> § 2º-  A Coordenação e Vice-Coordenação do Núcleo poderá concorrer aos editais publicados 
+                pela UNEB, cadastrando e desenvolvendo projetos que contemplem as Linhas de Pesquisa do Núcleo, bem como terá autonomia de propor editais, especialmente para 
+                seleção e contratação de professores/as Visitantes e professores/as Colaboradores/as junto a Pró-Reitoria de Extensão (PROEX) para atividades de cooperação 
+                nacional e internacional.
+                 </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 5º.</strong><strong>O NGEAALC</strong> tem sede no Campus 1 (Salvador) da UNEB, é vinculado à Pró-Reitoria de 
+                            Extensão (PROEX) e ao Departamento de Ciências Humanas (DCH1). </label>
+
+                <label class="texto-titulo-regimento-pc texto-titulo-regimento-mobile"> TÍTULO II <p></p> SEÇÃO 1 </label>
+
+                <label class="texto-titulo-regimento-pc texto-titulo-regimento-mobile"> Membros Efetivos e Membros Participantes – Definições e Critérios </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 6º.</strong> São <strong>membros/as efetivos/as</strong> do NGEAALC: professores/as, técnicos/as e estudantes da 
+                UNEB, e de outras Instituições e àqueles/as que, não vinculados às Instituições de Ensino Superior, 
+                tenham interesse na área de estudo e pesquisa do NGEAALC, contanto que se submetam e 
+                atendam aos critérios estabelecidos para membros/as efetivos/as.  </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 7º.</strong> Os/as membros/as efetivos/as terão direito a votar e a serem votados/as para qualquer 
+                das instâncias e atividades do NGEAALC, publicar artigos e outros gêneros literários na <strong>Revista Africanias.com</strong> ou outras, em nome do 
+                NGEAALC, tendo garantidos seus diretos e submetidos aos compromissos e obrigações de membros/as efetivos/as. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 8º.</strong> Para tornar-se <strong>membros/a efetivos/a</strong> deve-se preencher uma ficha de 
+                filiação, contendo dados pessoais (nome, endereço físico e eletrônico, telefone/celular), declarando interesse pela área de estudo do NGEAALC, disponibilizar
+                o Curriculum Lattes atualizado; comprometer-se a frequentar reuniões e assembleias, reuniões de Linhas de Pesquisa; comprometer-se a participar de alguma 
+                instância do NGEAALC e, sempre que necessário e solicitado, cumprir tarefas práticas-operacionais, que garantam a existência e manutenção do NGEAALC; ter no
+                mínimo 3 (três) publicações anuais de artigo em <strong>Revista Qualis A e B</strong>; ter no mínimo 2 (duas) publicações anuais de artigos em 
+                <strong>Livros</strong>. A Coordenação e Conselhos devem analisar a entrada dos/as membros/as efetivos/as, dando parecer por escrito sobre a solicitação de 
+                entrada, assim como criar critérios de permanência e saída dos/as membros/as efetivos/as.  </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 9º.</strong> São <strong>membros/as efetivos/as</strong> àqueles/as que manifestam interesse pela área temática 
+                do NGEAALC, desejam participar e colaborar eventualmente, sem compromissos assumidos 
+                pelos/as membros/as efetivos/as, desde que se manifestem por escrito. Os/as membros/as
+                participantes poderão, em qualquer momento, solicitar sua inscrição como membro/a efetivo/a,
+                contanto que siga os critérios expressos no Art. 8º desse Regimento Interno.  </label>
+
+                <label class="texto-titulo-regimento-pc texto-titulo-regimento-mobile"> SEÇÃO 2 </label>
+
+                <label class="texto-titulo-regimento-pc texto-titulo-regimento-mobile"> Da Organização e das Funções e Competências </label>
+                <!-- ARTIGO 10 - INIDICES -->
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 10º.</strong><strong>O NGEAALC</strong> terá a seguinte Estrutura Organizacional: </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile">I-Assembléia Geral<p></p>Assembléia Geral é composta por todos/as os/as membros/as efetivos/as, ocupantes ou não 
+                    de cargos e funções específicas, com direito a voz e voto e, a ser candidato/a a cargos através de eleição. Os/as membros/as participantes podem compor
+                    a Assembleia, mas não têm direito a voto. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile">II-Conselho Científico<p></p>O Conselho Científico deve ser composto pelo/a Coordenador/a e Vice-Coordenador/a e por mais 
+                    5 pessoas com doutorado concluído e com curriculum lattes balizado pela produção acadêmica, e/ou artística-cultural. As deliberações deverão ser por 
+                    maioria (50%+1) dos votos dos/as membros/as do Conselho Científico. O Conselho deve ser reunir ordinariamente uma vez por bimestre e, 
+                    extraordinariamente, quando se fizer necessário. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 1 -->
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>São Atividades, Compromissos e Competências do Conselho Científico: </strong> </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 1.1 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.1- Incentivar a produção individual e coletiva, assim como a divulgação dos produtos acadêmicos, culturais e 
+                    artísticos dos/as membros/as efetivos/as e dos/as membros/as participantes. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 1.2 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.2- Posicionar contra todo e qualquer tipo de opressão, preconceito, discriminação, 
+                    estigmatização que venham a ser sofridos pelos/as membros/as do NGEAALC, assim como de 
+                    seu público-alvo e, de todas os seres humanos.  </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 1.3 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.3- Estabelecer contato direto e permanente com a coordenação da equipe editorial da Revista 
+                    Africanias.com e outros instrumentos de divulgação da produção dos/as membros/as
+                   efetivos/as do NGEAALC, para acordos frente às produções, avaliações, publicações e 
+                    divulgações.  </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 1.4 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.4- Apreciar e aprovar, juntamente com o Conselho Administrativo, os Relatórios Anuais da 
+                    Coordenação. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 1.5 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.5- Elaborar parecer sobre a produção acadêmica/intelectual apresentada para publicação e 
+                    divulgação pelos/as membros/as efetivos/as do NGEAALC.  </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 2 -->
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile">III- Conselho Administrativo :<p></p>
+                    O Conselho Administrativo será composto pelo Coordenador, Vice-Coordenador e por mais 3 
+                    membros/as efetivos/as do NGEAALC. As deliberações deverão ser por maioria (50% + 1) dos 
+                    votos dos membros desse Conselho. O Conselho deve reunir-se ordinariamente uma vez por 
+                    bimestre e, extraordinariamente, quando se fizer necessário. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>São Atividades, Compromissos e Competências do Conselho Administrativo:</strong></label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 2.1 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.1- Criar, avaliar e coordenar atividades referentes a fontes de recursos, zelando pelas 
+                    finanças, orçamento, captação de recursos e rendimentos do NGEAALC. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 2.2 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.2- Elaborar os planos anuais de trabalho, os orçamentos; definir pela liberação ou não de 
+                    recursos; realizar a contabilidade financeira do NGEAALC para prestar contas às instâncias da 
+                    UNEB, em conformidade com a legislação em vigor dessa Instituição e a quem interessar possa. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 2.3 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.3- Elaborar e expedir Normas de Funcionamento, ou outros documentos afins que visem zelar 
+                    pelo funcionamento e desenvolvimento do NGEAALC. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 2.4 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.4- Elaborar relatório anual de prestação de contas. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 2.5 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">II.5- Apreciar e aprovar, juntamente com o Conselho Científico, os Relatórios Anuais da 
+                    Coordenação. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3 -->
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile">IV – Coordenação (Coordenador/a e Vice-Coordenador/a) <p></p> O/a Coordenador/a e o/a Vice-Coordenador/a serão 
+                    eleitos/as por voto direto pelos/as membros/as efetivos/as do NGEAALC, e terão mandatos coincidentes de 3 anos, podendo ser reeleitos/as por mais um 
+                    mandato, a critério e sob aprovação da Assembleia Geral. Pode o/a Coordenador/a e (o/a Vice-Coordenador/a quando em situação de substituição ao/à
+                    Coordenador/a) adotar, quando necessário, medidas “ad-referendum” de competência do Conselho Administrativo. Ao/à Vice-Coordenador/a caberá atuar junto 
+                    ao/à Coordenador/a em todas as situações, obrigações, tarefas e decisões, substituindo-o/a quando necessário na condição de seu/sua porta-voz e 
+                    representante direto. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>São Atribuições, Compromissos e Competências do/a Coordenador/a e do Vice-Coordenador/a: </strong></label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3.1 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">IV.1- Atuarem, de forma conjunta e harmônica, em favor e defesa dos interesses,
+                    desenvolvimento e boa produção do NGEAALC. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3.2 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">IV.2- Repassarem compromissos, tarefas, responsabilidades e atividades aos/às membros/as
+                    efetivos/as do NGEAALC e aos/às Coordenadores/as das Linhas de Pesquisa. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3.3 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">IV.3- Designar comissões , assessorias, consultorias, quando necessário. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3.4 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">IV.4- Convocar e coordenar as reuniões dos Conselhos (Administrativo e Científico).  </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3.5 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">IV.5- Representar o NGEAALC dentro e fora da UNEB. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3.6 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">IV.6- Coordenar o NGEAALC, com observância das direções dos Conselhos (Científico e
+                    Administrativo), bem como acompanhar as coordenações das Linhas. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3.7 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">IV.7- Atualizar a Plataforma do Diretório de Pesquisa, solicitando dos/as Membros/as 
+                    Efetivos/as e Participantes a rigorosa atualização do Currículo Lattes, ORCID, Publons, Google Acadêmico. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3.8 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">IV.8- Propor e Organizar, junto a Pró-Reitoria de Extensão (PROEX), acordos de cooperação 
+                    nacional e internacional. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 3.9 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">IV.9- Manter o Plano Individual de Trabalho (PIT) atualizado com base em sua carga horária. </label>
+
+                <!-- ARTIGO 10 - INIDICES - PARTE 4 - Indice -->
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile">V- Colegiado de Coordenadores/as de Linhas de Pesquisa
+                <p></p>Todos/as os/as Coordenadores/as de Linhas de Pesquisa devem ser membros/as efetivos/as do NGEAALC, com todos os direitos (votar, ser votado, apresentar e inscrever trabalhados em nome do NGEAALC, entre outros). Cada Linha de Pesquisa
+                deve eleger um/a Coordenador/a, por um mandato temporal coincidente com os demais cargos. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>São Atribuições, Compromissos e Competências dos/as Coordenadores/as de Linhas de Pesquisa</strong></label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 4.1 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">V.1- As Linhas de Pesquisa devem, em cada reunião, elaborar ata registrando, pelo menos, os seguintes dados: data, 
+                    horário, local, pauta, deliberação e responsabilidades assumidas por seus membros. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 4.2 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">V.2- As reuniões ordinárias da Linha de Pesquisa devem acontecer mensalmente e, as extraordinárias sempre que se 
+                    fizerem necessárias.  </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 4.3 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">V.3- Os/as Coordenadores/as de Linhas de Pesquisa devem se reunir uma vez a cada bimestre para repasse de informações,
+                    trocas de experiências, montagem de cronogramas das atividades das Linhas, entre outros. A cada reunião deve-se: selecionar a referência bibliográfica a 
+                    ser discutida no encontro, como também elaborar uma ata com, no mínimo, os mesmos dados das reuniões das Linhas.  </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 4.4 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">V.4- Os/as Coordenadores/as de Linhas de Pesquisa devem atuar junto à Coordenação Editorial da Revista Africanias.com 
+                    para montagem do Cronograma de Lançamento da Revista, com definições dos artigos e propostas de Dossiês Temáticos a serem publicados. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 4.5 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">V.5- Os/as Coordenadores/as de Linhas de Pesquisa devem propor, anualmente, no mínimo 
+                    3 (três) atividades que contemplem as modalidades de ensino, pesquisa e extensão. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 4.6 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">V.6- Os/as Coordenadores/as de Linhas de Pesquisa devem propor, anualmente, no mínimo 1 (uma) atividade que envolva 
+                    coletivamente as quatro Linhas de Pesquisas, contemplando as modalidades de ensino, pesquisa e extensão. </label>
+
+                <!-- ARTIGO 10 - INIDICES - PARTE 5 -->
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile">VI- Secretaria Executiva e Estagiários <p></p> O Secretário/a Executivo/a deve ser cedido e indicado pela PROEX, sob
+                    aprovação do Conselho Administrativo e da Coordenação, com as atribuições de: </label>
+
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.1 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.1- Exercer atividades da Secretaria Executiva, atendendo à Coordenação, ao Conselho 
+                    Científico, ao Conselho Administrativo e aos Coordenadores das Linhas de Pesquisa. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.2 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.2- Secretariar reuniões do Conselho Administrativo e do Conselho Científico. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.3 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.3- Secretariar a Coordenação (Coordendor/a e Vice-Coordenador/a) </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.4 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.4- Secretariar as reuniões dos/as Coordenadores/as das Linhas de Pesquisa. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.5 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.5- Atuar junto aos estagiários, ajudando a Coordenação, aos Conselhos e aos Coordenadores de Linhas de Pesquisa 
+                    nas orientações e acompanhamento das atividades repassadas para os/as estagiários/as. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.6 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.6- Cada estagiário deve estar vinculado a uma Linha de Pesquisa, sob orientação de um 
+                    Pesquisador/a ou Professor/a da Linha respectiva. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.7 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.7- Os/as estagiários/as deverão ser cedidos pela Proex, ou outra instância da UNEB, sob 
+                    aprovação do Conselho Administrativo e da Coordenação. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.8 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.8- PAos/às estagiários/as competem desenvolver atividades no limite de suas áreas de conhecimento e carga horária,
+                    sob a orientação e supervisão dos/as Coordenadores/as das Linhas de Pesquisa e/ou da Coordenação e Vice-Coordenação do NGEAALC. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.9 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.9- Aos/às estagiários/as competem desenvolver suas atividades na sala do NGEAALC, localizada no Prédio do Centro 
+                    de Pesquisa em Educação e Desenvolvimento Regional (CPEDR/UNEB), podendo ser previamente organizado por uma escala de dias e horários. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 5.10 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VI.10- Cabe também aos/às estagiários/as a atualização das redes sociais (facebook,instagram, flickr, twitter, 
+                    youtube, e-mails, site, blogs) do NGEAALC, como também auxiliar na organização da Revista Africanias.com </label>
+
+
+                <!-- ARTIGO 10 - INIDICES - PARTE 6 -->
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile">VII- Membros/as Efetivos/as organizados/as por Linha de Pesquisa <p></p> Todos/as os/as membros/as efetivos/as do 
+                    NGEAALC devem estar organizados/as por Linha de Pesquisa, com todos os direitos (votar, ser votado, apresentar e inscrever trabalhados em nome 
+                    do NGEAALC, entre outros). Um/a membro/a efetivo/a pode pertencer a mais de uma Linha de Pesquisa, caso seja de seu interesse. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>São Atribuições, Compromissos e Competências dos/as Membros/as Efetivos/as</strong></label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.1 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.1- Comprometer-se com as atividades do NGEAALC, participando mensalmente das reuniões ordinárias da Coordenação 
+                    Geral e da Linha de Pesquisa, a qual está vinculado/a, como também das extraordinárias sempre que se fizerem necessárias. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.2 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.2- Atualizar trimestralmente o Currículo Lattes, ORCID, Publons e o Google Scholar. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.3 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.3- Comprometer-se em participar de eventos nacionais e internacionais (colóquios, seminários, encontros, etc), 
+                    divulgando o NGEAALC. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.4 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.4- Contribuir na proposição de atividades e ações que contemplem as modalidades de 
+                    ensino, pesquisa e extensão junto às Linhas a que pertencem. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.5 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.5- Comprometer-se a participar de alguma instância do NGEAALC e, sempre que necessário e solicitado/a, cumprir 
+                    tarefas práticas-operacionais, que garantam a existência e manutenção do Grupo. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.6 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.6- Comprometer-se com as leituras de textos, livros e orientações apresentadas, bem como em participar das 
+                    atividades de ensino, pesquisa e extensão propostas pela Linha de Pesquisa a qual está vinculado/a e das publicações na Revista Africanias.com </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.7 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.7- Publicar anualmente no mínimo 3 (três) artigos em Revista Qualis A e B; </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.8 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.8- Publicar anualmente no mínimo 2 (dois) artigos em Livros. </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.9 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.9- Ter no mínimo, por ano, 1 (uma) publicação na Revista Africanias.com </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 6.10 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VII.10- A não observância dos compromissos com o NGEAALC incorre no desvinculamento de Membro/a Efetivo para 
+                    Membro/a Participante. </label>
+
+                <!-- ARTIGO 10 - INIDICES - PARTE 7 -->
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile">VIII- Membros/as não-efetivos/as (Participantes) <p></p> Todos/as os/as Membros/as Participantes do NGEAALC devem 
+                    estar organizados/as por Linha de Pesquisa, não podendo pertencer a mais de uma Linha de Pesquisa. Membro/a participante pode participar das assembleias,
+                    mas sem direito a voto nas decisões, podendo apresentar e inscrever trabalhados em eventos em nome do NGEAALC. Um/a membro/a Participante que almejar 
+                    constituir-se em Membro/a Efetivo/a, pode seguir as orientações previstas no Art. 8º desse Regimento Interno. </label>
+
+                <!-- ARTIGO 10 - INIDICES - PARTE 7.1 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VIII.1- Atualizar trimestralmente o Currículo Lattes, ORCID, Publons e o Google Scholar.
+                </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 7.2 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VIII.2- Comprometer-se em participar de eventos nacionais e internacionais (colóquios, 
+                    seminários, encontros, etc), divulgando o NGEAALC.  </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 7.3 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VIII.3- Comprometer-se com as leituras de textos, livros e orientações apresentadas, bem como em participar das 
+                    atividades de ensino, pesquisa e extensão propostas pela Linha de Pesquisa a qual está vinculado/a e das publicações na Revista Africanias.com </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 7.4 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VIII.4- Publicar anualmente no mínimo 2 (dois) artigos em Revista Qualis B; </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 7.5 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VIII.5- Ter no mínimo, por ano, 1 (uma) publicação na Revista Africanias.com </label>
+                <!-- ARTIGO 10 - INIDICES - PARTE 7.6 -->
+                <label class="texto-indice-regimento-pc texto-indice-regimento-mobile">VIII.6- A não observância dos compromissos com o NGEAALC incorre no desvinculamento do/a 
+                    Membro/a do Grupo de Pesquisa. </label>
+
+                <label class="texto-titulo-regimento-pc texto-titulo-regimento-mobile"> TÍTULO III <p></p> Do Financiamento </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 11º.</strong> O<strong> NGEAALC</strong> terá uma linha de orçamento formado por recursos oriundos da PROEX, do 
+                Departamento de Ciências Humanas (DCH1), dos convênios, parcerias, doações, 
+                consultorias e serviços prestados e do financiamento dos projetos e dos recursos das 
+                instituições e agências de fomento às atividades de ensino, pesquisa e extensão, no país ou 
+                no exterior. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 12º.</strong> O NGEAALC terá um fundo de recursos financeiros e materiais para gestão coletiva dos 
+                projetos do Núcleo. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 13º.</strong> A prestação de contas do NGEAALC ocorrerá em conformidade com e legislação em vigor 
+                e será realizada com a participação da UNEB. </label>
+
+                <label class="texto-titulo-regimento-pc texto-titulo-regimento-mobile"> TÍTULO IV <p></p> Das Disposições Gerais </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 14º.</strong> Este Regimento poderá ser modificado mediante proposta fundamentada de 1/3 dos/as
+                integrantes do NGEAALC e, com apreciação do Conselho Administrativo, Coordenação e, 
+                um representante da Pró-Reitoria de Extensão. Recomenda-se um parecer por escrito dessa 
+                apreciação.  </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 15º.</strong> Os bens patrimoniais que o NGEAALC vier a possuir serão incorporados ao patrimônio 
+                da UNEB, Campus I . </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 16º.</strong> Os casos omissos neste Regimento serão dirimidos pelos Conselhos e Coordenação. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 17º.</strong> Esta Resolução, que altera o Regimento Anterior do <strong>NGEAALC</strong> deverá ser aprovada em 
+                sessão especial do CONSU e entrará em vigor na data de sua publicação. </label>
+
+                <label class="texto-corpo-regimento-pc texto-corpo-regimento-mobile"><strong>Art. 18º.</strong> Revogam-se as disposições em contrário. </label>
+
+            </div>
+
+            <br> <br>
+            <!-- DIV Volte ao Topo -->
             <div class="rodape-cor">
                 <footer class="menu-r-topo">
-
-                    <script>
-                        var btn = document.querySelector("#back-to-top");
-
-                        btn.addEventListener("click", function() {
-                            window.scrollTo(0, 0);
-                        });
-                    </script>
-
-                    <a id="back-to-top" href=""> <label class="texto-rodape-topo"> <i class="fas fa-caret-up"></i> Volte ao Topo </label> </a>
-
+                    <!-- Barra Volte ao Topo -->
+                    <a href="#"> <label class="texto-rodape-topo texto-rodape-topo-mobile"> <i class="fas fa-caret-up"></i> Volte ao Topo </label> </a>
                 </footer>
             </div>
             <!--                                                  ICONES DO RODAPE                                                                -->
             <div class="rodape-cor">
-                <footer class="menu-r coluna-1-inicio">
+                <div class="apagar-elementos-mobile">
+                    <div class="centralizar-elementos-pc">
+                        <footer class="menu-r coluna-1-inicio">
+                            <!-- Container das Colunas Rodape -->
+                            <div class="container">
+                                <!-- Propriedade Coluna - Endereço -->
+                                <div class="row justify-content-md-center">
+                                    <!-- Coluna - Endereço -->
+                                    <div class="col col-lg-4 esquedizar-elementos-pc">
+                                        <label class="texto-rodape-endereco">Endereço</label>
+                                        <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
+                                        <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula </label>
+                                        <label class="texto-rodape-endereco">Salvador-BA</label>
+                                        <label class="texto-rodape-endereco">CEP: 41.150-000</label>
+                                    </div>
+                                    <!-- Coluna 2 - Reuniões -->
+                                    <div class="col col-lg-2">
+                                        <!-- Propriedade Coluna - Reuniões -->
+                                        <div class="row">
+                                            <!-- Propriedade para deixar em diferentes linhas - Reuniões -->
+                                            <div class="col col-lg-10">
+                                                <!-- Coluna - Reuniões -->
+                                                <label class="texto-rodape-endereco">Reuniões</label>
+                                                <label class="texto-rodape-endereco">Terças: 14 às 16 horas </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 3 - Telefone -->
+                                    <div class="col-lg-1 centralizar-elementos-pc">
+                                        <!-- Propriedade Coluna - Telefone -->
+                                        <div class="apagar-texto-rodape">
+                                            <!-- Coluna - Telefone -->
+                                            <label class="texto-rodape-direita contato-texto">Telefone</label>
+                                            <!-- Propriedade para deixar em diferentes linhas - Telefone -->
+                                            <div class="row">
+                                                <div class="col col-md-2">
+                                                    <a href="" target="_blank"> <i class="fas fa-phone contato-icone"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 4 - Mapa de Localização -->
+                                    <div class="col col-lg-2">
+                                        <div class="apagar-texto-rodape">
+                                            <label class="texto-rodape-direita contato-texto">Mapa de Localização</label>
+                                            <div class="row">
+                                                <div class="col col-md-2">
+                                                    <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map contato-icone-2"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 5 - Redes Sociais -->
+                                    <div class="col col-lg-2 esquedizar-elementos-pc">
+                                        <!-- DIV para apagar texto do rodape no PC, apenas -->
+                                        <div class="apagar-texto-rodape">
+                                            <label class="texto-rodape-redes-sociais">Redes Sociais</label>
+                                        </div>
+                                        <!-- Linha 1 - Redes Sociais -->
+                                        <div class="row">
+                                            <!-- Coluna - Facebook -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Instagram -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Youtube -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais"></i> </a>
+                                            </div>
+                                        </div>
+                                        <!-- Linha 2 - Redes Sociais -->
+                                        <div class="row">
+                                            <!-- Coluna - Twitter -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Flickr -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Email -->
+                                            <div class="col col-lg-2">
+                                                <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais"></i> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!--  ICONES DAS REDES SOCIAS - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc centralizar-elementos-mobile">
+                    <div class=" col-form-label-sm">
+                        <!-- Icone, apenas Mobile - Facebook -->
+                        <a class="link-redes-sociais-mobile" href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Instagram -->
+                        <a class="link-redes-sociais-mobile" href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Youtube -->
+                        <a class="link-redes-sociais-mobile" href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Twitter -->
+                        <a class="link-redes-sociais-mobile" href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais-mobile"></i> </a>
 
+                        <!-- Icone, apenas Mobile - Flickr -->
+                        <a class="link-redes-sociais-mobile" href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Email -->
+                        <a class="link-redes-sociais-mobile" href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Mapa de Localização -->
+                        <a class="link-redes-sociais-mobile" href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Telefone -->
+                        <a class="link-redes-sociais-mobile" href="" target="_blank"> <i class="fas fa-phone redes-sociais-mobile"></i> </a>
+                    </div>
+                </div>
+                <!--  Reuniões - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc centralizar-elementos-mobile fundo-reuniao">
+                    <!-- Coluna 2 - Reuniões -->
                     <div class="container">
-
-                        <div class="row justify-content-md-center">
-
-                            <div class="col col-lg-4"><label class="texto-rodape-endereco">Endereço</label>
+                        <!-- Propriedade Coluna - Reuniões -->
+                        <div class="row">
+                            <!-- Propriedade para deixar em diferentes linhas - Reuniões -->
+                            <div class=" col-lg-auto">
+                                <!-- Coluna - Reuniões -->
+                                <label class="texto-rodape-reuniao"> &nbsp; Reuniões - Terças: 14 às 16 horas &nbsp; &nbsp; </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  Endereço - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc">
+                    <div class="container">
+                        <!-- Propriedade Coluna - Endereço -->
+                        <div class="row">
+                            <!-- Coluna - Endereço -->
+                            <div class="col col-lg-auto centralizar-elementos-mobile">
                                 <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
-                                <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula </label>
-                                <div class="col col-lg-4">
-                                    <label class="texto-rodape-endereco">Salvador-BA</label></div>
+                                <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula / Salvador-BA</label>
                                 <label class="texto-rodape-endereco">CEP: 41.150-000</label>
                             </div>
-
-                            <div class="col col-auto"></div>
-
-                            <div class="col col-lg-2">
-                                <div class="row">
-
-                                    <div class="col col-lg-9">
-
-                                        <label class="texto-rodape-endereco">Reuniões</label>
-
-                                        <label class="texto-rodape-endereco">   </label>
-
-                                        <label class="texto-rodape-endereco">Terças: 14 às 16 horas </label>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-1">
-
-                                <div class="apagar-texto-rodape">
-
-                                    <label class="texto-rodape-direita contato-texto">Telefone</label>
-                                    <div class="row">
-
-                                        <div class="col col-lg-2">
-                                            <a href="" target="_blank"> <i class="fas fa-phone contato-icone"></i> </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col col-lg-2">
-
-                                <div class="apagar-texto-rodape">
-                                    <label class="texto-rodape-direita contato-texto">Mapa de Localização</label>
-                                    <div class="row">
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map contato-icone-2"></i> </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col col-xs-pull-2">
-
-                                <div class="apagar-texto-rodape">
-                                    <label class="texto-rodape-redes-sociais">Redes Sociais</label>
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col col-lg-2">
-                                        <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais"></i> </a>
-                                    </div>
-                                    <div class="col col-lg-2">
-                                        <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais"></i> </a>
-                                    </div>
-                                    <div class="col col-lg-2">
-                                        <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais"></i> </a>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col col-lg-2">
-                                        <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais"></i> </a>
-                                    </div>
-                                    <div class="col col-lg-2">
-                                        <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais"></i> </a>
-                                    </div>
-                                    <div class="col col-lg-2">
-                                        <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-
                     </div>
-
+                </div>
+                <!--                                            TEXTO ABAIXO DO RODAPE - MOBILE                                                             -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc">
+                    <div class="texto-rodape">
+                        <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href="https://github.com/Kuilua"> Tatakae </a></strong></label>
+                        <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
+                    </div>
+                </div>
+                <!--                                            TEXTO ABAIXO DO RODAPE                                                              -->
+                <div class="apagar-elementos-mobile">
+                    <div class="texto-rodape">
+                        <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href="https://github.com/Kuilua"> Tatakae </a></strong></label>
+                        <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
+                    </div>
+                </div>
             </div>
-            <br>
-            <div class="texto-rodape">
-                <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href=" "> Tatakae </a></strong></label>
-                <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
-
-            </div>
-            <br>
-            <!--                                                  ICONES DO RODAPE                                                                -->
-
         </div>
-
-
-        <!--                                            TEXTO ABAIXO DO RODAPE                                                              -->
-
-    </div>
 </body>
 
 </html>

@@ -1,0 +1,1478 @@
+/* Cor original da pagina - background-color: rgb(244, 247, 250); */
+
+.menu-mobile {
+    display: none;
+}
+
+@media (min-width: 361px) and (max-width: 412px) and (max-height: 915px) {
+    * {
+        display: -ms-flexbox;
+        margin: 0;
+        padding: 0;
+        background-blend-mode: darken;
+    }
+    header {
+        display: -ms-flexbox;
+        align-items: center;
+        background-image: none;
+        background-color: #333;
+    }
+    body {
+        display: -ms-flexbox;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-image: none;
+        background-color: rgb(168, 24, 24);
+    }
+    .centralizar-elementos-mobile {
+        text-align: center;
+    }
+    .esquedizar-elementos-mobile {
+        text-align: left;
+    }
+    .direitizar-elementos-mobile {
+        text-align: right;
+    }
+    .inicio-3-inline-mobile {
+        display: inline-block;
+        position: center;
+        width: 36rem;
+        height: 35rem;
+    }
+    /* MENU MOBILE */
+    .menu-mobile {
+        display: block;
+        overflow: hidden;
+    }
+    .centralizar-texto-corpo-mobile {
+        justify-items: center;
+        background-color: #333;
+    }
+    /* Style the navigation menu */
+    .topnav {
+        width: 100vmin;
+        background-color: rgb(51, 51, 51);
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        display: hidden;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks-MenuPrincipal #myLinks-MenuPrincipal-Ngeaalc #myLinks-MenuPrincipal-Publicacoes {
+        display: none;
+        overflow: none;
+    }
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 0;
+        font-size: 1.5rem;
+        display: hidden;
+    }
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: rgb(80, 80, 80);
+        display: flex;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .barras-mobile {
+        margin: .5rem;
+        border-radius: 0;
+    }
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        border-radius: 10px;
+        background-color: rgba(221, 221, 221, 0.924);
+        color: rgb(0, 0, 0);
+    }
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #c05605;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+    }
+    /* FIM - MENU MOBILE */
+    .mobile-corpo {
+        display: none;
+    }
+    .menu-h-mobile {
+        margin-top: 1rem;
+        position: relative;
+        align-items: center;
+        background-color: #888888;
+        border-radius: 15px;
+        list-style: none;
+    }
+    /* SUMIR COM AS LOGOS, TEXTOS RODAPE E MENU VERSAO SITE */
+    .logo-ngeaalc {
+        display: inline-table;
+    }
+    .apagar-elemento-mobile {
+        display: none;
+        opacity: 0%;
+    }
+    .mostrar-elemento-mobile {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+    .redes-sociais-mobile {
+        color: #ffffff;
+        padding: .5rem;
+        font-size: 2rem;
+        margin-inline-start: .5rem;
+        margin-inline-end: .5rem;
+        text-decoration: none;
+    }
+    .link-redes-sociais-mobile {
+        text-decoration: none;
+    }
+    .apagar-texto-mobile {
+        margin-top: 2vh;
+        display: none;
+    }
+    .apagar-elementos-mobile {
+        display: none;
+    }
+    .img-eventos-mobile {
+        height: 200px;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .img-eventos-mobile-2 {
+        margin-bottom: 3rem;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .logos {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    .dp-menu {
+        display: none;
+    }
+    .menu-principal {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    .topo {
+        visibility: hidden;
+    }
+    .container-eventos-mobile {
+        display: block;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    /* FIM - SUMIR COM AS LOGOS */
+    /* FIM - TEXTO DO CORPO */
+    .texto-titulo {
+        display: grid;
+        font-size: 3rem;
+        color: #c85314;
+        text-decoration: underline #e8b16e;
+    }
+    .texto-corpo {
+        font-size: larger;
+    }
+    .titulo-principal-1 {
+        margin-left: 5rem;
+    }
+    .texto-titulo-mobile {
+        color: #c85314;
+        display: grid;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 3.5rem;
+        font-family: 'roboto';
+        align-items: center;
+        text-align: center;
+        position: relative;
+        text-decoration: underline #e8b16e;
+    }
+    .texto-corpo-mobile {
+        color: #333;
+        display: grid;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-family: 'roboto';
+        align-items: left;
+        text-align: center;
+        position: relative;
+    }
+    .texto-eventos-mobile {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        color: #333;
+    }
+    /* FIM - TEXTO DO CORPO */
+    /* RODAPE + TEXTO DE RODAPE */
+    .menu-r {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-r-texto {
+        display: none;
+    }
+    .texto-rodape {
+        display: inline-flex;
+    }
+    .texto-rodape-topo-mobile {
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        margin-left: 1%;
+        font-size: 2rem;
+    }
+    .texto-rodape-topo-mobile:hover {
+        color: #26529D;
+    }
+    /* FIM - RODAPE + TEXTO DE RODAPE */
+    /* FIM - SUMIR COM AS LOGOS */
+    #campo-titulo {
+        display: contents;
+        align-items: center;
+        justify-items: center;
+        /* text-align: center; */
+        /* align-items: center; */
+        margin-bottom: 0.5em;
+        color: rgb(255, 255, 255);
+        display: contents;
+    }
+    .caixa {
+        display: contents;
+        background-color: #333;
+        margin: 3.5%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        align-items: center;
+        border: box-shadow 2px 2px 2px #333;
+    }
+    .grupo .campo .campo-label {
+        display: inline-flex;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+    .texto-nome-principal-2 {
+        font-style: 'roboto';
+        font-size: 3rem;
+        color: #c85314;
+        font-family: 'roboto';
+    }
+    .nome-site-2 {
+        color: #d1e1fb;
+        align-items: center;
+        text-align: center;
+    }
+    /* Trio de elementos da Pagina Inicial */
+    .inicio-3-inline {
+        display: grid;
+        position: center;
+        margin-bottom: 15rem;
+        margin-top: 2rem;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .inicio-3-inline-esquerda {
+        width: 35rem;
+        height: 35rem;
+        float: center;
+        justify-content: center;
+        border-radius: 5px;
+        float: center;
+    }
+    .inicio-3-inline-centro {
+        width: 31rem;
+        height: 35rem;
+        justify-content: center;
+        background-color: #e8b16e;
+        border-radius: 5px;
+        float: center;
+    }
+    .inicio-3-inline-direita {
+        width: 35rem;
+        height: 30rem;
+        float: center;
+        justify-content: center;
+        border-radius: 5px;
+        float: center;
+    }
+    /* PARTE 2 - Trio de elementos da Pagina Inicial */
+    .container-mobile-1 {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .container-mobile-2 {
+        display: inline-block;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .container-mobile-3 {
+        display: inline-block;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .container-mobile-calendario {
+        display: inline-block;
+        margin-bottom: 3rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    /* FIM - Trio de elementos da Pagina Inicial */
+    /* MEMBROS - OS 4 CAVALEIROS KKK */
+    /* MEMBROS - PESQUISADORES */
+    .membros-caixa-mobile {
+        border-radius: 5px;
+        margin-top: 1rem;
+        display: inline-grid;
+        text-align: left;
+    }
+    .img-colaboradores-mobile {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 40rem;
+        width: 35rem;
+        text-align: center;
+    }
+    .texto-membros-mobile {
+        color: #c85314;
+        display: grid;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        font-family: 'roboto';
+        align-items: center;
+        text-align: center;
+        position: relative;
+        text-decoration: underline #e8b16e;
+    }
+    .margem-colaboradores {
+        margin-top: -0.5rem;
+    }
+    .container-colaboradores-mobile {
+        display: inline-block;
+        margin-bottom: 2rem;
+        margin-inline-start: 2.5rem;
+        margin-inline-end: 2.5rem;
+        text-align: start;
+    }
+    .container-colaboradores-mobile-2 {
+        display: inline-block;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .container-colaboradores-mobile-dentro {
+        display: inline-block;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        text-align: start;
+    }
+    .texto-colaboradores-mobile {
+        font-size: 1.7rem;
+        margin-bottom: .3rem;
+        color: #333;
+    }
+    .colaboradores-resumo-mobile {
+        font-size: 1.7rem;
+        display: inline-block;
+        text-align: left;
+    }
+    /* FIM - MEMBROS - PESQUISADORES */
+    /* MEMBROS - ESTUDANTES */
+    /* MEMBROS - TECNICOS */
+    /* MEMBROS - INTERNACIONAIS */
+    /* FIM - MEMBROS - OS 4 CAVALEIROS KKK */
+    /* PAGINA APRESENTAÇÃO */
+    .texto-fundadores {
+        font-size: 1.5rem;
+        margin-top: .5rem;
+        margin-left: 1.5rem;
+        color: #333;
+    }
+    .texto-apresentacao-mobile {
+        align-items: center;
+        display: inline-grid;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    .titulo-principal-mobile {
+        position: relative;
+        font-size: 5rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        color: #333;
+        margin-top: 3%;
+        font-family: 'ROBOTO';
+        color: #c85314;
+    }
+    /* FIM - PAGINA APRESENTAÇÃO */
+    /* PAGINA CONTATO */
+    .caixa-contato-dentro {
+        border-radius: 5px;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        text-align: left;
+    }
+    .id-contato {
+        display: inline-block;
+        margin-bottom: 2rem;
+        color: #333;
+        justify-content: space-between;
+    }
+    .caixa-contato {
+        background-color: #b14c09;
+        margin: 2.5rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        border: box-shadow 2px 2px 2px #333;
+        display: block;
+    }
+    .texto-contato-titulo {
+        font-size: 1.3rem;
+        display: block;
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        color: #ffffff;
+        border-bottom: solid #333;
+    }
+    .texto-contato-titulo-mobile {
+        font-size: 1.2rem;
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        color: #ffffff;
+        border-bottom: solid #333;
+    }
+    .texto-contato-mobile-1 {
+        font-size: 1.2rem;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: #ffffff;
+    }
+    .texto-contato-mobile-2 {
+        font-size: 1.2rem;
+        text-align: end;
+        align-items: end;
+        color: #ffffff;
+        margin-bottom: 1.7rem;
+        margin-right: -3rem;
+    }
+    .texto-contato-mobile-2:hover {
+        opacity: 100%;
+        background-color: #e48d68;
+        border-radius: 5px;
+    }
+    .link-contato-mobile {
+        font-size: 1.2rem;
+        text-align: center;
+        align-items: center;
+        text-decoration: wavy rgb(10, 20, 156);
+        color: rgb(114, 155, 209);
+    }
+    .img-contato-mobile {
+        margin: 0;
+        align-items: center;
+        margin-left: -5rem;
+        margin-top: -5rem;
+        height: 7.5rem;
+        width: 12rem;
+        justify-content: space-between;
+        opacity: 50%;
+    }
+    /* FIM - PAGINA CONTATO */
+    .texto-rodape-reuniao {
+        font-size: 15px;
+        margin-top: 5px;
+        position: relative;
+        float: start;
+        color: #333;
+        border: solid #e8b16e;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+    .fundo-reuniao {
+        background: local;
+    }
+    /* PAGINA LINHAS DE PESQUISA */
+    /* FIM - PAGINA LINHAS DE PESQUISA */
+    .linhas-de-pesquisa-elementos-mobile {
+        display: grid;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .texto-titulo-linhas-de-pesquisa-mobile {
+        align-items: flex-start;
+        font-size: 1.7rem;
+        color: #333;
+        justify-content: center;
+        align-items: center;
+    }
+    .caixa-linhas-de-pesquisa-mobile {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+    }
+    .caixa-membros-linhas-de-pesquisa-mobile {
+        display: grid;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        justify-content: left;
+    }
+    .caixa-membros-linhas-de-pesquisa-mobile {
+        display: grid;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        justify-content: left;
+    }
+    .membros-linhas-de-pesquisa-mobile {
+        color: #333;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        display: grid;
+        font-size: 1.7rem;
+    }
+    .texto-corpo-linhas-de-pesquisa-mobile {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+        justify-content: left;
+        align-items: center;
+        color: #333;
+    }
+    .dir-linhas-de-pesquisa-mobile {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        justify-content: space-between;
+        font-family: 'ROBOTO';
+        text-align: center;
+    }
+    .numero-linhas-de-pesquisa-mobile {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    /*  Eventos */
+    .img-eventos {
+        justify-items: center;
+        border-radius: 5px;
+        border: solid #cecece;
+        margin-top: 5vmin;
+    }
+    .div-eventos {
+        position: relative;
+        font-size: 3rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+    }
+    .texto-eventos {
+        font-size: 16px;
+        margin-top: -1rem;
+        color: #333;
+    }
+    .texto-eventos-4 {
+        font-size: 16px;
+        color: #333;
+    }
+    .texto-eventos-1 {
+        font-size: 1.7rem;
+        margin-bottom: 2%;
+        color: #333;
+    }
+    .texto-eventos-2 {
+        font-size: 16px;
+        margin-top: -1.2%;
+        color: #333;
+        align-items: center;
+    }
+    .texto-eventos-3 {
+        font-size: 18px;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        color: #333;
+        align-items: center;
+    }
+    .texto-corpo-eventos {
+        margin: 5vmin;
+        background-position: center;
+        font: optional;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+    }
+    .margem-eventos {
+        margin-top: -185px;
+        margin-left: 165px;
+    }
+    /* FIM - Eventos */
+    /* Regimento */
+    .texto-titulo-regimento-mobile {
+        text-align: center;
+        font-size: 2.2rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .texto-corpo-regimento-mobile {
+        text-align: left;
+        font-size: 1.8rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-style: italic;
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .texto-indice-regimento-mobile {
+        text-align: left;
+        font-size: 1.2rem;
+        position: relative;
+        justify-content: baseline;
+        align-items: center;
+        color: #b14c09;
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .texto-estatuto-end {
+        text-align: center;
+        font-size: 1.2rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .div-regimento-mobile {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: inline-grid;
+    }
+    /* FIM - Regimento */
+    .texto-titulo-estatuto-mobile {
+        text-align: center;
+        font-size: 2.2rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .texto-corpo-estatuto-mobile {
+        text-align: center;
+        font-size: 1.8rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-style: italic;
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 820px) and (max-height: 1180px) {
+    * {
+        display: -ms-flexbox;
+        margin: 0;
+        padding: 0;
+        background-blend-mode: darken;
+    }
+    header {
+        display: -ms-flexbox;
+        align-items: center;
+        background-image: none;
+        background-color: #333;
+    }
+    body {
+        display: -ms-flexbox;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-image: none;
+        background-color: rgb(168, 24, 24);
+    }
+    .centralizar-elementos-mobile {
+        text-align: center;
+    }
+    .esquedizar-elementos-mobile {
+        text-align: left;
+    }
+    .direitizar-elementos-mobile {
+        text-align: right;
+    }
+    .inicio-3-inline-mobile {
+        display: inline-block;
+        position: center;
+        width: 36rem;
+        height: 35rem;
+    }
+    /* MENU MOBILE */
+    .menu-mobile {
+        display: block;
+    }
+    .centralizar-texto-corpo-mobile {
+        justify-items: center;
+        background-color: #333;
+    }
+    /* Style the navigation menu */
+    .topnav {
+        width: 100vmin;
+        overflow: hidden;
+        background-color: rgb(51, 51, 51);
+        position: relative;
+        list-style: none;
+        font-style: none;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks #myLinks2 {
+        display: none;
+    }
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 0;
+        font-size: 18px;
+        display: block;
+        list-style: none;
+        font-style: none;
+    }
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background-color: #888888;
+        display: flex;
+        position: relative;
+        right: 0;
+        top: 0;
+        list-style: none;
+        font-style: none;
+    }
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        border-radius: 10px;
+        background-color: rgba(221, 221, 221, 0.924);
+        color: rgb(0, 0, 0);
+        list-style: none;
+        font-style: none;
+    }
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #c05605;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+    }
+    /* FIM - MENU MOBILE */
+    .mobile-corpo {
+        display: none;
+    }
+    .menu-h-mobile {
+        font-size: 1rem;
+        margin-top: 1rem;
+        position: relative;
+        align-items: center;
+        background-color: #888888;
+        border-radius: 5px;
+        list-style: none;
+        font-style: none;
+        text-decoration: none;
+    }
+    .texto-menu-opcoes {
+        font-size: 1.5rem;
+        color: #ffffff;
+        margin-top: .5rem;
+        position: relative;
+        align-items: center;
+        border-radius: 15px;
+        list-style: none;
+        text-decoration: none;
+    }
+    .texto-titulo-mobile-menu {
+        font-size: 2rem;
+        color: #ffffff;
+        margin-top: .5rem;
+        margin-left: .3rem;
+        position: relative;
+        align-items: center;
+        border-radius: 15px;
+        list-style: none;
+        text-decoration: none;
+    }
+    .texto-menu-mobile {
+        font-size: 2rem;
+        color: #ffffff;
+        position: center;
+        align-items: center;
+        border-radius: 15px;
+        list-style: none;
+        text-decoration: none;
+    }
+    .texto-menu-mobile:hover {
+        color: #b14c09;
+    }
+    .texto-menu-mobile:focus {
+        color: #b14c09;
+    }
+    .texto-titulo-mobile-menu:hover {
+        color: #b14c09;
+    }
+    /* SUMIR COM AS LOGOS, TEXTOS RODAPE E MENU VERSAO SITE */
+    .logo-ngeaalc {
+        display: inline-table;
+    }
+    .apagar-elemento-mobile {
+        display: none;
+        opacity: 0%;
+    }
+    .mostrar-elemento-mobile {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+    .redes-sociais-mobile {
+        color: #ffffff;
+        padding: .5rem;
+        font-size: 2rem;
+        margin-inline-start: .5rem;
+        margin-inline-end: .5rem;
+        text-decoration: none;
+    }
+    .link-redes-sociais-mobile {
+        text-decoration: none;
+    }
+    .apagar-texto-mobile {
+        margin-top: 2vh;
+        display: none;
+    }
+    .apagar-elementos-mobile {
+        display: none;
+    }
+    .img-eventos-mobile {
+        height: 200px;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .img-eventos-mobile-2 {
+        margin-bottom: 3rem;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .logos {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    .dp-menu {
+        display: none;
+    }
+    .menu-principal {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    .topo {
+        visibility: hidden;
+    }
+    .container-eventos-mobile {
+        display: block;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    /* FIM - SUMIR COM AS LOGOS */
+    /* FIM - TEXTO DO CORPO */
+    .texto-titulo {
+        display: grid;
+        font-size: 3rem;
+        color: #c85314;
+        text-decoration: underline #e8b16e;
+    }
+    .texto-corpo {
+        font-size: larger;
+    }
+    .titulo-principal-1 {
+        margin-left: 5rem;
+    }
+    .texto-titulo-mobile {
+        color: #c85314;
+        display: grid;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 3.5rem;
+        font-family: 'roboto';
+        align-items: center;
+        text-align: center;
+        position: relative;
+        text-decoration: underline #e8b16e;
+    }
+    .texto-corpo-mobile {
+        color: #333;
+        display: grid;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-family: 'roboto';
+        align-items: left;
+        text-align: center;
+        position: relative;
+    }
+    .texto-eventos-mobile {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        color: #333;
+    }
+    /* FIM - TEXTO DO CORPO */
+    /* FIM - RODAPE + TEXTO DE RODAPE */
+    .menu-r {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-r-texto {
+        display: none;
+    }
+    .texto-rodape {
+        display: inline-flex;
+    }
+    /* FIM - RODAPE + TEXTO DE RODAPE */
+    /* FIM - SUMIR COM AS LOGOS */
+    #campo-titulo {
+        display: contents;
+        align-items: center;
+        justify-items: center;
+        /* text-align: center; */
+        /* align-items: center; */
+        margin-bottom: 0.5em;
+        color: rgb(255, 255, 255);
+        display: contents;
+    }
+    .caixa {
+        display: contents;
+        background-color: #333;
+        margin: 3.5%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        align-items: center;
+        border: box-shadow 2px 2px 2px #333;
+    }
+    .grupo .campo .campo-label {
+        display: inline-flex;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+    .texto-nome-principal-2 {
+        font-style: 'roboto';
+        font-size: 3rem;
+        color: #c85314;
+        font-family: 'roboto';
+    }
+    .nome-site-2 {
+        color: #d1e1fb;
+        align-items: center;
+        text-align: center;
+    }
+    /* Trio de elementos da Pagina Inicial */
+    .inicio-3-inline {
+        display: grid;
+        position: center;
+        margin-bottom: 15rem;
+        margin-top: 2rem;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .inicio-3-inline-esquerda {
+        width: 35rem;
+        height: 35rem;
+        float: center;
+        justify-content: center;
+        border-radius: 5px;
+        float: center;
+    }
+    .inicio-3-inline-centro {
+        width: 31rem;
+        height: 35rem;
+        justify-content: center;
+        background-color: #e8b16e;
+        border-radius: 5px;
+        float: center;
+    }
+    .inicio-3-inline-direita {
+        width: 35rem;
+        height: 30rem;
+        float: center;
+        justify-content: center;
+        border-radius: 5px;
+        float: center;
+    }
+    /* PARTE 2 - Trio de elementos da Pagina Inicial */
+    .container-mobile-1 {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .container-mobile-2 {
+        display: inline-block;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .container-mobile-3 {
+        display: inline-block;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .container-mobile-calendario {
+        display: inline-block;
+        margin-bottom: 3rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    /* FIM - Trio de elementos da Pagina Inicial */
+    /* MEMBROS - OS 4 CAVALEIROS KKK */
+    /* MEMBROS - PESQUISADORES */
+    .membros-caixa-mobile {
+        border-radius: 5px;
+        margin-top: 1rem;
+        display: inline-grid;
+        text-align: left;
+    }
+    .img-colaboradores-mobile {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 40rem;
+        width: 35rem;
+        text-align: center;
+    }
+    .texto-membros-mobile {
+        color: #c85314;
+        display: grid;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        font-family: 'roboto';
+        align-items: center;
+        text-align: center;
+        position: relative;
+        text-decoration: underline #e8b16e;
+    }
+    .margem-colaboradores {
+        margin-top: -0.5rem;
+    }
+    .container-colaboradores-mobile {
+        display: inline-block;
+        margin-bottom: 2rem;
+        margin-inline-start: 2.5rem;
+        margin-inline-end: 2.5rem;
+        text-align: start;
+    }
+    .container-colaboradores-mobile-2 {
+        display: inline-block;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .container-colaboradores-mobile-dentro {
+        display: inline-block;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        text-align: start;
+    }
+    .texto-colaboradores-mobile {
+        font-size: 1.7rem;
+        margin-bottom: .3rem;
+        color: #333;
+    }
+    .colaboradores-resumo-mobile {
+        font-size: 1.7rem;
+        display: inline-block;
+        text-align: left;
+    }
+    /* FIM - MEMBROS - PESQUISADORES */
+    /* MEMBROS - ESTUDANTES */
+    /* MEMBROS - TECNICOS */
+    /* MEMBROS - INTERNACIONAIS */
+    /* FIM - MEMBROS - OS 4 CAVALEIROS KKK */
+    /* PAGINA APRESENTAÇÃO */
+    .texto-fundadores {
+        font-size: 1.5rem;
+        margin-top: .5rem;
+        margin-left: 1.5rem;
+        color: #333;
+    }
+    .texto-apresentacao-mobile {
+        align-items: center;
+        display: inline-grid;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    .titulo-principal-mobile {
+        position: relative;
+        font-size: 5rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        color: #333;
+        margin-top: 3%;
+        font-family: 'ROBOTO';
+        color: #c85314;
+    }
+    /* FIM - PAGINA APRESENTAÇÃO */
+    /* PAGINA CONTATO */
+    .caixa-contato-dentro {
+        border-radius: 5px;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        text-align: left;
+    }
+    .id-contato {
+        display: inline-block;
+        margin-bottom: 2rem;
+        color: #333;
+        justify-content: space-between;
+    }
+    .caixa-contato {
+        background-color: #b14c09;
+        margin: 2.5rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        border: box-shadow 2px 2px 2px #333;
+        display: block;
+    }
+    .texto-contato-titulo {
+        font-size: 1.3rem;
+        display: block;
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        color: #ffffff;
+        border-bottom: solid #333;
+    }
+    .texto-contato-titulo-mobile {
+        font-size: 1.2rem;
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        color: #ffffff;
+        border-bottom: solid #333;
+    }
+    .texto-contato-mobile-1 {
+        font-size: 1.2rem;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: #ffffff;
+    }
+    .texto-contato-mobile-2 {
+        font-size: 1.2rem;
+        text-align: end;
+        align-items: end;
+        color: #ffffff;
+        margin-bottom: 1.7rem;
+        margin-right: -3rem;
+    }
+    .texto-contato-mobile-2:hover {
+        opacity: 100%;
+        background-color: #e48d68;
+        border-radius: 5px;
+    }
+    .link-contato-mobile {
+        font-size: 1.2rem;
+        text-align: center;
+        align-items: center;
+        text-decoration: wavy rgb(10, 20, 156);
+        color: rgb(114, 155, 209);
+    }
+    .img-contato-mobile {
+        margin: 0;
+        margin-left: -5rem;
+        margin-top: -5rem;
+        height: 7.5rem;
+        width: 12rem;
+        justify-content: space-between;
+    }
+    /* FIM - PAGINA CONTATO */
+    .texto-rodape-reuniao {
+        font-size: 15px;
+        margin-top: 5px;
+        position: relative;
+        float: start;
+        color: #333;
+        border: solid #e8b16e;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+    .fundo-reuniao {
+        background: local;
+    }
+    /* PAGINA LINHAS DE PESQUISA */
+    /* FIM - PAGINA LINHAS DE PESQUISA */
+    .linhas-de-pesquisa-elementos-mobile {
+        display: grid;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .texto-titulo-linhas-de-pesquisa-mobile {
+        align-items: flex-start;
+        font-size: 1.7rem;
+        color: #333;
+        justify-content: center;
+        align-items: center;
+    }
+    .caixa-linhas-de-pesquisa-mobile {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+    }
+    .caixa-membros-linhas-de-pesquisa-mobile {
+        display: grid;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        justify-content: left;
+    }
+    .caixa-membros-linhas-de-pesquisa-mobile {
+        display: grid;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        justify-content: left;
+    }
+    .membros-linhas-de-pesquisa-mobile {
+        color: #333;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        display: grid;
+        font-size: 1.7rem;
+    }
+    .texto-corpo-linhas-de-pesquisa-mobile {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+        justify-content: left;
+        align-items: center;
+        color: #333;
+    }
+    .dir-linhas-de-pesquisa-mobile {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        justify-content: space-between;
+        font-family: 'ROBOTO';
+        text-align: center;
+    }
+    .numero-linhas-de-pesquisa-mobile {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    /*  Eventos */
+    .img-eventos {
+        justify-items: center;
+        border-radius: 5px;
+        border: solid #cecece;
+        margin-top: 5vmin;
+    }
+    .div-eventos {
+        position: relative;
+        font-size: 3rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+    }
+    .texto-eventos {
+        font-size: 16px;
+        margin-top: -1rem;
+        color: #333;
+    }
+    .texto-eventos-4 {
+        font-size: 16px;
+        color: #333;
+    }
+    .texto-eventos-1 {
+        font-size: 1.7rem;
+        margin-bottom: 2%;
+        color: #333;
+    }
+    .texto-eventos-2 {
+        font-size: 16px;
+        margin-top: -1.2%;
+        color: #333;
+        align-items: center;
+    }
+    .texto-eventos-3 {
+        font-size: 18px;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        color: #333;
+        align-items: center;
+    }
+    .texto-corpo-eventos {
+        margin: 5vmin;
+        background-position: center;
+        font: optional;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+    }
+    .margem-eventos {
+        margin-top: -185px;
+        margin-left: 165px;
+    }
+    /* FIM - Eventos */
+    /* Regimento */
+    .texto-titulo-regimento-mobile {
+        text-align: center;
+        font-size: 2.5rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .texto-corpo-regimento-mobile {
+        text-align: left;
+        font-size: 2rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-style: italic;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .texto-indice-regimento-mobile {
+        text-align: left;
+        font-size: 1.5rem;
+        position: relative;
+        justify-content: baseline;
+        align-items: center;
+        color: #b14c09;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .texto-estatuto-end {
+        text-align: center;
+        font-size: 1.5rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    /* FIM - Regimento */
+    .div-regimento-mobile {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: inline-grid;
+    }
+    .texto-titulo-estatuto-mobile {
+        text-align: center;
+        font-size: 2.5rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .texto-corpo-estatuto-mobile {
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-style: italic;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}

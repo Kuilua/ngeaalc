@@ -11,8 +11,14 @@
     <link rel="apple-touch-icon" sizes="192x192" href="../img/icone-aba/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icone-aba/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/icone-aba/favicon-16x16.png">
-    <!-- Icone da aba -->
+    <!-- CSS ORIGINAL - NAO MEXA AQUI - Icone da aba -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Tamanho da guia no PC -->
+    <link rel="stylesheet" type="text/css" href="../css/pc-style.css">
+    <!-- Tamanho da guia no Mobile -->
+    <link rel="stylesheet" type="text/css" href="../css/mobile-style.css">
+    <!-- Tamanho da guia no Tablet -->
+    <link rel="stylesheet" type="text/css" href="../css/tablet-style.css">
     <!-- Animaçao dos elementos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Icone Hamburger -->
@@ -59,55 +65,62 @@
         <div class="menu-mobile">
             <!-- Menu Mobile -->
             <div class="topnav">
-                <a href="#topo" class="active texto-nome">NGEAALC</a>
+                <a href="index.html" class="active texto-nome-mobile">NGEAALC</a>
                 <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
+                <div id="myLinks-MenuPrincipal">
                     <li class="texto-menu-opcoes">
-                        <a href="../index.html"> <i class="fas fa-home"></i></i>
-                            <p></p>Butula</a>
+                        <a href="../index.html"><label class="texto-menu-mobile"> <i class="fas fa-home"></i><br> Butula</label></a>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><i class="fas fa-users icon" ></i><p></p>O Ngeaalc</a>
-                        <div id="myLinks2">
+                    <li class="texto-menu-opcoes">
+                        <a href="javascript:void(0);" onclick="MenuPrincipalNgeaalc()"> <label class="texto-menu-mobile"><i class="fas fa-users icon"></i> <br> O Ngeaalc</label></a>
+                        <div id="myLinks-MenuPrincipal-Ngeaalc">
                             <ul>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/apresentacao.html">Apresentação</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/pesquisadores.html">Pesquisadores</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estudantes.html">Estudantes</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/tecnicos.html">Técnicos</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/internacionais.html">Colaboradores Internacionais</a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/apresentacao.html"><label class="texto-menu-mobile">Apresentação</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/pesquisadores.html"><label class="texto-menu-mobile">Pesquisadores</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estudantes.html"><label class="texto-menu-mobile">Estudantes</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/tecnicos.html"><label class="texto-menu-mobile">Técnicos</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/internacionais.html"><label class="texto-menu-mobile">Colaboradores Internacionais</label></a></li>
 
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estatuto.html">Estatuto</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/regimento.html">Regimento</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/linhas-de-pesquisas.html">Linhas de Pesquisas</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/instituicoes-parceiras.html">Instituições Parceiras</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/egresso.html">Egressos</a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estatuto.html"><label class="texto-menu-mobile">Estatuto</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/regimento.html"><label class="texto-menu-mobile">Regimento</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/linhas-de-pesquisas.html"><label class="texto-menu-mobile">Linhas de Pesquisas</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/instituicoes-parceiras.html"><label class="texto-menu-mobile">Instituições Parceiras</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/egresso.html"><label class="texto-menu-mobile">Egressos</label></a></li>
+
                             </ul>
                         </div>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="../projetos.html"><i class="fas fa-book"></i><p></p>Projetos</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="../eventos.html"><i class="fas fa-chalkboard-teacher"></i><p></p>Eventos</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="../revista.html"><i class="fas fa-newspaper"></i><p></p>Revista</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><i class="fas fa-chalkboard-teacher"></i><p></p>Publicações</a>
-                        <div id="myLinks3">
+                    <li class="texto-menu-opcoes"> <a href="../projetos.html"><label class="texto-menu-mobile"><i class="fas fa-book"></i> <br> Projetos</label></a> </li>
+                    <li class="texto-menu-opcoes"> <a href="../eventos.html"><label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Eventos</label></a> </li>
+                    <li class="texto-menu-opcoes"> <a href="../revista.html"><label class="texto-menu-mobile"><i class="fas fa-newspaper"></i> <br> Revista</label></a> </li>
+                    <li class="texto-menu-opcoes">
+                        <a href="javascript:void(0);" onclick="MenuPrincipalPublicacoes()"> <label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Publicações</label></a>
+                        <div id="myLinks-MenuPrincipal-Publicacoes">
                             <ul>
-                                <li class="menu-h-mobile"><a href="../publicacoes/artigos.html">Artigos</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/livros.html">Livros</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/teses.html">Teses</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html">Outras Produções</a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/artigos.html"><label class="texto-menu-mobile">Artigos</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/livros.html"><label class="texto-menu-mobile">Livros</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/teses.html"><label class="texto-menu-mobile">Teses</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html"><label class="texto-menu-mobile">Outras Produções</label></a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="../contato.html"><i class="fas fa-mail-bulk"></i><p></p>Contato</a> </li>
+
+                    <li class="texto-menu-opcoes"> <a href="../contato.html"><label class="texto-menu-mobile"><i class="fas fa-mail-bulk"></i> <br> Contato</label></a> </li>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                <a href="javascript:void(0);" class="icon" onclick="MenuPrincipalFuncao()">
+                    <i class="fa fa-bars barras-mobile"></i>
                 </a>
             </div>
         </div>
-
+        <!-- FUNCOES DO MENU -->
+        <!-- Links do Menu Principal - Função-Mãe -->
         <script>
-            function myFunction() {
-                var x = document.getElementById("myLinks");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Mãe
+            var x = document.getElementById("myLinks-MenuPrincipal").style.display = 'none';
+
+            function MenuPrincipalFuncao() {
+                var x = document.getElementById("myLinks-MenuPrincipal");
                 if (x.style.display === "block") {
                     x.style.display = "none";
                 } else {
@@ -115,10 +128,13 @@
                 }
             }
         </script>
-
+        <!-- Links do Menu Principal - Função-Ngeaalc -->
         <script>
-            function myFunction2() {
-                var y = document.getElementById("myLinks2");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Ngeaalc
+            var y = document.getElementById("myLinks-MenuPrincipal-Ngeaalc").style.display = 'none';
+
+            function MenuPrincipalNgeaalc() {
+                var y = document.getElementById("myLinks-MenuPrincipal-Ngeaalc");
                 if (y.style.display === "block") {
                     y.style.display = "none";
                 } else {
@@ -126,10 +142,13 @@
                 }
             }
         </script>
-
+        <!-- Links do Menu Principal - Função-Publicacoes -->
         <script>
-            function myFunction3() {
-                var z = document.getElementById("myLinks3");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Publicacoes
+            var z = document.getElementById("myLinks-MenuPrincipal-Publicacoes").style.display = 'none';
+
+            function MenuPrincipalPublicacoes() {
+                var z = document.getElementById("myLinks-MenuPrincipal-Publicacoes");
                 if (z.style.display === "block") {
                     z.style.display = "none";
                 } else {
@@ -137,43 +156,47 @@
                 }
             }
         </script>
-
-
+        <!-- FIM - FUNCOES DO MENU  -->
         <!-- Corpo da pagina - Adicionar Elementos AQUI -->
-        <div class="centralizar-texto-corpo-inico">
-            <br><br>
-            <div class="menu-r-topo-1">
+        <div class="centralizar-texto-corpo-inicio">
 
-                <label class="texto-rodape-topo">   </label>
+            <div class="apagar-elemento-mobile">
+                <br><br>
+                <div class="menu-r-topo-1 ">
 
-            </div>
-            <div class="logos">
-                <!-- LOGO UNEB -->
-                <div class="animate__animated animate__zoomInUp">
-                    <a href="https://portal.uneb.br/" target="_blank">
-                        <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+                    <label class="texto-rodape-topo">   </label>
+
                 </div>
-                <div class="nome-site">
-                    <label class="texto-nome-principal-1"> NGEAALC </label>
-                    <div>
-                        <label class="texto-nome-principal"> NÚCLEO DE</label>
-                        <label class="texto-nome-principal">ESTUDOS  </label>
-                        <label class="texto-nome-principal">AFRICANOS E </label>
-                        <label class="texto-nome-principal">AFRO-BRASILEIROS  EM </label>
-                        <label class="texto-nome-principal">LÍNGUAS </label> <label class="texto-nome-principal">E CULTURAS </label>
+                <div class="logos">
+                    <!-- LOGO UNEB -->
+                    <div class="animate__animated animate__zoomInUp">
+                        <a href="https://portal.uneb.br/" target="_blank">
+                            <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+                    </div>
+                    <div class="nome-site">
+                        <label class="texto-nome-principal-1"> NGEAALC </label>
+                        <div>
+                            <label class="texto-nome-principal"> NÚCLEO DE</label>
+                            <label class="texto-nome-principal">ESTUDOS  </label>
+                            <label class="texto-nome-principal">AFRICANOS E </label>
+                            <label class="texto-nome-principal">AFRO-BRASILEIROS  EM </label>
+                            <label class="texto-nome-principal">LÍNGUAS </label> <label class="texto-nome-principal">E CULTURAS </label>
+                        </div>
+                    </div>
+                    <!-- LOGO NGEAALC -->
+                    <div class="animate__animated animate__zoomIn">
+                        <a href="https://revistas.uneb.br/index.php/africanias/login?source=%2Findex.php%2Fafricanias" target="_blank">
+                            <img class="logo-ngeaalc" src="../img/logos/logo.png" /> </a>
                     </div>
                 </div>
-                <!-- LOGO NGEAALC -->
-                <div class="animate__animated animate__zoomIn">
-                    <a href="https://revistas.uneb.br/index.php/africanias/login?source=%2Findex.php%2Fafricanias" target="_blank">
-                        <img class="logo-ngeaalc" src="../img/logos/logo.png" /> </a>
+
+                <br><br><br><br>
+
+                <div class="menu-r-topo-1">
+
+                    <label class="texto-rodape-topo">   </label>
+
                 </div>
-            </div>
-            <br><br><br><br>
-            <div class="menu-r-topo-1">
-
-                <label class="texto-rodape-topo">   </label>
-
             </div>
 
             <div class="mobile-corpo">
@@ -182,269 +205,374 @@
                     <nav class="dp-menu">
                         <ul class="menu-h">
                             <li class="texto-menu-opcoes">
-                                <a href="../index.html"> <i class="fas fa-home"></i></i>
-                                    <p></p>Butula</a>
+                                <a href="../index.html"><label class="texto-menu-mobile"><i class="fas fa-home icon"></i> <br> Butula</label></a>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><i class="fas fa-users icon" ></i><p></p>O Ngeaalc</a>
+                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><label class="texto-menu-mobile"><i class="fas fa-users icon"></i> <br> O Ngeaalc</label></a>
                                 <div id="myLinks2">
                                     <ul>
-                                        <li class="menu-h"><a href="/o-ngeaalc/apresentacao.html">Apresentação</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/pesquisadores.html">Pesquisadores</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/estudantes.html">Estudantes</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/tecnicos.html">Técnicos</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/internacionais.html">Colaboradores Internacionais</a></li>
+                                        <li class="menu-h-mobile"><a href="apresentacao.html"><label class="texto-menu-mobile">Apresentação</label></a></li>
+                                        <li class="menu-h-mobile"><a href="pesquisadores.html"><label class="texto-menu-mobile">Pesquisadores</label></a></li>
+                                        <li class="menu-h-mobile"><a href="estudantes.html"><label class="texto-menu-mobile">Estudantes</label></a></li>
+                                        <li class="menu-h-mobile"><a href="tecnicos.html"><label class="texto-menu-mobile">Técnicos</label></a></li>
+                                        <li class="menu-h-mobile"><a href="internacionais.html"><label class="texto-menu-mobile">Colaboradores Internacionais</label></a></li>
 
-                                        <li class="menu-h"><a href="/o-ngeaalc/estatuto.html">Estatuto</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/regimento.html">Regimento</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/linhas-de-pesquisas.html">Linhas de Pesquisas</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/instituicoes-parceiras.html">Instituições Parceiras</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/egresso.html">Egressos</a></li>
+                                        <li class="menu-h-mobile"><a href="estatuto.html"><label class="texto-menu-mobile">Estatuto</label></a></li>
+                                        <li class="menu-h-mobile"><a href="regimento.html"><label class="texto-menu-mobile">Regimento</label></a></li>
+                                        <li class="menu-h-mobile"><a href="linhas-de-pesquisas.html"><label class="texto-menu-mobile">Linhas de Pesquisas</label></a></li>
+                                        <li class="menu-h-mobile"><a href="instituicoes-parceiras.html"><label class="texto-menu-mobile">Instituições Parceiras</label></a></li>
+                                        <li class="menu-h-mobile"><a href="egresso.html"><label class="texto-menu-mobile">Egressos</label></a></li>
                                     </ul>
+                                </div>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="../projetos.html"><i class="fas fa-book"></i><p></p>Projetos</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="../eventos.html"><i class="fas fa-chalkboard-teacher"></i><p></p>Eventos</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="../revista.html"><i class="fas fa-newspaper"></i><p></p>Revista</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><i class="fas fa-chalkboard-teacher"></i><p></p>Publicações</a>
+                            <li class="texto-menu-opcoes"> <a href="../projetos.html"><label class="texto-menu-mobile"><i class="fas fa-book"></i> <br> Projetos</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="../eventos.html"><label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Eventos</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="../revista.html"><label class="texto-menu-mobile"><i class="fab fa-readme"></i> <br> Revista</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><label class="texto-menu-mobile"><i class="fas fa-newspaper"></i> <br> Publicações</label></a>
                                 <div id="myLinks3">
                                     <ul>
-                                        <li class="menu-h-mobile"><a href="/publicacoes/artigos.html">Artigos</a></li>
-                                        <li class="menu-h-mobile"><a href="/publicacoes/livros.html">Livros</a></li>
-                                        <li class="menu-h-mobile"><a href="/publicacoes/teses.html">Teses</a></li>
-                                        <li class="menu-h-mobile"><a href="/publicacoes/outras-producoes.html">Outras Produções</a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/artigos.html"><label class="texto-menu-mobile">Artigos</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/livros.html"><label class="texto-menu-mobile">Livros</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/teses.html"><label class="texto-menu-mobile">Teses</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html"><label class="texto-menu-mobile">Outras Produções</label></a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="../contato.html"><i class="fas fa-mail-bulk"></i><p></p>Contato</a> </li>
-                        </ul>
-                    </nav>
-                </header>
-                </div>
-
-                <div id="myLinks30" class="container3">
-                    <h1 class="texto-membros"><strong> Tecnicos </strong></h1>
-
-                    <!-- Colaboradores contidos em ... -->
-
-                    <!-- Colaborador 01 de 18 -->
-
-                    <img class="forma-colaboradores-img" src="../img/tecnicos/01.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores-2">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Ana Pessoa de Souza Castro</label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/3763946124884641"> http://lattes.cnpq.br/3763946124884641 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-5160-9057"> https://orcid.org/0000-0002-5160-9057 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 1. Culturas Negro-africanas no Brasil; 3. Patrimônio Cultural, Memória, História e Acervos; 4. Educação e Interseccionalidades</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong> Pesquisas relacionadas à valorização e sustentabilidade do turismo cultural, com foco especial na Bahia, além de pesquisas sobre Cultura e Afrodescendência</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="" target="_blank">  </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-1">Pós-Graduada em História e Culturas Africanas e Afrobrasileiras. Chefe do Setor de Gestão Administrativa e Financeira da Pró-Reitoria de Ensino de Graduação da Universidade Federal da Bahia (PROGRAD/UFBA). Foi Tradutora Oficial da Assessoria de Comunicação (ASCOM) da Secretaria de Turismo do Estado da Bahia, sendo responsável pela tradução do Portal Oficial do Turismo do Estado da Bahia: http://bahia.com.br/, bem como dos seus hotsites. Também faz traduções para o Instituto de Radiodifusão do Estado da Bahia (IRDEB)/TVE Bahia, onde é tradutora oficial do portal http://carnaval.ba.gov.br/. Tem vasta experiência como assistente de pesquisa nas áreas de etnolinguística e antropologia, e como auxiliar na composição e tradução de textos técnicos e livros nestas mesmas áreas. Também atuou na pesquisa sobre línguas africanas para a montagem do Museu da Língua Portuguesa na Estação da Luz, em São Paulo. Foi tradutora oficial no 12º Congresso da ONU sobre Prevenção ao Crime e Justiça Criminal. Graduada em Administração de Empresas pela Universidade Católica do Salvador - UCSAL (2006). Pesquisadora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB).</label><br>
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 01 de 18 -->
-                    <!-- Colaborador 02 de 10 -->
-
-
-                    <img class="forma-colaboradores-img" src="../img/tecnicos/02.jpg" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores-2">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Antonio Cesar Araújo Santana</label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/0139130452852566"> http://lattes.cnpq.br/0139130452852566 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0003-0063-5367"> https://orcid.org/0000-0003-0063-5367 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 3. Patrimônio Cultural, Memória, História e Acervos</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong> Recursos de computação (produção, armazenamento, transmissão e o acesso); Programação, Segurança da informação, Redes, Banco de Dados, Análise de Sistemas; Bibliotecas e Centros de documentação digitais</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="acssantana@uneb.br" target="_blank"> acssantana@uneb.br </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto">Graduando em Ciências da Computação, pela Universidade de Salvador (UNIFACS). Tecnico do Núcleo de Estudos Africanos e Afro-brasileiros em Línguas e Culturas (NGEAALC/UNEB). Atualmente está como estagiário na área de Tecnologias da Informação na Universidade do estado da Bahia (UNEB).</label><br>
-                        </div>
-                    </div>
-
-                    <!-- FIM - Colaborador 02 de 18 -->
-                    <!-- Colaborador 03 de 18 -->
-
-                    <img class="forma-colaboradores-img" src="../img/tecnicos/03.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores-1">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Karine Janaina Santos Costa</label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/3901927770877551"> http://lattes.cnpq.br/3901927770877551 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-5160-9057"> https://orcid.org/0000-0002-5160-9057 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 3. Patrimônio Cultural, Memória, História e Acervos</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong> Produção executiva, cultura, rádio, divulgação, assessoria de imprensa e atendimentos; Criação de novos sites, atualização e manutenção de institucionais (arquitetura de informação, layout, implementação, publicação); Redação e edição de notícias publicadas em site institucional.</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="" target="_blank">  </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-2">Formada em Comunicação Social, com habilitação em Publicidade e Propaganda, pela Faculdade da Cidade do Salvador (FCSal). Estive a frente da organização, agendamento de atividades culturais e acadêmicas, assessoria de comunicação interna e externa e coordenação de grupo de trabalho do Centro de Estudos dos Povos Afro-Índios Américas  (CEPAIA), órgão vinculado à Universidade do Estado da Bahia. Tem experiência em Coordenação, planejamento, execução e monitoramento de campanhas institucionais, bem como concepção e produção de ações de marketing promocional. Pesquisadora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB).</label><br>
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 03 de 18 -->
-                    <!-- Colaborador 04 de 18 -->
-
-                    <img class="forma-colaboradores-img" src="../img/tecnicos/04.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Rosana Soares Garcia</label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/3901927770877551"> http://lattes.cnpq.br/3901927770877551 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-5160-9057"> https://orcid.org/0000-0002-5160-9057 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 3. Patrimônio Cultural, Memória, História e Acervos</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong> Gestão de Documentação e Difusão de Conhecimento; Probabilidade e Estatística.</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="" target="_blank">  </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-2">Possui graduação em Ciências Estatísticas, pela Escola Superior de Estatística da Bahia (1989). Especialização em Arquivologia, pela Universidade do Estado da Bahia (UNEB), com conhecimento na área de Gestão de Documentação e Difusão de Conhecimento. Tem experiência na área de Probabilidade e Estatística. Pesquisadora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB).</label><br>
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 04 de 04 -->
-
-                    </form> <br>
-                    <!-- FIM - Colaboradores contidos em ... -->
-                </div>
-
-                <br>
-
-                <div class="rodape-cor">
-                    <footer class="menu-r-topo">
-
-                        <script>
-                            var btn = document.querySelector("#back-to-top");
-
-                            btn.addEventListener("click", function() {
-                                window.scrollTo(0, 0);
-                            });
-                        </script>
-
-                        <a id="back-to-top" href=""> <label class="texto-rodape-topo"> <i class="fas fa-caret-up"></i> Volte ao Topo </label> </a>
-
-                    </footer>
-                </div>
-                <!--                                                  ICONES DO RODAPE                                                                -->
-                <div class="rodape-cor">
-                    <footer class="menu-r coluna-1-inicio">
-
-                        <div class="container">
-
-                            <div class="row justify-content-md-center">
-
-                                <div class="col col-lg-4"><label class="texto-rodape-endereco">Endereço</label>
-                                    <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
-                                    <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula </label>
-                                    <div class="col col-lg-4">
-                                        <label class="texto-rodape-endereco">Salvador-BA</label></div>
-                                    <label class="texto-rodape-endereco">CEP: 41.150-000</label>
-                                </div>
-
-                                <div class="col-auto"></div>
-
-                                <div class="col col-lg-2">
-                                    <div class="row">
-
-                                        <div class="col col-lg-9">
-
-                                            <label class="texto-rodape-endereco">Reuniões</label>
-
-                                            <label class="texto-rodape-endereco">   </label>
-
-                                            <label class="texto-rodape-endereco">Terças: 14 às 16 horas </label>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-xxl-auto"></div>
-
-                                <div class="col-lg-1">
-
-                                    <div class="apagar-texto-rodape">
-
-                                        <label class="texto-rodape-direita contato-texto">Telefone</label>
-                                        <div class="row">
-
-                                            <div class="col col-lg-2">
-                                                <a href="" target="_blank"> <i class="fas fa-phone contato-icone"></i> </a>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col-xl-auto"></div>
-
-                                <div class="col col-lg-2">
-
-                                    <div class="apagar-texto-rodape">
-                                        <label class="texto-rodape-direita contato-texto">Mapa de Localização</label>
-                                        <div class="row">
-                                            <div class="col col-lg-2">
-                                                <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map contato-icone-2"></i> </a>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-xxl-auto"></div>
-
-                                <div class="col col-xs-pull-2">
-
-                                    <div class="apagar-texto-rodape">
-                                        <label class="texto-rodape-redes-sociais">Redes Sociais</label>
-                                    </div>
-
-                                    <div class="row">
-
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais"></i> </a>
-                                        </div>
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais"></i> </a>
-                                        </div>
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais"></i> </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-
-                                        <div class="col col-lg-2">
-                                            <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais"></i> </a>
-                                        </div>
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais"></i> </a>
-                                        </div>
-                                        <div class="col col-lg-2">
-                                            <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais"></i> </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                </div>
-                <div class="texto-rodape">
-                    <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href="https://github.com/Kuilua"> Tatakae </a></strong></label>
-                    <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
-
-                </div>
-
-                <!--                                                  ICONES DO RODAPE                                                                -->
-
+                            <li class="texto-menu-opcoes"> <a href="../contato.html"><label class="texto-menu-mobile"><i class="fas fa-mail-bulk"></i> <br> Contato</label></a> </li>
             </div>
 
+            <div id="myLinks30" class="container3">
+                <!-- TEXTO PRINCIPAL - COLABORADORES INTERNACIONAIS  -->
+                <label class="texto-titulo-pc texto-titulo-mobile"> TÉCNICOS </label><br><br><br>
+                <!-- Colaboradores contidos em TÉCNICOS -->
+                <!-- Colaborador 01 de 05 -->
 
-            <!--                                            TEXTO ABAIXO DO RODAPE                                                              -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile" src="../img/tecnicos/01.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Ana Pessoa de Souza Castro </label>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> Pós-Graduada em História e Culturas Africanas e Afrobrasileiras. 
+                                        Chefe do Setor de Gestão Administrativa e Financeira da Pró-Reitoria de Ensino de Graduação da Universidade Federal da Bahia (PROGRAD/UFBA). 
+                                        Foi Tradutora Oficial da Assessoria de Comunicação (ASCOM) da Secretaria de Turismo do Estado da Bahia, sendo responsável pela tradução do Portal Oficial do Turismo do Estado da 
+                                        Bahia: http://bahia.com.br/, bem como dos seus hotsites. Também faz traduções para o Instituto de Radiodifusão do Estado da Bahia (IRDEB)/TVE Bahia, onde é tradutora oficial do portal
+                                         http://carnaval.ba.gov.br/. Tem vasta experiência como assistente de pesquisa nas áreas de etnolinguística e antropologia, e como auxiliar na composição e tradução de textos técnicos
+                                          e livros nestas mesmas áreas. Também atuou na pesquisa sobre línguas africanas para a montagem do Museu da Língua Portuguesa na Estação da Luz, em São Paulo. Foi tradutora oficial 
+                                          no 12º Congresso da ONU sobre Prevenção ao Crime e Justiça Criminal. Graduada em Administração de Empresas pela Universidade Católica do Salvador - UCSAL (2006). Pesquisadora do 
+                                          Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB). </strong></label><br>
+                            </div>
+                        </div>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes:</strong> <a class="link-colaboradores" href="http://lattes.cnpq.br/3763946124884641"> http://lattes.cnpq.br/3763946124884641 </a> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID:</strong> <a class="link-colaboradores" href="https://orcid.org/0000-0002-5160-9057"> https://orcid.org/0000-0002-5160-9057 </a> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa: </strong>1. Culturas Negro-africanas no Brasil;  3. Patrimônio Cultural, Memória, História e Acervos; 4. Educação e Interseccionalidades</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse:</strong> Pesquisas relacionadas à valorização e sustentabilidade do turismo cultural, com foco especial na Bahia, além de pesquisas sobre Cultura e Afrodescendência</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail: </strong> </label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> Pós-Graduada em História e Culturas Africanas e Afrobrasileiras. 
+                                    Chefe do Setor de Gestão Administrativa e Financeira da Pró-Reitoria de Ensino de Graduação da Universidade Federal da Bahia (PROGRAD/UFBA). 
+                                    Foi Tradutora Oficial da Assessoria de Comunicação (ASCOM) da Secretaria de Turismo do Estado da Bahia, sendo responsável pela tradução do Portal Oficial do Turismo do Estado da 
+                                    Bahia: http://bahia.com.br/, bem como dos seus hotsites. Também faz traduções para o Instituto de Radiodifusão do Estado da Bahia (IRDEB)/TVE Bahia, onde é tradutora oficial do portal
+                                     http://carnaval.ba.gov.br/. Tem vasta experiência como assistente de pesquisa nas áreas de etnolinguística e antropologia, e como auxiliar na composição e tradução de textos técnicos
+                                      e livros nestas mesmas áreas. Também atuou na pesquisa sobre línguas africanas para a montagem do Museu da Língua Portuguesa na Estação da Luz, em São Paulo. Foi tradutora oficial 
+                                      no 12º Congresso da ONU sobre Prevenção ao Crime e Justiça Criminal. Graduada em Administração de Empresas pela Universidade Católica do Salvador - UCSAL (2006). Pesquisadora do 
+                                      Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB). </strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 01 de 05 -->
+                <!-- Colaborador 02 de 05 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile" src="../img/tecnicos/02.jpg" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Antonio Cesar Araújo Santana </label>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> Graduando em Ciências da Computação, pela Universidade de Salvador (UNIFACS). 
+                                        Tecnico do Núcleo de Estudos Africanos e Afro-brasileiros em Línguas e Culturas (NGEAALC/UNEB). Atualmente está como estagiário na área de Tecnologias da Informação na 
+                                        Universidade do estado da Bahia (UNEB). </strong></label><br>
+                            </div>
+                        </div>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes:</strong> <a class="link-colaboradores" href="http://lattes.cnpq.br/0139130452852566"> http://lattes.cnpq.br/0139130452852566 </a> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID:</strong> <a class="link-colaboradores" href="https://orcid.org/0000-0003-0063-5367"> https://orcid.org/0000-0003-0063-5367 </a> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa: </strong>3. Patrimônio Cultural, Memória, História e Acervos</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse:</strong> Recursos de computação (produção, armazenamento, transmissão e o acesso); Programação, Segurança da informação, Redes, Banco de Dados, Análise de Sistemas; Bibliotecas e Centros de documentação digitais </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail: </strong> <a class="link-colaboradores" href="acssantana@uneb.br" target="_blank"> acssantana@uneb.br </a> </label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> Graduando em Ciências da Computação, pela Universidade de Salvador (UNIFACS). 
+                                    Tecnico do Núcleo de Estudos Africanos e Afro-brasileiros em Línguas e Culturas (NGEAALC/UNEB). Atualmente está como estagiário na área de Tecnologias da Informação na 
+                                    Universidade do estado da Bahia (UNEB). </strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 02 de 05 -->
+                <!-- Colaborador 03 de 05 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile" src="../img/tecnicos/03.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Karine Janaina Santos Costa </label>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> Formada em Comunicação Social, com habilitação em Publicidade e Propaganda, pela Faculdade da Cidade do Salvador (FCSal). 
+                                        Estive a frente da organização, agendamento de atividades culturais e acadêmicas, assessoria de comunicação interna e externa e coordenação de grupo de trabalho do Centro de Estudos 
+                                        dos Povos Afro-Índios Américas  (CEPAIA), órgão vinculado à Universidade do Estado da Bahia. Tem experiência em Coordenação, planejamento, execução e monitoramento de campanhas 
+                                        institucionais, bem como concepção e produção de ações de marketing promocional. Pesquisadora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB). </strong></label><br>
+                            </div>
+                        </div>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes:</strong> <a class="link-colaboradores" href="http://lattes.cnpq.br/3901927770877551"> http://lattes.cnpq.br/3901927770877551 </a> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID:</strong> <a class="link-colaboradores" href="https://orcid.org/0000-0002-5160-9057"> https://orcid.org/0000-0002-5160-9057 </a> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa: </strong>3. Patrimônio Cultural, Memória, História e Acervos</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse:</strong> Produção executiva, cultura, rádio, divulgação, assessoria de imprensa e atendimentos; Criação de novos sites, atualização e manutenção de institucionais (arquitetura de informação, layout, implementação, publicação); Redação e edição de notícias publicadas em site institucional. </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail: </strong> </label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> Formada em Comunicação Social, com habilitação em Publicidade e Propaganda, pela Faculdade da Cidade do Salvador (FCSal). 
+                                    Estive a frente da organização, agendamento de atividades culturais e acadêmicas, assessoria de comunicação interna e externa e coordenação de grupo de trabalho do Centro de Estudos 
+                                    dos Povos Afro-Índios Américas  (CEPAIA), órgão vinculado à Universidade do Estado da Bahia. Tem experiência em Coordenação, planejamento, execução e monitoramento de campanhas 
+                                    institucionais, bem como concepção e produção de ações de marketing promocional. Pesquisadora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB). </strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 03 de 05 -->
+                <!-- Colaborador 04 de 05 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile" src="../img/tecnicos/04.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Rosana Soares Garcia </label>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> Possui graduação em Ciências Estatísticas, pela Escola Superior de Estatística da Bahia (1989). 
+                                        Especialização em Arquivologia, pela Universidade do Estado da Bahia (UNEB), com conhecimento na área de Gestão de Documentação e Difusão de Conhecimento. 
+                                        Tem experiência na área de Probabilidade e Estatística. Pesquisadora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB). </strong></label><br>
+                            </div>
+                        </div>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes:</strong> <a class="link-colaboradores" href="http://lattes.cnpq.br/3901927770877551"> http://lattes.cnpq.br/3901927770877551 </a> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID:</strong> <a class="link-colaboradores" href="https://orcid.org/0000-0002-5160-9057"> https://orcid.org/0000-0002-5160-9057 </a> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa: </strong> 3. Patrimônio Cultural, Memória, História e Acervos</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse:</strong> Gestão de Documentação e Difusão de Conhecimento; Probabilidade e Estatística. </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail: </strong> </label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> Possui graduação em Ciências Estatísticas, pela Escola Superior de Estatística da Bahia (1989). 
+                                    Especialização em Arquivologia, pela Universidade do Estado da Bahia (UNEB), com conhecimento na área de Gestão de Documentação e Difusão de Conhecimento. 
+                                    Tem experiência na área de Probabilidade e Estatística. Pesquisadora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB). </strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 04 de 05 -->
+                <!-- Colaborador 05 de 05 -->
 
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile" src="../img/tecnicos/01.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Daniele </label>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> </strong></label><br>
+                            </div>
+                        </div>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes:</strong> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID:</strong> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa: </strong>1. Culturas Negro-africanas no Brasil  2.Patrimônio Cultural, Memória, História e Acervos</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse:</strong> </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail: </strong> </label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> </strong></label><br>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIM - Colaborador 05 de 05 -->
+
+                </form> <br>
+                <!-- FIM - Colaboradores contidos em TECNICOS -->
+            </div>
+
+            <br>
+            <!-- DIV Volte ao Topo -->
+            <div class="rodape-cor">
+                <footer class="menu-r-topo">
+                    <!-- Barra Volte ao Topo -->
+                    <a href="#"> <label class="texto-rodape-topo"> <i class="fas fa-caret-up"></i> Volte ao Topo </label> </a>
+                </footer>
+            </div>
+            <!--                                                  ICONES DO RODAPE                                                                -->
+            <div class="rodape-cor">
+                <div class="apagar-elementos-mobile">
+                    <div class="centralizar-elementos-pc">
+                        <footer class="menu-r coluna-1-inicio">
+                            <!-- Container das Colunas Rodape -->
+                            <div class="container">
+                                <!-- Propriedade Coluna - Endereço -->
+                                <div class="row justify-content-md-center">
+                                    <!-- Coluna - Endereço -->
+                                    <div class="col col-lg-4 esquedizar-elementos-pc">
+                                        <label class="texto-rodape-endereco">Endereço</label>
+                                        <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
+                                        <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula </label>
+                                        <label class="texto-rodape-endereco">Salvador-BA</label>
+                                        <label class="texto-rodape-endereco">CEP: 41.150-000</label>
+                                    </div>
+                                    <!-- Coluna 2 - Reuniões -->
+                                    <div class="col col-lg-2">
+                                        <!-- Propriedade Coluna - Reuniões -->
+                                        <div class="row">
+                                            <!-- Propriedade para deixar em diferentes linhas - Reuniões -->
+                                            <div class="col col-lg-10">
+                                                <!-- Coluna - Reuniões -->
+                                                <label class="texto-rodape-endereco">Reuniões</label>
+                                                <label class="texto-rodape-endereco">Terças: 14 às 16 horas </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 3 - Telefone -->
+                                    <div class="col-lg-1 centralizar-elementos-pc">
+                                        <!-- Propriedade Coluna - Telefone -->
+                                        <div class="apagar-texto-rodape">
+                                            <!-- Coluna - Telefone -->
+                                            <label class="texto-rodape-direita contato-texto">Telefone</label>
+                                            <!-- Propriedade para deixar em diferentes linhas - Telefone -->
+                                            <div class="row">
+                                                <div class="col col-md-2">
+                                                    <a href="" target="_blank"> <i class="fas fa-phone contato-icone"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 4 - Mapa de Localização -->
+                                    <div class="col col-lg-2">
+                                        <div class="apagar-texto-rodape">
+                                            <label class="texto-rodape-direita contato-texto">Mapa de Localização</label>
+                                            <div class="row">
+                                                <div class="col col-md-2">
+                                                    <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map contato-icone-2"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 5 - Redes Sociais -->
+                                    <div class="col col-lg-2 esquedizar-elementos-pc">
+                                        <!-- DIV para apagar texto do rodape no PC, apenas -->
+                                        <div class="apagar-texto-rodape">
+                                            <label class="texto-rodape-redes-sociais">Redes Sociais</label>
+                                        </div>
+                                        <!-- Linha 1 - Redes Sociais -->
+                                        <div class="row">
+                                            <!-- Coluna - Facebook -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Instagram -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Youtube -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais"></i> </a>
+                                            </div>
+                                        </div>
+                                        <!-- Linha 2 - Redes Sociais -->
+                                        <div class="row">
+                                            <!-- Coluna - Twitter -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Flickr -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Email -->
+                                            <div class="col col-lg-2">
+                                                <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais"></i> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!--  ICONES DAS REDES SOCIAS - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc centralizar-elementos-mobile">
+                    <div class=" col-form-label-sm">
+                        <!-- Icone, apenas Mobile - Facebook -->
+                        <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Instagram -->
+                        <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Youtube -->
+                        <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Twitter -->
+                        <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais-mobile"></i> </a>
+
+                        <!-- Icone, apenas Mobile - Flickr -->
+                        <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Email -->
+                        <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Mapa de Localização -->
+                        <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Telefone -->
+                        <a href="" target="_blank"> <i class="fas fa-phone redes-sociais-mobile"></i> </a>
+                    </div>
+                </div>
+                <!--  Reuniões - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc centralizar-elementos-mobile fundo-reuniao">
+                    <!-- Coluna 2 - Reuniões -->
+                    <div class="container">
+                        <!-- Propriedade Coluna - Reuniões -->
+                        <div class="row">
+                            <!-- Propriedade para deixar em diferentes linhas - Reuniões -->
+                            <div class=" col-lg-auto">
+                                <!-- Coluna - Reuniões -->
+                                <label class="texto-rodape-reuniao">Reuniões - Terças: 14 às 16 horas</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  Endereço - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc">
+                    <div class="container">
+                        <!-- Propriedade Coluna - Endereço -->
+                        <div class="row">
+                            <!-- Coluna - Endereço -->
+                            <div class="col col-lg-auto centralizar-elementos-mobile">
+                                <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
+                                <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula / Salvador-BA</label>
+                                <label class="texto-rodape-endereco">CEP: 41.150-000</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                                            TEXTO ABAIXO DO RODAPE - MOBILE                                                             -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc">
+                    <div class="texto-rodape">
+                        <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href="https://github.com/Kuilua"> Tatakae </a></strong></label>
+                        <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
+                    </div>
+                </div>
+                <!--                                            TEXTO ABAIXO DO RODAPE                                                              -->
+                <div class="apagar-elementos-mobile">
+                    <div class="texto-rodape">
+                        <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href="https://github.com/Kuilua"> Tatakae </a></strong></label>
+                        <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
+                    </div>
+                </div>
+            </div>
         </div>
 </body>
 

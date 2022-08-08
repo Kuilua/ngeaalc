@@ -10,299 +10,6 @@
             }
             /* NAO SEI PRA Q SERVE  -   html   background-color: #26529D; */
             
-            body {
-                margin: 0;
-                padding: 0;
-                position: relative;
-                align-items: center;
-                display: flexbox;
-                background-image: url(../img/446.jpg);
-                background-color: rgb(126, 65, 25);
-            }
-            
-            body::-webkit-scrollbar {
-                width: 15px;
-                /* width of the entire scrollbar */
-            }
-            
-            body::-webkit-scrollbar-track {
-                background-color: rgb(240, 169, 102);
-                /* color of the tracking area */
-            }
-            
-            body::-webkit-scrollbar-thumb {
-                background-color: #eaf2f2;
-                /* color of the scroll thumb */
-                border-radius: 10px;
-                /* roundness of the scroll thumb */
-                border: 4px solid rgb(240, 169, 102);
-                /* creates padding around scroll thumb */
-            }
-            /* Cor original da pagina - background-color: rgb(244, 247, 250); */
-            
-            .menu-mobile {
-                display: none;
-            }
-            
-            @media (max-width: 300px) {
-                * {
-                    display: -ms-inline-grid;
-                    margin: 0;
-                    padding: 0;
-                }
-                header {
-                    display: -ms-flexbox;
-                    align-items: center;
-                }
-                body {
-                    display: flexbox;
-                    align-items: flex-start;
-                    position: relative;
-                    float: inline-start;
-                    border-radius: 5px;
-                }
-                .texto-calendario-mes {
-                    font-size: 150px;
-                }
-            }
-            
-            @media (max-width: 600px) {
-                * {
-                    display: -ms-flexbox;
-                    margin: 0;
-                    padding: 0;
-                    background-blend-mode: darken;
-                }
-                header {
-                    display: -ms-flexbox;
-                    align-items: center;
-                    background-image: none;
-                    background-color: #333;
-                }
-                body {
-                    display: -ms-flexbox;
-                    margin: 0;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                    background-image: none;
-                    background-color: rgb(168, 24, 24);
-                }
-                .inicio-3-inline-mobile {
-                    display: inline-block;
-                    position: center;
-                    margin-bottom: 5vh;
-                    margin-top: 5vh;
-                    margin-left: -1vh;
-                    width: 106vmin;
-                    height: 106vmin;
-                }
-                /* MENU MOBILE */
-                .menu-mobile {
-                    display: block;
-                }
-                .centralizar-texto-corpo-mobile {
-                    justify-items: center;
-                    width: 90vw;
-                    background-color: #333;
-                }
-                /* Style the navigation menu */
-                .topnav {
-                    width: 100vmin;
-                    overflow: hidden;
-                    background-color: rgb(51, 51, 51);
-                    position: relative;
-                    list-style: none;
-                }
-                /* Hide the links inside the navigation menu (except for logo/home) */
-                .topnav #myLinks #myLinks2 {
-                    display: none;
-                }
-                /* Style navigation menu links */
-                .topnav a {
-                    color: white;
-                    padding: 0;
-                    font-size: 18px;
-                    display: block;
-                }
-                /* Style the hamburger menu */
-                .topnav a.icon {
-                    background: rgb(80, 80, 80);
-                    display: flex;
-                    position: relative;
-                    right: 0;
-                    top: 0;
-                }
-                /* Add a grey background color on mouse-over */
-                .topnav a:hover {
-                    background-color: rgba(221, 221, 221, 0.924);
-                    color: rgb(0, 0, 0);
-                }
-                /* Style the active link (or home/logo) */
-                .active {
-                    background-color: #c05605;
-                    color: white;
-                    font-size: 20px;
-                    padding: 5px;
-                }
-                /* FIM - MENU MOBILE */
-                .mobile-corpo {
-                    display: none;
-                }
-                .menu-h-mobile {
-                    margin-top: 2%;
-                    position: relative;
-                    align-items: center;
-                    background-color: #888888;
-                    border-radius: 15px;
-                }
-                /* SUMIR COM AS LOGOS, TEXTOS RODAPE E MENU VERSAO SITE */
-                .logo-ngeaalc {
-                    display: inline-table;
-                }
-                .apagar-texto-rodape {
-                    display: none;
-                    opacity: 0%;
-                }
-                .mostrar-texto-rodape {
-                    display: inline-block;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .redes-sociais-mobile {
-                    color: #ffffff;
-                    padding: 10px;
-                    font-size: 25px;
-                    margin-inline-start: 2vmin;
-                    margin-inline-end: 2vmin;
-                }
-                .apagar-texto-mobile {
-                    margin-top: 2vh;
-                    display: none;
-                }
-                .apagar-elementos-mobile {
-                    display: none;
-                }
-                .img-eventos-mobile {
-                    height: 200px;
-                    align-self: center;
-                    justify-self: center;
-                    justify-content: center;
-                    justify-items: center;
-                }
-                .logos {
-                    width: 0;
-                    height: 0;
-                    visibility: hidden;
-                }
-                .dp-menu {
-                    display: none;
-                }
-                .menu-principal {
-                    width: 0;
-                    height: 0;
-                    visibility: hidden;
-                }
-                .topo {
-                    visibility: hidden;
-                }
-                /* FIM - SUMIR COM AS LOGOS */
-                /* FIM - TEXTO DO CORPO */
-                .texto-titulo {
-                    font-size: 20vmin;
-                    font-family: 'Caesar Dressing', cursive;
-                    margin-left: 30%;
-                }
-                .texto-corpo {
-                    font-size: larger;
-                }
-                .titulo-principal {
-                    font-size: larger;
-                }
-                /* FIM - TEXTO DO CORPO */
-                /* FIM - RODAPE + TEXTO DE RODAPE */
-                .menu-r {
-                    display: flex;
-                    position: relative;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-                .menu-r-texto {
-                    display: none;
-                }
-                .texto-rodape {
-                    display: inline-flex;
-                }
-                /* FIM - RODAPE + TEXTO DE RODAPE */
-                /* FIM - SUMIR COM AS LOGOS */
-                #campo-titulo {
-                    display: contents;
-                    align-items: center;
-                    justify-items: center;
-                    /* text-align: center; */
-                    /* align-items: center; */
-                    margin-bottom: 0.5em;
-                    color: rgb(255, 255, 255);
-                    display: contents;
-                }
-                .caixa {
-                    display: contents;
-                    background-color: #333;
-                    margin: 3.5%;
-                    margin-left: 0;
-                    margin-right: 0;
-                    text-align: center;
-                    align-items: center;
-                    border: box-shadow 2px 2px 2px #333;
-                }
-                .grupo .campo .campo-label {
-                    display: inline-flex;
-                    align-items: flex-start;
-                    justify-items: flex-start;
-                }
-            }
-            /* CABEÇA DA PAGINA INICIAL  -  OQ FICA OU NAO NAS PAGINAS NO PC */
-            
-            @media (min-width: 720px) {
-                #titulo {
-                    font-size: 15vmin;
-                }
-                .menu-principal {
-                    margin: 0;
-                    padding: 0;
-                    z-index: 9;
-                }
-                .fundo-inicio {
-                    margin: 0;
-                    padding: 0;
-                    background-image: url(../img/446.jpg);
-                    background-color: rgb(128, 69, 52);
-                }
-                .nome-site {
-                    margin-top: 2%;
-                    color: #d1e1fb;
-                    font-size: xx-large;
-                    align-items: center;
-                    text-align: center;
-                    width: 70vw;
-                }
-                .centralizar-texto-corpo {
-                    display: flexbox;
-                    margin-inline: 15%;
-                    width: 70vw;
-                    background-color: rgb(244, 247, 250);
-                }
-                .centralizar-texto-corpo-inico {
-                    display: flexbox;
-                    margin-inline: 3vw;
-                    width: 93vw;
-                    background-color: rgb(244, 247, 250);
-                }
-                .apagar-elementos-pc {
-                    display: none;
-                }
-            }
-            
             .mobile-corpo {
                 display: inline-flex;
                 justify-items: center;
@@ -355,66 +62,15 @@
                 margin-left: 2%;
                 margin-right: 2%;
             }
-            /* Trio de elementos da Pagina Inicial */
-            
-            .inicio-3-inline {
-                display: inline-block;
-                position: center;
-                margin-left: 10vh;
-                margin-right: -15vh;
-                margin-bottom: 10vh;
-                margin-top: 2vh;
-                border-radius: 15px;
-            }
-            
-            .inicio-3-inline-ajuste {
-                display: inline-flex;
-                width: 40vmin;
-                height: 40vmin;
-            }
-            
-            .inicio-3-inline-ajuste-2 {
-                width: 40vmin;
-                height: 40vmin;
-                justify-content: space-evenly;
-            }
-            
-            .inicio-3-inline-ajuste-3 {
-                margin-top: 5%;
-                width: 65vmin;
-                height: 35vmin;
-                justify-content: space-evenly;
-            }
-            
-            .inicio-3-inline-esquerda {
-                width: 40vh;
-                height: 40vh;
-                float: inline-start;
-                background-color: #fbdbbb;
-                background-color: #c85314;
-                border-radius: 5px;
-            }
-            
-            .inicio-3-inline-centro {
-                margin-top: -3px;
-                width: 40vh;
-                height: 40vh;
-                justify-content: center;
-                background-color: #e8b16e;
-                border-radius: 5px;
-            }
-            
-            .inicio-3-inline-direita {
-                width: 0vh;
-                height: 37vh;
-                float: inline-end;
-                background-color: #c85314;
-                border-radius: 5px;
-            }
-            /* FIM - Trio de elementos da Pagina Inicial */
             
             .ab-1 {
-                margin-left: 13%;
+                margin-left: 4.2rem;
+                color: white;
+                font-size: 12px;
+            }
+            
+            .ab-1-1 {
+                margin-left: 4.9rem;
                 color: white;
                 font-size: 12px;
             }
@@ -423,61 +79,6 @@
                 margin-left: 10%;
                 color: white;
                 font-size: 12px;
-            }
-            
-            .img-eventos {
-                justify-items: center;
-                border-radius: 5px;
-                border: solid #cecece;
-                margin-top: 5vmin;
-            }
-            
-            .div-eventos {
-                position: relative;
-                font-size: 5vmin;
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                z-index: 0;
-            }
-            
-            .texto-eventos {
-                font-size: 16px;
-                margin-top: -2%;
-                color: #333;
-            }
-            
-            .texto-eventos-1 {
-                font-size: 18px;
-                margin-top: 1%;
-                margin-bottom: 2%;
-                color: #333;
-            }
-            
-            .texto-eventos-2 {
-                font-size: 16px;
-                margin-top: -1.2%;
-                color: #333;
-                align-items: center;
-            }
-            
-            .texto-eventos-3 {
-                font-size: 18px;
-                margin-top: 2%;
-                margin-bottom: 5%;
-                color: #333;
-                align-items: center;
-            }
-            
-            .texto-corpo-eventos {
-                margin: 5vmin;
-                background-position: center;
-                font: optional;
-                font-size: 3vmin;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #333;
             }
             
             .container4 {
@@ -542,7 +143,7 @@
             }
             
             .texto-nome-principal-1 {
-                font-size: 7vh;
+                font-size: 7rem;
                 color: #c85314;
                 font-family: 'roboto';
                 /*color: rgb(200, 86, 4);*/
@@ -555,9 +156,11 @@
             }
             
             .texto-nome-mobile {
-                font-size: 1vh;
+                font-size: 2rem;
                 color: #c85314;
                 font-family: 'Segoe UI';
+                font-style: none;
+                list-style: none;
             }
             /* FIM - Logo da UNEB da Pagina Principal Inicial */
             
@@ -585,27 +188,13 @@
             
             .titulo-principal {
                 position: relative;
-                font-size: 5vmin;
+                font-size: 4rem;
                 display: grid;
                 justify-content: center;
                 align-items: center;
                 z-index: 0;
                 color: #333;
                 margin-top: 3%;
-                font-family: 'ROBOTO';
-                color: #c85314;
-            }
-            
-            .titulo-principal-1 {
-                position: relative;
-                font-size: 4vmin;
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                z-index: 0;
-                color: #333;
-                margin-top: 3%;
-                margin-left: -13vmin;
                 font-family: 'ROBOTO';
                 color: #c85314;
             }
@@ -613,22 +202,20 @@
             
             .texto-titulo {
                 margin-top: 3%;
-                font-style: oblique;
-                font-size: 5vmin;
-                display: flex;
+                font-size: 3rem;
+                display: grid;
                 border-radius: 5px;
                 justify-content: center;
                 align-items: center;
                 position: relative;
-                color: #333;
             }
             
             .texto-corpo {
                 margin-top: 3%;
-                margin: 10vmin;
+                margin: 2rem;
                 background-position: center;
                 font: optional;
-                font-size: 3vmin;
+                font-size: 2.5rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -638,11 +225,11 @@
             
             .texto-menu-opcoes {
                 color: #ffffff;
-                font-size: large;
-                padding-left: 15px;
-                padding-right: 15px;
-                padding-top: 5px;
-                padding-bottom: 5px;
+                font-size: 2rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
                 text-align: center;
                 position: relative;
             }
@@ -716,19 +303,19 @@
             }
             
             .menu-h ul li {
-                display: inline;
+                display: inline-block;
+                margin-left: -2rem;
             }
             
             .menu-h ul li a {
-                padding: 15px;
-                padding-left: 25px;
-                padding-right: 25px;
+                padding: 1.5rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
                 display: inline-block;
                 text-decoration: none;
                 transition: background .3s;
                 border: none;
                 border-radius: 5px;
-                margin-left: -20px;
             }
             
             .menu-h li a:hover {
@@ -737,125 +324,6 @@
                 background-color: #e4a583;
             }
             /* FIM - Menu Principal Inicial */
-            /* Linhas-de-pesquisa */
-            
-            .caixa-linhas-de-pesquisa {
-                margin-top: 3vh;
-                margin-left: 5vh;
-                margin-right: 5vh;
-                display: inline-block;
-                justify-content: left;
-                align-items: center;
-                color: #333;
-            }
-            
-            .caixa-membros-linhas-de-pesquisa {
-                display: grid;
-                margin-bottom: 2vh;
-                font-size: 2vh;
-                justify-content: left;
-            }
-            
-            .membros-linhas-de-pesquisa {
-                color: #333;
-                margin-top: .5vh;
-                margin-bottom: .5vh;
-            }
-            
-            .numero-linhas-de-pesquisa-1 {
-                font-size: 3vh;
-                margin-top: 3vh;
-                margin-bottom: 1vh;
-                margin-left: 45vh;
-                margin-right: 45vh;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .numero-linhas-de-pesquisa-2 {
-                font-size: 3vh;
-                margin-top: 3vh;
-                margin-bottom: 1vh;
-                margin-left: 35vh;
-                margin-right: 35vh;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .numero-linhas-de-pesquisa-3 {
-                font-size: 3vh;
-                margin-top: 3vh;
-                margin-bottom: 1vh;
-                margin-left: 30vh;
-                margin-right: 30vh;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .numero-linhas-de-pesquisa-4 {
-                font-size: 3vh;
-                margin-top: 3vh;
-                margin-bottom: 1vh;
-                margin-left: 10vh;
-                margin-right: 10vh;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .dir-linhas-de-pesquisa {
-                margin-top: 1vh;
-                margin-bottom: 3vh;
-                display: block;
-                justify-content: space-evenly;
-                font-family: 'ROBOTO';
-            }
-            
-            .dir-linhas-de-pesquisa-direita {
-                float: right;
-                margin-right: 10vh;
-                font-size: 2vh;
-            }
-            
-            .dir-linhas-de-pesquisa-esquerda {
-                float: left;
-                margin-left: 10vh;
-                font-size: 2vh;
-            }
-            
-            .texto-titulo-linhas-de-pesquisa {
-                align-items: flex-start;
-                margin-top: 3%;
-                margin-left: 5vh;
-                margin-right: 5vh;
-                font-size: 2.5vh;
-                color: #333;
-                display: grid;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .texto-titulo-linhas-de-pesquisa-1 {
-                margin-top: 2%;
-                margin-bottom: 2%;
-                font-size: 3vh;
-                color: #333;
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                text-decoration: rgb(173, 74, 4);
-                text-decoration-line: underline;
-                font-family: 'Caesar Dressing', cursive;
-            }
-            
-            .texto-corpo-linhas-de-pesquisa {
-                margin-top: 3%;
-                margin-bottom: 2vmin;
-                font-size: 2vmin;
-                justify-content: left;
-                align-items: center;
-                color: #333;
-            }
-            /* FIM - Linhas-de-pesquisa */
             /* RODAPE DA PAGINA INICIAL */
             /* Menu do Rodape */
             /* Rodape - TOPO */
@@ -879,7 +347,7 @@
                 color: rgb(0, 0, 0);
                 padding: 5px;
                 margin-left: 1%;
-                font-size: 1.3vh;
+                font-size: 1.2rem;
             }
             
             .texto-rodape-topo:hover {
@@ -982,7 +450,7 @@
                 font-size: 15px;
                 margin-top: 5px;
                 position: relative;
-                float: left;
+                float: start;
                 color: rgb(255, 255, 255);
             }
             
@@ -1025,6 +493,17 @@
                 color: #c85314;
             }
             
+            .texto-projetos {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-size: 2rem;
+                color: white;
+                border-radius: 10px;
+                font-family: sans-serif;
+                list-style: none;
+                font-style: none;
+            }
+            
             .scrool-calendario {
                 overflow: hidden;
                 overflow-y: scroll;
@@ -1056,8 +535,7 @@
                 margin-top: 10px;
                 margin-bottom: 10px;
                 background-position: center;
-                font: optional;
-                font-size: 2.5vmin;
+                font-size: 2rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1067,9 +545,9 @@
             
             .texto-calendario {
                 color: #000000;
-                font-size: 1.7vh;
+                font-size: 1.4rem;
                 padding: 5px;
-                margin-left: -3.2vmin;
+                margin-left: -2.5rem;
                 text-align: center;
                 position: relative;
                 font-family: 'roboto';
@@ -1078,7 +556,7 @@
             .data-calendario {
                 background-color: #eaf2f2;
                 color: #000000;
-                font-size: 2vh;
+                font-size: 1.8rem;
                 font-family: 'roboto';
                 text-align: center;
                 align-items: center;
@@ -1211,163 +689,6 @@
                 box-shadow: 2px 2px 2px rgb(71, 71, 71);
             }
             /* FIM - PAGINA TESES */
-            /* PAGINA MEMBROS E AFINS */
-            
-            .texto-membros {
-                color: #333;
-                display: grid;
-                margin: 50px;
-                font-size: 5vh;
-                align-items: center;
-                text-align: center;
-                position: relative;
-            }
-            
-            .texto-menu-membros {
-                color: #ffffff;
-                font-size: large;
-                padding: 15px;
-                text-align: center;
-                position: relative;
-            }
-            
-            .icone-menu-membros {
-                color: #ffffff;
-                padding: 12px;
-                text-align: center;
-                position: relative;
-            }
-            /* PAGINA MEMBROS - PESQUISADORES/ESTUDANTES/TECNICOS */
-            /* PAGINA PESQUISADORES */
-            
-            .titulo-corpo-doscente {
-                margin: 50px;
-                text-align: center;
-                align-items: center;
-                text-decoration: #26529D;
-            }
-            
-            .forma-colaboradores-img {
-                border-radius: 5px;
-                width: 150px;
-                height: 200px;
-            }
-            
-            .caixa-membros-internacionais {
-                display: inline-block;
-                margin-left: 2.5vh;
-                margin-right: 2.5vh;
-                justify-content: flex-start;
-                align-items: flex-start;
-                position: relative;
-            }
-            
-            .id-colaboradores {
-                display: inline-block;
-                margin-bottom: 2vh;
-                color: #333;
-                justify-content: space-between;
-            }
-            
-            .id-colaboradores-texto-1 {
-                font-size: 16px;
-                border-radius: 5px;
-                margin-top: 4vh;
-                font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-                display: inline-block;
-                text-align: left;
-            }
-            
-            .id-colaboradores-texto-2 {
-                font-size: 16px;
-                border-radius: 5px;
-                margin-top: 5vh;
-                font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-                display: inline-block;
-                text-align: left;
-            }
-            
-            .id-colaboradores-texto {
-                font-size: 16px;
-                border-radius: 5px;
-                margin-top: 6vh;
-                display: inline-block;
-                text-align: left;
-            }
-            
-            .margem-colaboradores {
-                margin-top: -180px;
-                margin-left: 160px;
-            }
-            
-            .margem-colaboradores-1 {
-                margin-top: -212px;
-                margin-left: 160px;
-            }
-            
-            .margem-colaboradores-2 {
-                margin-top: -200px;
-                margin-left: 160px;
-            }
-            
-            .texto-colaboradores {
-                display: grid;
-                background-color: rgb(83, 25, 2);
-                border-radius: 5px;
-                margin-left: 20px;
-                color: #ffffff;
-                box-shadow: 1px 1px 1px gray;
-                border: solid black;
-            }
-            
-            .texto-colaboradores-id {
-                font-size: 16px;
-                margin-bottom: .1%;
-                color: #333;
-            }
-            
-            .texto-colaboradores:hover {
-                display: flex;
-                margin-left: 1%;
-                background-color: rgb(83, 25, 2);
-                border-radius: 15px;
-            }
-            
-            .link-colaboradores {
-                font-weight: bolder;
-                text-decoration: wavy rgb(10, 20, 156);
-                color: rgb(114, 155, 209);
-            }
-            
-            .link-colaboradores:hover {
-                opacity: 80%;
-                background-color: rgb(202, 202, 202);
-                color: rgb(99, 24, 24);
-            }
-            
-            .link-colaboradores:focus {
-                font-weight: bolder;
-                color: rgb(156, 86, 235);
-            }
-            /* ESTILO DAS IMAGENS INTERNACIONAIS */
-            
-            .img-inter {
-                width: 25px;
-                height: 15px;
-                display: flex;
-                float: right;
-                margin-inline-end: 2.5%;
-            }
-            
-            .img-inter-angola {
-                width: 30px;
-                height: 20px;
-                display: flex;
-                float: right;
-                margin-inline-end: 2.5%;
-            }
-            /* FIM - PAGINA COLABORADORES - CORPO DOSCENTE */
-            /* FIM - PAGINA COLABORADORES */
             /* PAGINA FALE CONOSCO */
             /* ENVIO DE MENSAGEM PARA O GRUPO - IDE NAO DISPONIVEL - IMPLEMENTACAO FUTURA - PAGINA FALE CONOSCO */
             
@@ -1428,6 +749,12 @@
                 margin-bottom: 0.5em;
                 color: #ffffff;
                 margin-right: 25vmin;
+            }
+            
+            .campo-label-4:hover {
+                background-color: #eaf2f2;
+                color: rgb(156, 86, 235);
+                border-radius: 10px;
             }
             
             .campo-label-5 {
@@ -1530,117 +857,97 @@
             /* FIM - PAGINA FALE CONOSCO */
             /* PAGINA INSTITUICOES PARCEIRAS */
             
-            .icone-parceiras-ufrj {
-                margin-top: 5%;
-                margin-bottom: -4%;
-                justify-content: center;
-                position: relative;
-                margin-inline: 80vmin;
-            }
-            
-            .icone-parceiras-ufes {
-                margin-bottom: -4%;
-                justify-content: center;
-                position: relative;
-                margin-inline: 88vmin;
+            .posicao-instituicoes-parceiras {
+                text-align: center;
             }
             /* FIM - PAGINA INSTITUICOES PARCEIRAS */
-            /* PAGINA  */
+            /* PAGINA PUBLICAÇÕES - ARTIGOS */
             
             .ano-publicacao {
                 background-color: #c85314;
-                margin: 5vh;
-                font-style: none;
+                margin: 3rem;
                 border-radius: 10px;
+                font-style: none;
                 list-style: none;
             }
             
             .ano-publicacao-2 {
-                background-color: #e4a583;
-                font-style: none;
+                background-color: #c85314;
+                margin: 2.5rem;
                 border-radius: 10px;
+                font-style: none;
                 list-style: none;
             }
             
             .ano-publicacao-dentro {
-                display: inline;
-                background-color: #e4a583;
+                position: relative;
+                align-items: center;
+                border-radius: 10px;
                 font-style: none;
-                margin-left: 0vh;
-                margin-right: 0vh;
                 list-style: none;
             }
             
             .ano-publicacao-dentro-2 {
                 background-color: #e4a583;
+                font-style: none;
                 list-style: none;
             }
             
             .texto-publicacao {
-                margin-top: 3vh;
-                margin-bottom: 3vh;
-                font: optional;
-                font-size: 3vh;
-                display: block;
-                justify-content: center;
-                align-items: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-size: 2rem;
                 color: white;
-                margin-left: 5vh;
                 border-radius: 10px;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-family: sans-serif;
                 list-style: none;
+                font-style: none;
             }
             
             .texto-publicacao-2 {
-                font-style: none;
-                font: optional;
-                font-size: 3vh;
-                display: block;
-                justify-content: center;
-                align-items: center;
+                font-size: 1.5rem;
                 color: white;
                 border-radius: 10px;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-family: 'Arial Narrow Bold', sans-serif;
+                list-style: none;
+                font-style: none;
             }
             
             .texto-publicacao-itens {
-                margin-top: 2vh;
-                margin-bottom: 2vh;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
                 font: optional;
-                font-size: 3vh;
+                font-size: 2rem;
                 color: white;
-                margin-left: 1.5vh;
                 border-radius: 10px;
+                font-style: none;
+                list-style: none;
             }
             
             .texto-publicacao-itens-2 {
                 font: optional;
-                font-size: 3vh;
+                font-size: 2rem;
                 color: white;
                 border-radius: 10px;
+                font-style: none;
+                list-style: none;
             }
             
             .texto-publicacao:hover {
-                margin-left: 0vh;
-                margin-right: 0vh;
-                background-color: #d07e61;
-            }
-            
-            .texto-publicacao-2:hover {
-                margin-left: 0vh;
-                margin-right: 0vh;
-                font-size: 3.5vh;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+                font-size: 2.7rem;
                 color: #333;
-                background-color: #e4a583;
+                background-color: #d47d5e;
+                font-style: none;
+                list-style: none;
             }
             
             .texto-publicacao-itens:hover {
-                margin-left: 5vh;
+                color: #333;
                 background-color: #c66744;
-            }
-            
-            .texto-publicacao-itens-2:hover {
-                margin-left: 0vh;
+                list-style: none;
+                font-style: none;
             }
             /* PUBLICAÇOES - MENU DE SELEÇÃO */
             
@@ -1682,22 +989,13 @@
                 margin-bottom: 2vh;
             }
             
-            .manutencao {
-                font-size: 1vh;
+            .div-around {
+                justify-content: space-between;
                 position: relative;
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                margin-left: 35%;
             }
             
-            .texto-nome-manutencao {
-                font-size: 6vh;
-                position: relative;
+            .div-apresentacao {
                 display: grid;
-                justify-content: center;
                 align-items: center;
-                z-index: 0;
-                color: rgb(0, 0, 0);
-                margin-top: 3%;
+                justify-content: center;
             }

@@ -11,8 +11,14 @@
     <link rel="apple-touch-icon" sizes="192x192" href="../img/icone-aba/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icone-aba/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/icone-aba/favicon-16x16.png">
-    <!-- Icone da aba -->
+    <!-- CSS ORIGINAL - NAO MEXA AQUI - Icone da aba -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Tamanho da guia no PC -->
+    <link rel="stylesheet" type="text/css" href="../css/pc-style.css">
+    <!-- Tamanho da guia no Mobile -->
+    <link rel="stylesheet" type="text/css" href="../css/mobile-style.css">
+    <!-- Tamanho da guia no Tablet -->
+    <link rel="stylesheet" type="text/css" href="../css/tablet-style.css">
     <!-- Animaçao dos elementos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Icone Hamburger -->
@@ -40,9 +46,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
     <!-- JS -->
-    <script defer src="js/alternar.js"></script>
+    <script src="js/alternar.js"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Titulo da Pagina -->
     <title class="titulo-principal"> NGEAALC - PESQUISADORES INTERNACIONAIS</title>
 
@@ -55,55 +65,62 @@
         <div class="menu-mobile">
             <!-- Menu Mobile -->
             <div class="topnav">
-                <a href="#topo" class="active texto-nome">NGEAALC</a>
+                <a href="index.html" class="active texto-nome-mobile">NGEAALC</a>
                 <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
+                <div id="myLinks-MenuPrincipal">
                     <li class="texto-menu-opcoes">
-                        <a href="../index.html"> <i class="fas fa-home"></i></i>
-                            <p></p>Butula</a>
+                        <a href="../index.html"><label class="texto-menu-mobile"> <i class="fas fa-home"></i><br> Butula</label></a>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><i class="fas fa-users icon" ></i><p></p>O Ngeaalc</a>
-                        <div id="myLinks2">
+                    <li class="texto-menu-opcoes">
+                        <a href="javascript:void(0);" onclick="MenuPrincipalNgeaalc()"> <label class="texto-menu-mobile"><i class="fas fa-users icon"></i> <br> O Ngeaalc</label></a>
+                        <div id="myLinks-MenuPrincipal-Ngeaalc">
                             <ul>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/apresentacao.html">Apresentação</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/pesquisadores.html">Pesquisadores</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estudantes.html">Estudantes</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/tecnicos.html">Técnicos</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/internacionais.html">Colaboradores Internacionais</a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/apresentacao.html"><label class="texto-menu-mobile">Apresentação</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/pesquisadores.html"><label class="texto-menu-mobile">Pesquisadores</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estudantes.html"><label class="texto-menu-mobile">Estudantes</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/tecnicos.html"><label class="texto-menu-mobile">Técnicos</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/internacionais.html"><label class="texto-menu-mobile">Colaboradores Internacionais</label></a></li>
 
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estatuto.html">Estatuto</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/regimento.html">Regimento</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/linhas-de-pesquisas.html">Linhas de Pesquisas</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/instituicoes-parceiras.html">Instituições Parceiras</a></li>
-                                <li class="menu-h-mobile"><a href="../o-ngeaalc/egresso.html">Egressos</a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/estatuto.html"><label class="texto-menu-mobile">Estatuto</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/regimento.html"><label class="texto-menu-mobile">Regimento</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/linhas-de-pesquisas.html"><label class="texto-menu-mobile">Linhas de Pesquisas</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/instituicoes-parceiras.html"><label class="texto-menu-mobile">Instituições Parceiras</label></a></li>
+                                <li class="menu-h-mobile"><a href="../o-ngeaalc/egresso.html"><label class="texto-menu-mobile">Egressos</label></a></li>
+
                             </ul>
                         </div>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="../projetos.html"><i class="fas fa-book"></i><p></p>Projetos</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="../eventos.html"><i class="fas fa-chalkboard-teacher"></i><p></p>Eventos</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="../revista.html"><i class="fas fa-newspaper"></i><p></p>Revista</a> </li>
-                    <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><i class="fas fa-chalkboard-teacher"></i><p></p>Publicações</a>
-                        <div id="myLinks3">
+                    <li class="texto-menu-opcoes"> <a href="../projetos.html"><label class="texto-menu-mobile"><i class="fas fa-book"></i> <br> Projetos</label></a> </li>
+                    <li class="texto-menu-opcoes"> <a href="../eventos.html"><label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Eventos</label></a> </li>
+                    <li class="texto-menu-opcoes"> <a href="../revista.html"><label class="texto-menu-mobile"><i class="fas fa-newspaper"></i> <br> Revista</label></a> </li>
+                    <li class="texto-menu-opcoes">
+                        <a href="javascript:void(0);" onclick="MenuPrincipalPublicacoes()"> <label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Publicações</label></a>
+                        <div id="myLinks-MenuPrincipal-Publicacoes">
                             <ul>
-                                <li class="menu-h-mobile"><a href="../publicacoes/artigos.html">Artigos</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/livros.html">Livros</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/teses.html">Teses</a></li>
-                                <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html">Outras Produções</a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/artigos.html"><label class="texto-menu-mobile">Artigos</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/livros.html"><label class="texto-menu-mobile">Livros</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/teses.html"><label class="texto-menu-mobile">Teses</label></a></li>
+                                <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html"><label class="texto-menu-mobile">Outras Produções</label></a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="texto-menu-opcoes"> <a href="../contato.html"><i class="fas fa-mail-bulk"></i><p></p>Contato</a> </li>
+
+                    <li class="texto-menu-opcoes"> <a href="../contato.html"><label class="texto-menu-mobile"><i class="fas fa-mail-bulk"></i> <br> Contato</label></a> </li>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                <a href="javascript:void(0);" class="icon" onclick="MenuPrincipalFuncao()">
+                    <i class="fa fa-bars barras-mobile"></i>
                 </a>
             </div>
         </div>
-
+        <!-- FUNCOES DO MENU -->
+        <!-- Links do Menu Principal - Função-Mãe -->
         <script>
-            function myFunction() {
-                var x = document.getElementById("myLinks");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Mãe
+            var x = document.getElementById("myLinks-MenuPrincipal").style.display = 'none';
+
+            function MenuPrincipalFuncao() {
+                var x = document.getElementById("myLinks-MenuPrincipal");
                 if (x.style.display === "block") {
                     x.style.display = "none";
                 } else {
@@ -111,10 +128,13 @@
                 }
             }
         </script>
-
+        <!-- Links do Menu Principal - Função-Ngeaalc -->
         <script>
-            function myFunction2() {
-                var y = document.getElementById("myLinks2");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Ngeaalc
+            var y = document.getElementById("myLinks-MenuPrincipal-Ngeaalc").style.display = 'none';
+
+            function MenuPrincipalNgeaalc() {
+                var y = document.getElementById("myLinks-MenuPrincipal-Ngeaalc");
                 if (y.style.display === "block") {
                     y.style.display = "none";
                 } else {
@@ -122,10 +142,13 @@
                 }
             }
         </script>
-
+        <!-- Links do Menu Principal - Função-Publicacoes -->
         <script>
-            function myFunction3() {
-                var z = document.getElementById("myLinks3");
+            // Setando a variavel para que o elemento nao apareça em tela ate que o botao seja cliclado - Função-Publicacoes
+            var z = document.getElementById("myLinks-MenuPrincipal-Publicacoes").style.display = 'none';
+
+            function MenuPrincipalPublicacoes() {
+                var z = document.getElementById("myLinks-MenuPrincipal-Publicacoes");
                 if (z.style.display === "block") {
                     z.style.display = "none";
                 } else {
@@ -133,43 +156,47 @@
                 }
             }
         </script>
-
-
+        <!-- FIM - FUNCOES DO MENU  -->
         <!-- Corpo da pagina - Adicionar Elementos AQUI -->
-        <div class="centralizar-texto-corpo-inico">
-            <br><br>
-            <div class="menu-r-topo-1">
+        <div class="centralizar-texto-corpo-inicio">
 
-                <label class="texto-rodape-topo">   </label>
+            <div class="apagar-elemento-mobile">
+                <br><br>
+                <div class="menu-r-topo-1 ">
 
-            </div>
-            <div class="logos">
-                <!-- LOGO UNEB -->
-                <div class="animate__animated animate__zoomInUp">
-                    <a href="https://portal.uneb.br/" target="_blank">
-                        <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+                    <label class="texto-rodape-topo">   </label>
+
                 </div>
-                <div class="nome-site">
-                    <label class="texto-nome-principal-1"> NGEAALC </label>
-                    <div>
-                        <label class="texto-nome-principal"> NÚCLEO DE</label>
-                        <label class="texto-nome-principal">ESTUDOS  </label>
-                        <label class="texto-nome-principal">AFRICANOS E </label>
-                        <label class="texto-nome-principal">AFRO-BRASILEIROS  EM </label>
-                        <label class="texto-nome-principal">LÍNGUAS </label> <label class="texto-nome-principal">E CULTURAS </label>
+                <div class="logos">
+                    <!-- LOGO UNEB -->
+                    <div class="animate__animated animate__zoomInUp">
+                        <a href="https://portal.uneb.br/" target="_blank">
+                            <img class="logo-uneb" src="../img/logos/UNEB-logo-2.png" /> </a>
+                    </div>
+                    <div class="nome-site">
+                        <label class="texto-nome-principal-1"> NGEAALC </label>
+                        <div>
+                            <label class="texto-nome-principal"> NÚCLEO DE</label>
+                            <label class="texto-nome-principal">ESTUDOS  </label>
+                            <label class="texto-nome-principal">AFRICANOS E </label>
+                            <label class="texto-nome-principal">AFRO-BRASILEIROS  EM </label>
+                            <label class="texto-nome-principal">LÍNGUAS </label> <label class="texto-nome-principal">E CULTURAS </label>
+                        </div>
+                    </div>
+                    <!-- LOGO NGEAALC -->
+                    <div class="animate__animated animate__zoomIn">
+                        <a href="https://revistas.uneb.br/index.php/africanias/login?source=%2Findex.php%2Fafricanias" target="_blank">
+                            <img class="logo-ngeaalc" src="../img/logos/logo.png" /> </a>
                     </div>
                 </div>
-                <!-- LOGO NGEAALC -->
-                <div class="animate__animated animate__zoomIn">
-                    <a href="https://revistas.uneb.br/index.php/africanias/login?source=%2Findex.php%2Fafricanias" target="_blank">
-                        <img class="logo-ngeaalc" src="../img/logos/logo.png" /> </a>
+
+                <br><br><br><br>
+
+                <div class="menu-r-topo-1">
+
+                    <label class="texto-rodape-topo">   </label>
+
                 </div>
-            </div>
-            <br><br><br><br>
-            <div class="menu-r-topo-1">
-
-                <label class="texto-rodape-topo">   </label>
-
             </div>
 
             <div class="mobile-corpo">
@@ -178,316 +205,479 @@
                     <nav class="dp-menu">
                         <ul class="menu-h">
                             <li class="texto-menu-opcoes">
-                                <a href="../index.html"> <i class="fas fa-home"></i></i>
-                                    <p></p>Butula</a>
+                                <a href="../index.html"><label class="texto-menu-mobile"><i class="fas fa-home icon"></i> <br> Butula</label></a>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><i class="fas fa-users icon" ></i><p></p>O Ngeaalc</a>
+                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction2()"><label class="texto-menu-mobile"><i class="fas fa-users icon"></i> <br> O Ngeaalc</label></a>
                                 <div id="myLinks2">
                                     <ul>
-                                        <li class="menu-h"><a href="/o-ngeaalc/apresentacao.html">Apresentação</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/pesquisadores.html">Pesquisadores</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/estudantes.html">Estudantes</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/tecnicos.html">Técnicos</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/internacionais.html">Colaboradores Internacionais</a></li>
+                                        <li class="menu-h-mobile"><a href="apresentacao.html"><label class="texto-menu-mobile">Apresentação</label></a></li>
+                                        <li class="menu-h-mobile"><a href="pesquisadores.html"><label class="texto-menu-mobile">Pesquisadores</label></a></li>
+                                        <li class="menu-h-mobile"><a href="estudantes.html"><label class="texto-menu-mobile">Estudantes</label></a></li>
+                                        <li class="menu-h-mobile"><a href="tecnicos.html"><label class="texto-menu-mobile">Técnicos</label></a></li>
+                                        <li class="menu-h-mobile"><a href="internacionais.html"><label class="texto-menu-mobile">Colaboradores Internacionais</label></a></li>
 
-                                        <li class="menu-h"><a href="/o-ngeaalc/estatuto.html">Estatuto</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/regimento.html">Regimento</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/linhas-de-pesquisas.html">Linhas de Pesquisas</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/instituicoes-parceiras.html">Instituições Parceiras</a></li>
-                                        <li class="menu-h"><a href="/o-ngeaalc/egresso.html">Egressos</a></li>
+                                        <li class="menu-h-mobile"><a href="estatuto.html"><label class="texto-menu-mobile">Estatuto</label></a></li>
+                                        <li class="menu-h-mobile"><a href="regimento.html"><label class="texto-menu-mobile">Regimento</label></a></li>
+                                        <li class="menu-h-mobile"><a href="linhas-de-pesquisas.html"><label class="texto-menu-mobile">Linhas de Pesquisas</label></a></li>
+                                        <li class="menu-h-mobile"><a href="instituicoes-parceiras.html"><label class="texto-menu-mobile">Instituições Parceiras</label></a></li>
+                                        <li class="menu-h-mobile"><a href="egresso.html"><label class="texto-menu-mobile">Egressos</label></a></li>
                                     </ul>
+                                </div>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="../projetos.html"><i class="fas fa-book"></i><p></p>Projetos</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="../eventos.html"><i class="fas fa-chalkboard-teacher"></i><p></p>Eventos</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="../revista.html"><i class="fas fa-newspaper"></i><p></p>Revista</a> </li>
-                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><i class="fas fa-chalkboard-teacher"></i><p></p>Publicações</a>
+                            <li class="texto-menu-opcoes"> <a href="../projetos.html"><label class="texto-menu-mobile"><i class="fas fa-book"></i> <br> Projetos</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="../eventos.html"><label class="texto-menu-mobile"><i class="fas fa-chalkboard-teacher"></i> <br> Eventos</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="../revista.html"><label class="texto-menu-mobile"><i class="fab fa-readme"></i> <br> Revista</label></a> </li>
+                            <li class="texto-menu-opcoes"> <a href="javascript:void(0);" onclick="myFunction3()"><label class="texto-menu-mobile"><i class="fas fa-newspaper"></i> <br> Publicações</label></a>
                                 <div id="myLinks3">
                                     <ul>
-                                        <li class="menu-h-mobile"><a href="/publicacoes/artigos.html">Artigos</a></li>
-                                        <li class="menu-h-mobile"><a href="/publicacoes/livros.html">Livros</a></li>
-                                        <li class="menu-h-mobile"><a href="/publicacoes/teses.html">Teses</a></li>
-                                        <li class="menu-h-mobile"><a href="/publicacoes/outras-producoes.html">Outras Produções</a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/artigos.html"><label class="texto-menu-mobile">Artigos</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/livros.html"><label class="texto-menu-mobile">Livros</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/teses.html"><label class="texto-menu-mobile">Teses</label></a></li>
+                                        <li class="menu-h-mobile"><a href="../publicacoes/outras-producoes.html"><label class="texto-menu-mobile">Outras Produções</label></a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="texto-menu-opcoes"> <a href="../contato.html"><i class="fas fa-mail-bulk"></i><p></p>Contato</a> </li>
-                        </ul>
-                    </nav>
-                </header>
-                </div>
-
-                <div id="myLinks40" class="container3">
-
-                    <label class="texto-membros"> Colaboradores&nbsp;Internacionais </label><br><br><br>
-
-                    <!-- Colaboradores contidos em ... -->
-
-                    <!-- Colaborador 01 de 07 -->
-                    <img class="forma-colaboradores-img" src="../img/colaboradores/01.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores-2">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Abreu Castelo Vieira dos Paxe (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png">
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/4646074481799566"> http://lattes.cnpq.br/4646074481799566 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0003-2576-1693"> https://orcid.org/0000-0003-2576-1693 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 1. Culturas Negro-africanas no Brasil;  2. Línguas da Família Niger-Congo e Negroafricano</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong>Pesquisas na área de Letras, com ênfase em Teoria Literária, Ensino de Literatura;  nas áreas de Comunicação e Semiótica, com ênfase em processos de criação na comunicação e na cultura</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="abreupaxe@gmail.com" target="_blank"> abreupaxe@gmail.com </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-2">Poeta, Ensaista e Professor. Doutor em Comunicação e Semiótica (PUC/SP). Mestre em Ensino de Literaturas em Língua Portuguesa, pela Universidade Agostinho Neto (UAN/Luanda). Formado em Ciência da Educação, Ensino de Língua Portuguesa e de Literatura (UAN/Luanda). Foi Curador da Primeira Bienal Internacional de Poesia em Luanda (BIP/Fundação Sindika Dokolo). Foi Consultor do Filme Sobre a Rainha Nzinga Mbande (Semba Comunicações). Colaborou no Jornal de Angola (Caderno Vida e Cultura e Vida Cultural). Leciona atualmente no programa de pós-graduação nos Mestrados de Línguas e Literaturas Angolanas na Faculdade de Letras da Universidade Agostinho Neto (UAN) e nos Programas de graduação e pós-graduação do Instituto Superior de Ciências da Educação (ISCED/Luanda), coordenando a linha de pesquisa em “Educação, Cultura: Comunicação e Artes”, do Mestrado de Literaturas em Língua Portuguesa. Chefe do Departamento de Línguas e Literaturas Africanas (ISCED) e Presidente do Conselho Científico do mesmo Departamento e Instituição. Director do Centro de Estudos Literários Angolanos (CELA) e Consultor para a área criativa da Comissão Interministerial para a Expo-Dubai (2020-2022). Autor dos livros "A Chave no Repouso da Porta" (2003) e "Vento Fede de Luz" (2007). Membro da União dos Escritores Angolanos e do Colégio dos Estudos Literários (ISCED/Luanda). Integra o Grupo de Pesquisa em Comunicação, Cultura: Barroco, Oralidade e Mestiçagem (PUC-SP). Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</label><br>
-
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 01 de 18 -->
-                    <!-- Colaborador 02 de 18 -->
-                    <img class="forma-colaboradores-img" src="../img/colaboradores/02.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores-2">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Babatunde Lawal (Nigéria)</label> <img class="img-inter" src="../img/bandeiras/nig.png">
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/9049074461008419"> http://lattes.cnpq.br/9049074461008419 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="">  </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 1. Culturas Negro-africanas no Brasil;  3. Patrimônio Cultural, Memória, História e Acervos</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong>Arte africana, afro-americana e da diáspora africana, com foco nas artes antigas e contemporâneas da Nigéria.  Cultura visual dos iorubás e suas influências nas Américas.</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="blawal@vcu.edu" target="_blank"> blawal@vcu.edu </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-2">Professor de História da Arte na Virginia Commonwealth University (VCU). Especialista em arte africana, afro-americana e da diáspora africana, com foco nas artes antigas e contemporâneas da Nigéria, particularmente na cultura visual dos iorubás e suas influências nas Américas. Realizou trabalho de campo na África, Caribe, Estados Unidos e Brasil. Foi professor visitante no Dartmouth College, Columbia University, Harvard University, Williams College e na Universidade do Estado da Bahia (UNEB/Salvador-Brasil), entre outros. Foi consultor para grandes museus como o British Museum, Boston Museum of Fine Arts, Smithsonian National Museum of African Art, Newark Museum, Detroit Institute of Arts, Chrysler Museum, Virginia Museum of Fine Arts, Seattle Art Museum e Alto Museu de Arte. Doutor e Mestre em História da Arte,  pela Indiana University em Bloomington, bem como um MBA em design gráfico pela University of Nigeria, Nsukka. Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</label><br>
-
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 02 de 10 -->
-                    <!-- Colaborador 03 de 10 -->
-                    <img class="forma-colaboradores-img" src="../img/colaboradores/03.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores-2">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Boubakar Namory Keita (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png">
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/9049074461008419"> http://lattes.cnpq.br/9049074461008419 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="">  </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 1. Culturas Negro-africanas no Brasil;  3. Patrimônio Cultural, Memória, História e Acervos</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong>Pesquisas no âmbito da História, Historiografia e Antropologia da África; Colonização europeia de África Negra, Tradição Oral e Antropogénese</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="boublik.keita047@gmail.com" target="_blank"> boublik.keita047@gmail.com </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-2">Doutor em Ciências Históricas e Antropológicas pela Academia de Ciências da Universidade Estatal de Leningrado (SPBU/Rússia). Professor Catedrático de História e Antropologia Africanas na Faculdade de Ciências Sociais da Universidade Agostinho Neto (FCS-UAN/Luanda) e Chefe do Departamento de História da mesma Universidade. Coordenador da Comissão de Harmonização Curricular dos Cursos de Graduação nas IES de Angola, em Humanidades e Artes. Membro do Conselho Científico dos Cursos de Pós-graduação da Faculdade de Ciências Sociais (UAN/Luanda) e do Mestrado de Ensino de História da África do Instituto Superior de Ciências da Educação (ISCED/Luanda). </label><br>
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 03 de 18 -->
-                    <!-- Colaborador 04 de 18 -->
-                    <img class="forma-colaboradores-img" src="../img/colaboradores/04.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Francisco Ramallo (Argentina)</label> <img class="img-inter" src="../img/bandeiras/arg.png">
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/1399696305502196"> http://lattes.cnpq.br/1399696305502196 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-4611-3989"> https://orcid.org/0000-0002-4611-3989 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 4. Educação e Interseccionalidades</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong>Historia de la educación, la memoria, la investigación; Narrativa y las perspectivas descoloniales y queers</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="ramallo.francisco@gmail.com" target="_blank"> ramallo.francisco@gmail.com </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-2">Profesor adjunto en el Departamento de Ciencias de la Educación de la Facultad de Humanidades de la Universidad Nacional de Mar del Plata e investigador asistente del Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Es director del Grupo de Extensión Pedagorgía y del proyecto Cuir en educadorxs. Además de co-director del Grupo de Investigación en Educación y Estudios Culturales (GIEEC) y de su proyecto Formación del Profesorado X: Intimidad, afectividad y performatividad en la construcción de la condición autobiográfica. Además es regularmente profesor y/o tutor en cinco carreras de posgrado, dicta seminario en el extranjero y es coordinador de la Red de Investigaciones-Vidas , investigador y tutor del programa específico en Investigación narrativa y autobiográfica del Doctorado en Educación de la Universidad Nacional de Rosario. Realizó estudios postdoctorales en la Universidad Federal de Pernambuco. Se graduó de Doctor en Humanidades y Artes, Magíster en Estudios Étnicos y Africanos, Magister, Licenciado y Profesor en Historia, Especialista en Docencia Universitaria y Especialista en Educación y TICs. En docencia, investigación y extensión trabaja sobre modos performáticos de investigar en la educación. Investigador colaborador del Centro de Estudios Africanos y Afrobrasileños en Lenguas y Culturas (NGEAALC/UNEB/Bahia/Brasil).</label><br>
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 04 de 18 -->
-                    <!-- Colaborador 05 de 18 -->
-                    <img class="forma-colaboradores-img" src="../img/colaboradores/05.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores-2">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Helena Cosma da Graça Fonseca Veloso (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png">
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/2687032314827230"> http://lattes.cnpq.br/2687032314827230 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-1042-163X"> https://orcid.org/0000-0002-1042-163X </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong>4. Educação e Interseccionalidades</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong>Pesquisas sobre segmentos sociais historicamente silenciados, nomeadamente, os/as negros/as, as mulheres e pessoas com transtorno mental.  </label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="helenaveloso@hotmail.com" target="_blank"> helenaveloso@hotmail.com </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-2">Doutora e Mestra em Teoria Psicanalítica, pela Universidade Federal do Rio de Janeiro (UFRJ/Brasil). Bacharel e Licenciada em Psicologia, pela Universidade Federal do Rio de  Janeiro (UFRJ). Possui formação em saúde mental pela Escola Nacional de Saúde Pública do Rio de Janeiro. Professora da Universidade Católica de Angola, onde ocupa o cargo de Directora do Centro Interdisciplinar de Estudos e Investigação. Pesquisadora colaboradora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</label><br>
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 05 de 18 -->
-                    <!-- Colaborador 06 de 18 -->
-                    <img class="forma-colaboradores-img" src="../img/colaboradores/06.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores-2">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Mbiavanga Fernando (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png">
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/9049074461008419"> http://lattes.cnpq.br/9049074461008419 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-2351-4245"> https://orcid.org/0000-0002-2351-4245 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 1. Culturas Negro-africanas no Brasil;  2. Línguas da Família Niger-Congo e Negroafricano</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong>Estudos das Línguas da família bantu; Língua Sociedade e Políticas Linguísticas educativas; Currículo e Formação de Professores com foco na identidade profissional docente.</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="mbiavangaf@yahoo.com" target="_blank"> mbiavangaf@yahoo.com </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-2">Doutorado em Linguística Africana pela Universidade de Stellenbosch (US/República de África do Sul). Mestrado em Linguística Africana pela Universidade de África do Sul (UNISA/República de África do Sul). Licenciatura em Ciências da Educação com ênfase no Ensino de Língua Inglesa, pelo Instituto Superior de Ciências da Educação (ISCED/Luanda), antiga unidade orgânica da Universidade Agostinho Neto (UAN/Luanda). Professor Associado, leciona nos cursos de graduação e pós-graduação (mestrados) do (ISCED/Luanda) e nos cursos de pós-graduação da Faculdade de Humanidades (UAN). Coordenador do Mestrado em Metodologia de Ensino de Línguas, financiado pela Unidade Técnica de Gestão do Plano Nacional de Formação de Quadros da Presidência da República de Angola. Coordenador da Linha de pesquisa “Língua, sociedade, educação e políticas públicas educativas” do referido mestrado. Membro da Comissão Científica do Mestrado em Ensino de Português e Literaturas em Língua portuguesa. Professor visitante da Universidade de Stellenbosch da África do Sul e da Universidade de Lisboa. Consultor do Projecto Posse e Localização: Micro-variação em variedades do português (PALMA) com a referência PTDC/LLT-LIN/29552/2017, financiado pela Fundação para a Ciência e a Tecnologia (FCT, Portugal) do Centro de Linguística de Lisboa, Portugal. Também desempenha as funções de coordenador da Comissão Nacional para a Harmonização Curricular (Educação e Formação) do Ministério do Ensino Superior, Ciência, Tecnologia e Inovação. Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</label><br>
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 06 de 18 -->
-                    <!-- Colaborador 07 de 18 -->
-                    <img class="forma-colaboradores-img" src="../img/colaboradores/07.png" width="300" height="400" alt="img">
-
-                    <div class="id-colaboradores">
-                        <div class="margem-colaboradores">
-                            <label class="texto-colaboradores-id"><strong>Nome: </strong>Nsimba Jose (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png">
-                            <br><label class="texto-colaboradores-id"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/7270962052381673"> http://lattes.cnpq.br/7270962052381673 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-3426-8262"> https://orcid.org/0000-0002-3426-8262 </a></label>
-                            <br><label class="texto-colaboradores-id"><strong>Linha de Pesquisa: </strong> 1. Culturas Negro-africanas no Brasil;   2. Línguas da Família Niger-Congo e Negroafricano</label>
-                            <br><label class="texto-colaboradores-id"><strong>Áreas de Interesse: </strong>Produção literária em línguas bantu; Arte e Cultura em Angola</label>
-                            <br><label class="texto-colaboradores-id"><strong>E-mail: </strong><a class="link-colaboradores" href="nsimbakilongo@hotmail.com" target="_blank"> nsimbakilongo@hotmail.com </a></label>
-                        </div>
-                        <div class="id-colaboradores">
-                            <label class="id-colaboradores-texto-2">Doutorando em Literatura, pela Universidade Federal de Santa Catarina (UFSC/Brasil). Está vinculado à linha de pesquisa Subjetividade, Memória e História. Coordenador do Grupo de Estudos sobre Oralidade e Escrita do Núcleo de Estudos de Relações Interétnicas e Raciais do Departamento de Antropologia Social da UFSC. Pesquisador associado do Núcleo de Estudos Afro-Brasileiros da Universidade do Estado de Santa Catarina. Possui mestrado em Literaturas Africanas pela Faculdade de Letras da Universidade Agostinho Neto (UAN/Luanda), onde também atua como docente e pesquisador no campo das literaturas orais. Graduado em Ensino de Línguas e Literaturas Africanas, pelo Instituto Superior de Ciências da Educação (ISCED/Luanda). Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</label><br>
-                        </div>
-                    </div>
-                    <!-- FIM - Colaborador 07 de 18 -->
-
-                    <!-- FIM - Colaboradores contidos em ... -->
-                </div>
-
-                <br>
-
-                <div class="rodape-cor">
-                    <footer class="menu-r-topo">
-
-                        <script>
-                            var btn = document.querySelector("#back-to-top");
-
-                            btn.addEventListener("click", function() {
-                                window.scrollTo(0, 0);
-                            });
-                        </script>
-
-                        <a id="back-to-top" href=""> <label class="texto-rodape-topo"> <i class="fas fa-caret-up"></i> Volte ao Topo </label> </a>
-
-                    </footer>
-                </div>
-                <!--                                                  ICONES DO RODAPE                                                                -->
-                <div class="rodape-cor">
-                    <footer class="menu-r coluna-1-inicio">
-
-                        <div class="container">
-
-                            <div class="row justify-content-md-center">
-
-                                <div class="col col-lg-4"><label class="texto-rodape-endereco">Endereço</label>
-                                    <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
-                                    <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula </label>
-                                    <div class="col col-lg-4">
-                                        <label class="texto-rodape-endereco">Salvador-BA</label></div>
-                                    <label class="texto-rodape-endereco">CEP: 41.150-000</label>
-                                </div>
-
-                                <div class="col-auto"></div>
-
-                                <div class="col col-lg-2">
-                                    <div class="row">
-
-                                        <div class="col col-lg-9">
-
-                                            <label class="texto-rodape-endereco">Reuniões</label>
-
-                                            <label class="texto-rodape-endereco">   </label>
-
-                                            <label class="texto-rodape-endereco">Terças: 14 às 16 horas </label>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-xxl-auto"></div>
-
-                                <div class="col-lg-1">
-
-                                    <div class="apagar-texto-rodape">
-
-                                        <label class="texto-rodape-direita contato-texto">Telefone</label>
-                                        <div class="row">
-
-                                            <div class="col col-lg-2">
-                                                <a href="" target="_blank"> <i class="fas fa-phone contato-icone"></i> </a>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col-xl-auto"></div>
-
-                                <div class="col col-lg-2">
-
-                                    <div class="apagar-texto-rodape">
-                                        <label class="texto-rodape-direita contato-texto">Mapa de Localização</label>
-                                        <div class="row">
-                                            <div class="col col-lg-2">
-                                                <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map contato-icone-2"></i> </a>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-xxl-auto"></div>
-
-                                <div class="col col-xs-pull-2">
-
-                                    <div class="apagar-texto-rodape">
-                                        <label class="texto-rodape-redes-sociais">Redes Sociais</label>
-                                    </div>
-
-                                    <div class="row">
-
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais"></i> </a>
-                                        </div>
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais"></i> </a>
-                                        </div>
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais"></i> </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-
-                                        <div class="col col-lg-2">
-                                            <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais"></i> </a>
-                                        </div>
-                                        <div class="col col-lg-2">
-                                            <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais"></i> </a>
-                                        </div>
-                                        <div class="col col-lg-2">
-                                            <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais"></i> </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                </div>
-                <div class="texto-rodape">
-                    <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href=" "> Tatakae </a></strong></label>
-                    <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
-
-                </div>
-
-                <!--                                                  ICONES DO RODAPE                                                                -->
-
+                            <li class="texto-menu-opcoes"> <a href="../contato.html"><label class="texto-menu-mobile"><i class="fas fa-mail-bulk"></i> <br> Contato</label></a> </li>
             </div>
 
+            <div id="myLinks40" class="container3">
+                <!-- TEXTO PRINCIPAL - COLABORADORES INTERNACIONAIS  -->
+                <label class="texto-titulo-pc texto-titulo-mobile"> COLABORADORES INTERNACIONAIS </label><br><br><br>
+                <!-- Colaboradores contidos em COLABORADORES INTERNACIONAIS -->
+                <!-- Colaborador 01 de 07 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile container-colaboradores-pc" src="../img/colaboradores/01.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores-4 container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Abreu Castelo Vieira dos Paxe (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png"> <br>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Poeta, Ensaista e Professor. Doutor em Comunicação e Semiótica (PUC/SP). 
+                                    Mestre em Ensino de Literaturas em Língua Portuguesa, pela Universidade Agostinho Neto (UAN/Luanda). 
+                                    Formado em Ciência da Educação, Ensino de Língua Portuguesa e de Literatura (UAN/Luanda). 
+                                    Foi Curador da Primeira Bienal Internacional de Poesia em Luanda (BIP/Fundação Sindika Dokolo). 
+                                    Foi Consultor do Filme Sobre a Rainha Nzinga Mbande (Semba Comunicações). Colaborou no Jornal de Angola (Caderno Vida e Cultura e Vida Cultural). 
+                                    Leciona atualmente no programa de pós-graduação nos Mestrados de Línguas e Literaturas Angolanas na Faculdade de Letras da Universidade Agostinho Neto (UAN) 
+                                    e nos Programas de graduação e pós-graduação do Instituto Superior de Ciências da Educação (ISCED/Luanda), coordenando a linha de pesquisa em “Educação, 
+                                    Cultura: Comunicação e Artes”, do Mestrado de Literaturas em Língua Portuguesa. Chefe do Departamento de Línguas e Literaturas Africanas (ISCED) e Presidente 
+                                    do Conselho Científico do mesmo Departamento e Instituição. Director do Centro de Estudos Literários Angolanos (CELA) e Consultor para a área criativa da 
+                                    Comissão Interministerial para a Expo-Dubai (2020-2022). Autor dos livros "A Chave no Repouso da Porta" (2003) e "Vento Fede de Luz" (2007). 
+                                    Membro da União dos Escritores Angolanos e do Colégio dos Estudos Literários (ISCED/Luanda). Integra o Grupo de Pesquisa em Comunicação, Cultura: 
+                                    Barroco, Oralidade e Mestiçagem (PUC-SP). Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                            </div>
+                        </div>
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/4646074481799566"> http://lattes.cnpq.br/4646074481799566 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0003-2576-1693"> https://orcid.org/0000-0003-2576-1693 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa:</strong> 1. Culturas Negro-africanas no Brasil 2. Línguas da Família Niger-Congo e Negroafricano </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse: </strong>Pesquisas na área de Letras, com ênfase em Teoria Literária, Ensino de Literatura;  nas áreas de Comunicação e Semiótica, com ênfase em processos de criação na comunicação e na cultura</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail:</strong><a class="link-colaboradores" href="abreupaxe@gmail.com" target="_blank"> abreupaxe@gmail.com </a></label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong> Poeta, Ensaista e Professor. Doutor em Comunicação e Semiótica (PUC/SP). 
+                            Mestre em Ensino de Literaturas em Língua Portuguesa, pela Universidade Agostinho Neto (UAN/Luanda). 
+                            Formado em Ciência da Educação, Ensino de Língua Portuguesa e de Literatura (UAN/Luanda). 
+                            Foi Curador da Primeira Bienal Internacional de Poesia em Luanda (BIP/Fundação Sindika Dokolo). 
+                            Foi Consultor do Filme Sobre a Rainha Nzinga Mbande (Semba Comunicações). Colaborou no Jornal de Angola (Caderno Vida e Cultura e Vida Cultural). 
+                            Leciona atualmente no programa de pós-graduação nos Mestrados de Línguas e Literaturas Angolanas na Faculdade de Letras da Universidade Agostinho Neto (UAN) 
+                            e nos Programas de graduação e pós-graduação do Instituto Superior de Ciências da Educação (ISCED/Luanda), coordenando a linha de pesquisa em “Educação, 
+                            Cultura: Comunicação e Artes”, do Mestrado de Literaturas em Língua Portuguesa. Chefe do Departamento de Línguas e Literaturas Africanas (ISCED) e Presidente 
+                            do Conselho Científico do mesmo Departamento e Instituição. Director do Centro de Estudos Literários Angolanos (CELA) e Consultor para a área criativa da 
+                            Comissão Interministerial para a Expo-Dubai (2020-2022). Autor dos livros "A Chave no Repouso da Porta" (2003) e "Vento Fede de Luz" (2007). 
+                            Membro da União dos Escritores Angolanos e do Colégio dos Estudos Literários (ISCED/Luanda). Integra o Grupo de Pesquisa em Comunicação, Cultura: 
+                            Barroco, Oralidade e Mestiçagem (PUC-SP). Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 01 de 18 -->
+                <!-- Colaborador 02 de 18 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile container-colaboradores-pc" src="../img/colaboradores/02.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores-4 container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Babatunde Lawal (Nigéria)</label> <img class="img-inter" src="../img/bandeiras/nig.png"> <br>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Professor de História da Arte na Virginia Commonwealth University (VCU). 
+                                        Especialista em arte africana, afro-americana e da diáspora africana, com foco nas artes antigas e contemporâneas da Nigéria, particularmente na cultura visual dos iorubás 
+                                        e suas influências nas Américas. Realizou trabalho de campo na África, Caribe, Estados Unidos e Brasil. 
+                                        Foi professor visitante no Dartmouth College, Columbia University, Harvard University, Williams College e na Universidade do Estado da Bahia (UNEB/Salvador-Brasil), entre outros. 
+                                        Foi consultor para grandes museus como o British Museum, Boston Museum of Fine Arts, Smithsonian National Museum of African Art, Newark Museum, Detroit Institute of Arts, 
+                                        Chrysler Museum, Virginia Museum of Fine Arts, Seattle Art Museum e Alto Museu de Arte. Doutor e Mestre em História da Arte,  pela Indiana University em Bloomington, bem como 
+                                        um MBA em design gráfico pela University of Nigeria, Nsukka. Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                            </div>
+                        </div>
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/9049074461008419"> http://lattes.cnpq.br/9049074461008419 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="">  </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa:</strong> 1. Culturas Negro-africanas no Brasil 3. Patrimônio Cultural, Memória, História e Acervos</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse: </strong> Arte africana, afro-americana e da diáspora africana, com foco nas artes antigas e contemporâneas da Nigéria.  Cultura visual dos iorubás e suas influências nas Américas.</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail:</strong><a class="link-colaboradores" href="blawal@vcu.edu" target="_blank"> blawal@vcu.edu </a></label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Professor de História da Arte na Virginia Commonwealth University (VCU). 
+                                Especialista em arte africana, afro-americana e da diáspora africana, com foco nas artes antigas e contemporâneas da Nigéria, particularmente na cultura visual dos iorubás 
+                                e suas influências nas Américas. Realizou trabalho de campo na África, Caribe, Estados Unidos e Brasil. 
+                                Foi professor visitante no Dartmouth College, Columbia University, Harvard University, Williams College e na Universidade do Estado da Bahia (UNEB/Salvador-Brasil), entre outros. 
+                                Foi consultor para grandes museus como o British Museum, Boston Museum of Fine Arts, Smithsonian National Museum of African Art, Newark Museum, Detroit Institute of Arts, 
+                                Chrysler Museum, Virginia Museum of Fine Arts, Seattle Art Museum e Alto Museu de Arte. Doutor e Mestre em História da Arte,  pela Indiana University em Bloomington, bem como 
+                                um MBA em design gráfico pela University of Nigeria, Nsukka. Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 02 de 10 -->
+                <!-- Colaborador 03 de 10 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile container-colaboradores-pc" src="../img/colaboradores/03.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores-4 container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Boubakar Namory Keita (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png"> <br>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Doutor em Ciências Históricas e Antropológicas pela Academia de Ciências da Universidade Estatal de Leningrado (SPBU/Rússia).
+                                        Professor Catedrático de História e Antropologia Africanas na Faculdade de Ciências Sociais da Universidade Agostinho Neto (FCS-UAN/Luanda) e Chefe do Departamento de História da 
+                                        mesma Universidade. Coordenador da Comissão de Harmonização Curricular dos Cursos de Graduação nas IES de Angola, em Humanidades e Artes. Membro do Conselho Científico dos Cursos de
+                                         Pós-graduação da Faculdade de Ciências Sociais (UAN/Luanda) e do Mestrado de Ensino de História da África do Instituto Superior de Ciências da Educação (ISCED/Luanda).</strong></label><br>
+                            </div>
+                        </div>
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/9049074461008419"> http://lattes.cnpq.br/9049074461008419 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="">  </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa:</strong> 1. Culturas Negro-africanas no Brasil 3. Patrimônio Cultural, Memória, História e Acervos</label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse: </strong> Pesquisas no âmbito da História, Historiografia e Antropologia da África; Colonização europeia de África Negra, Tradição Oral e Antropogénese </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail:</strong><a class="link-colaboradores" href="boublik.keita047@gmail.com" target="_blank"> boublik.keita047@gmail.com </a></label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Doutor em Ciências Históricas e Antropológicas pela Academia de Ciências da Universidade Estatal de Leningrado (SPBU/Rússia).
+                                    Professor Catedrático de História e Antropologia Africanas na Faculdade de Ciências Sociais da Universidade Agostinho Neto (FCS-UAN/Luanda) e Chefe do Departamento de História da 
+                                    mesma Universidade. Coordenador da Comissão de Harmonização Curricular dos Cursos de Graduação nas IES de Angola, em Humanidades e Artes. Membro do Conselho Científico dos Cursos de
+                                     Pós-graduação da Faculdade de Ciências Sociais (UAN/Luanda) e do Mestrado de Ensino de História da África do Instituto Superior de Ciências da Educação (ISCED/Luanda).</strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 03 de 18 -->
+                <!-- Colaborador 04 de 18 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile container-colaboradores-pc" src="../img/colaboradores/04.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores-4 container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Francisco Ramallo (Argentina)</label> <img class="img-inter" src="../img/bandeiras/arg.png"> <br>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Profesor adjunto en el Departamento de Ciencias de la Educación de la Facultad de Humanidades de la Universidad Nacional de Mar del Plata e investigador asistente 
+                                        del Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Es director del Grupo de Extensión Pedagorgía y del proyecto Cuir en educadorxs. Además de co-director del Grupo de 
+                                        Investigación en Educación y Estudios Culturales (GIEEC) y de su proyecto Formación del Profesorado X: Intimidad, afectividad y performatividad en la construcción de la condición autobiográfica. 
+                                        Además es regularmente profesor y/o tutor en cinco carreras de posgrado, dicta seminario en el extranjero y es coordinador de la Red de Investigaciones-Vidas , investigador y tutor del programa 
+                                        específico en Investigación narrativa y autobiográfica del Doctorado en Educación de la Universidad Nacional de Rosario. Realizó estudios postdoctorales en la Universidad Federal de Pernambuco. 
+                                        Se graduó de Doctor en Humanidades y Artes, Magíster en Estudios Étnicos y Africanos, Magister, Licenciado y Profesor en Historia, Especialista en Docencia Universitaria y Especialista en Educación y
+                                         TICs. En docencia, investigación y extensión trabaja sobre modos performáticos de investigar en la educación. Investigador colaborador del Centro de Estudios Africanos y Afrobrasileños en Lenguas y 
+                                         Culturas (NGEAALC/UNEB/Bahia/Brasil).</strong></label><br>
+                            </div>
+                        </div>
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/1399696305502196"> http://lattes.cnpq.br/1399696305502196 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-4611-3989"> https://orcid.org/0000-0002-4611-3989 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa:</strong> 4. Educação e Interseccionalidades </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse: </strong> Historia de la educación, la memoria, la investigación; Narrativa y las perspectivas descoloniales y queers </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail:</strong><a class="link-colaboradores" href="ramallo.francisco@gmail.com" target="_blank"> ramallo.francisco@gmail.com </a></label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Profesor adjunto en el Departamento de Ciencias de la Educación de la Facultad de Humanidades de la Universidad Nacional de Mar del Plata e investigador asistente 
+                                    del Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Es director del Grupo de Extensión Pedagorgía y del proyecto Cuir en educadorxs. Además de co-director del Grupo de 
+                                    Investigación en Educación y Estudios Culturales (GIEEC) y de su proyecto Formación del Profesorado X: Intimidad, afectividad y performatividad en la construcción de la condición autobiográfica. 
+                                    Además es regularmente profesor y/o tutor en cinco carreras de posgrado, dicta seminario en el extranjero y es coordinador de la Red de Investigaciones-Vidas , investigador y tutor del programa 
+                                    específico en Investigación narrativa y autobiográfica del Doctorado en Educación de la Universidad Nacional de Rosario. Realizó estudios postdoctorales en la Universidad Federal de Pernambuco. 
+                                    Se graduó de Doctor en Humanidades y Artes, Magíster en Estudios Étnicos y Africanos, Magister, Licenciado y Profesor en Historia, Especialista en Docencia Universitaria y Especialista en Educación y
+                                     TICs. En docencia, investigación y extensión trabaja sobre modos performáticos de investigar en la educación. Investigador colaborador del Centro de Estudios Africanos y Afrobrasileños en Lenguas y 
+                                     Culturas (NGEAALC/UNEB/Bahia/Brasil).</strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 04 de 18 -->
+                <!-- Colaborador 05 de 18 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile container-colaboradores-pc" src="../img/colaboradores/05.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores-4 container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Helena Cosma da Graça Fonseca Veloso (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png"> <br>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Doutora e Mestra em Teoria Psicanalítica, pela Universidade Federal do Rio de Janeiro (UFRJ/Brasil). 
+                                        Bacharel e Licenciada em Psicologia, pela Universidade Federal do Rio de  Janeiro (UFRJ). 
+                                        Possui formação em saúde mental pela Escola Nacional de Saúde Pública do Rio de Janeiro. Professora da Universidade Católica de Angola, onde ocupa o cargo de Directora do Centro Interdisciplinar 
+                                        de Estudos e Investigação. Pesquisadora colaboradora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                            </div>
+                        </div>
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/2687032314827230"> http://lattes.cnpq.br/2687032314827230 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-1042-163X"> https://orcid.org/0000-0002-1042-163X </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa:</strong> 4. Educação e Interseccionalidades </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse: </strong> Pesquisas sobre segmentos sociais historicamente silenciados, nomeadamente, os/as negros/as, as mulheres e pessoas com transtorno mental. </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail:</strong><a class="link-colaboradores" href="helenaveloso@hotmail.com" target="_blank"> helenaveloso@hotmail.com </a></label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Doutora e Mestra em Teoria Psicanalítica, pela Universidade Federal do Rio de Janeiro (UFRJ/Brasil). 
+                                    Bacharel e Licenciada em Psicologia, pela Universidade Federal do Rio de  Janeiro (UFRJ). 
+                                    Possui formação em saúde mental pela Escola Nacional de Saúde Pública do Rio de Janeiro. Professora da Universidade Católica de Angola, onde ocupa o cargo de Directora do Centro Interdisciplinar 
+                                    de Estudos e Investigação. Pesquisadora colaboradora do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 05 de 18 -->
+                <!-- Colaborador 06 de 18 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile container-colaboradores-pc" src="../img/colaboradores/06.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores-4 container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Mbiavanga Fernando (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png"> <br>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Doutorado em Linguística Africana pela Universidade de Stellenbosch (US/República de África do Sul). 
+                                        Mestrado em Linguística Africana pela Universidade de África do Sul (UNISA/República de África do Sul). 
+                                        Licenciatura em Ciências da Educação com ênfase no Ensino de Língua Inglesa, pelo Instituto Superior de Ciências da Educação (ISCED/Luanda), antiga unidade orgânica da Universidade 
+                                        Agostinho Neto (UAN/Luanda). Professor Associado, leciona nos cursos de graduação e pós-graduação (mestrados) do (ISCED/Luanda) e nos cursos de pós-graduação da Faculdade de 
+                                        Humanidades (UAN). Coordenador do Mestrado em Metodologia de Ensino de Línguas, financiado pela Unidade Técnica de Gestão do Plano Nacional de Formação de Quadros da Presidência da 
+                                        República de Angola. Coordenador da Linha de pesquisa “Língua, sociedade, educação e políticas públicas educativas” do referido mestrado. Membro da Comissão Científica do Mestrado em 
+                                        Ensino de Português e Literaturas em Língua portuguesa. Professor visitante da Universidade de Stellenbosch da África do Sul e da Universidade de Lisboa. Consultor do Projecto Posse 
+                                        e Localização: Micro-variação em variedades do português (PALMA) com a referência PTDC/LLT-LIN/29552/2017, financiado pela Fundação para a Ciência e a Tecnologia (FCT, Portugal) do 
+                                        Centro de Linguística de Lisboa, Portugal. Também desempenha as funções de coordenador da Comissão Nacional para a Harmonização Curricular (Educação e Formação) do Ministério do 
+                                        Ensino Superior, Ciência, Tecnologia e Inovação. Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                            </div>
+                        </div>
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/9049074461008419"> http://lattes.cnpq.br/9049074461008419 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-2351-4245"> https://orcid.org/0000-0002-2351-4245 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa:</strong> 1. Culturas Negro-africanas no Brasil;  2. Línguas da Família Niger-Congo e Negroafricano </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse: </strong> Estudos das Línguas da família bantu; Língua Sociedade e Políticas Linguísticas educativas; Currículo e Formação de Professores com foco na identidade profissional docente. </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail:</strong><a class="link-colaboradores" href="mbiavangaf@yahoo.com" target="_blank"> mbiavangaf@yahoo.com </a></label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Doutorado em Linguística Africana pela Universidade de Stellenbosch (US/República de África do Sul). 
+                                    Mestrado em Linguística Africana pela Universidade de África do Sul (UNISA/República de África do Sul). 
+                                    Licenciatura em Ciências da Educação com ênfase no Ensino de Língua Inglesa, pelo Instituto Superior de Ciências da Educação (ISCED/Luanda), antiga unidade orgânica da Universidade 
+                                    Agostinho Neto (UAN/Luanda). Professor Associado, leciona nos cursos de graduação e pós-graduação (mestrados) do (ISCED/Luanda) e nos cursos de pós-graduação da Faculdade de 
+                                    Humanidades (UAN). Coordenador do Mestrado em Metodologia de Ensino de Línguas, financiado pela Unidade Técnica de Gestão do Plano Nacional de Formação de Quadros da Presidência da 
+                                    República de Angola. Coordenador da Linha de pesquisa “Língua, sociedade, educação e políticas públicas educativas” do referido mestrado. Membro da Comissão Científica do Mestrado em 
+                                    Ensino de Português e Literaturas em Língua portuguesa. Professor visitante da Universidade de Stellenbosch da África do Sul e da Universidade de Lisboa. Consultor do Projecto Posse 
+                                    e Localização: Micro-variação em variedades do português (PALMA) com a referência PTDC/LLT-LIN/29552/2017, financiado pela Fundação para a Ciência e a Tecnologia (FCT, Portugal) do 
+                                    Centro de Linguística de Lisboa, Portugal. Também desempenha as funções de coordenador da Comissão Nacional para a Harmonização Curricular (Educação e Formação) do Ministério do 
+                                    Ensino Superior, Ciência, Tecnologia e Inovação. Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 06 de 18 -->
+                <!-- Colaborador 07 de 18 -->
+                <div class="centralizar-elementos-mobile">
+                    <img class="img-colaboradores img-colaboradores-mobile container-colaboradores-pc" src="../img/colaboradores/07.png" width="150" height="200" alt="img">
+                </div>
+                <div class="id-colaboradores">
+                    <div class="margem-colaboradores-4 container-colaboradores-mobile container-colaboradores-pc">
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Nome:</strong> Nsimba Jose (Angola)</label> <img class="img-inter-angola" src="../img/bandeiras/angola.png"> <br>
+                        <div class="apagar-elementos-pc mostrar-elemento-mobile">
+                            <div class="id-colaboradores container-colaboradores-mobile-dentro">
+                                <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Doutorando em Literatura, pela Universidade Federal de Santa Catarina (UFSC/Brasil). 
+                                        Está vinculado à linha de pesquisa Subjetividade, Memória e História. Coordenador do Grupo de Estudos sobre Oralidade e Escrita do Núcleo de Estudos de Relações Interétnicas e Raciais
+                                         do Departamento de Antropologia Social da UFSC. Pesquisador associado do Núcleo de Estudos Afro-Brasileiros da Universidade do Estado de Santa Catarina. Possui mestrado em Literaturas
+                                          Africanas pela Faculdade de Letras da Universidade Agostinho Neto (UAN/Luanda), onde também atua como docente e pesquisador no campo das literaturas orais. Graduado em Ensino de 
+                                          Línguas e Literaturas Africanas, pelo Instituto Superior de Ciências da Educação (ISCED/Luanda). Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas
+                                           e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                            </div>
+                        </div>
+                        <label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do Lattes: </strong><a class="link-colaboradores" href="http://lattes.cnpq.br/7270962052381673"> http://lattes.cnpq.br/7270962052381673 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Link do ORCID: </strong><a class="link-colaboradores" href="https://orcid.org/0000-0002-3426-8262"> https://orcid.org/0000-0002-3426-8262 </a></label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Linha de Pesquisa:</strong> 1. Culturas Negro-africanas no Brasil;  2. Línguas da Família Niger-Congo e Negroafricano </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>Áreas de Interesse: </strong> Produção literária em línguas bantu; Arte e Cultura em Angola </label>
+                        <br><label class="texto-colaboradores-pesquisadores-pc texto-colaboradores-mobile"><strong>E-mail:</strong><a class="link-colaboradores" href="nsimbakilongo@hotmail.com" target="_blank"> nsimbakilongo@hotmail.com </a></label>
+                    </div>
+                    <div class="apagar-elementos-mobile mostrar-elemento-pc">
+                        <div class="id-colaboradores container-colaboradores-mobile">
+                            <label class="margem-colaboradores-resumo colaboradores-resumo-mobile"><strong>Doutorando em Literatura, pela Universidade Federal de Santa Catarina (UFSC/Brasil). 
+                                    Está vinculado à linha de pesquisa Subjetividade, Memória e História. Coordenador do Grupo de Estudos sobre Oralidade e Escrita do Núcleo de Estudos de Relações Interétnicas e Raciais
+                                     do Departamento de Antropologia Social da UFSC. Pesquisador associado do Núcleo de Estudos Afro-Brasileiros da Universidade do Estado de Santa Catarina. Possui mestrado em Literaturas
+                                      Africanas pela Faculdade de Letras da Universidade Agostinho Neto (UAN/Luanda), onde também atua como docente e pesquisador no campo das literaturas orais. Graduado em Ensino de 
+                                      Línguas e Literaturas Africanas, pelo Instituto Superior de Ciências da Educação (ISCED/Luanda). Pesquisador colaborador do Núcleo de Estudos Africanos e Afro-Brasileiros em Línguas
+                                       e Culturas (NGEAALC/UNEB/Bahia).</strong></label><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM - Colaborador 07 de 18 -->
 
-            <!--                                            TEXTO ABAIXO DO RODAPE                                                              -->
+                <!-- FIM - Colaboradores contidos em ... -->
+            </div>
+            <br>
+            <!-- DIV Volte ao Topo -->
+            <div class="rodape-cor">
+                <footer class="menu-r-topo">
+                    <!-- Barra Volte ao Topo -->
+                    <a href="#"> <label class="texto-rodape-topo"> <i class="fas fa-caret-up"></i> Volte ao Topo </label> </a>
+                </footer>
+            </div>
+            <!--                                                  ICONES DO RODAPE                                                                -->
+            <div class="rodape-cor">
+                <div class="apagar-elementos-mobile">
+                    <div class="centralizar-elementos-pc">
+                        <footer class="menu-r coluna-1-inicio">
+                            <!-- Container das Colunas Rodape -->
+                            <div class="container">
+                                <!-- Propriedade Coluna - Endereço -->
+                                <div class="row justify-content-md-center">
+                                    <!-- Coluna - Endereço -->
+                                    <div class="col col-lg-4 esquedizar-elementos-pc">
+                                        <label class="texto-rodape-endereco">Endereço</label>
+                                        <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
+                                        <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula </label>
+                                        <label class="texto-rodape-endereco">Salvador-BA</label>
+                                        <label class="texto-rodape-endereco">CEP: 41.150-000</label>
+                                    </div>
+                                    <!-- Coluna 2 - Reuniões -->
+                                    <div class="col col-lg-2">
+                                        <!-- Propriedade Coluna - Reuniões -->
+                                        <div class="row">
+                                            <!-- Propriedade para deixar em diferentes linhas - Reuniões -->
+                                            <div class="col col-lg-10">
+                                                <!-- Coluna - Reuniões -->
+                                                <label class="texto-rodape-endereco">Reuniões</label>
+                                                <label class="texto-rodape-endereco">Terças: 14 às 16 horas </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 3 - Telefone -->
+                                    <div class="col-lg-1 centralizar-elementos-pc">
+                                        <!-- Propriedade Coluna - Telefone -->
+                                        <div class="apagar-texto-rodape">
+                                            <!-- Coluna - Telefone -->
+                                            <label class="texto-rodape-direita contato-texto">Telefone</label>
+                                            <!-- Propriedade para deixar em diferentes linhas - Telefone -->
+                                            <div class="row">
+                                                <div class="col col-md-2">
+                                                    <a href="" target="_blank"> <i class="fas fa-phone contato-icone"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 4 - Mapa de Localização -->
+                                    <div class="col col-lg-2">
+                                        <div class="apagar-texto-rodape">
+                                            <label class="texto-rodape-direita contato-texto">Mapa de Localização</label>
+                                            <div class="row">
+                                                <div class="col col-md-2">
+                                                    <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map contato-icone-2"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coluna 5 - Redes Sociais -->
+                                    <div class="col col-lg-2 esquedizar-elementos-pc">
+                                        <!-- DIV para apagar texto do rodape no PC, apenas -->
+                                        <div class="apagar-texto-rodape">
+                                            <label class="texto-rodape-redes-sociais">Redes Sociais</label>
+                                        </div>
+                                        <!-- Linha 1 - Redes Sociais -->
+                                        <div class="row">
+                                            <!-- Coluna - Facebook -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Instagram -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Youtube -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais"></i> </a>
+                                            </div>
+                                        </div>
+                                        <!-- Linha 2 - Redes Sociais -->
+                                        <div class="row">
+                                            <!-- Coluna - Twitter -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Flickr -->
+                                            <div class="col col-lg-2">
+                                                <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais"></i> </a>
+                                            </div>
+                                            <!-- Coluna - Email -->
+                                            <div class="col col-lg-2">
+                                                <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais"></i> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!--  ICONES DAS REDES SOCIAS - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc centralizar-elementos-mobile">
+                    <div class=" col-form-label-sm">
+                        <!-- Icone, apenas Mobile - Facebook -->
+                        <a href="https://www.facebook.com/africanias/" target="_blank"> <i class="fab fa-facebook redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Instagram -->
+                        <a href="https://www.instagram.com/NGEAALC.uneb/" target="_blank"> <i class="fab fa-instagram redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Youtube -->
+                        <a href="https://www.youtube.com/channel/UCZ9MP_BaNLZU_yWybXtjqhQ" target="_blank"> <i class="fab fa-youtube redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Twitter -->
+                        <a href="https://twitter.com/NGEAALC" target="_blank"> <i class="fab fa-twitter redes-sociais-mobile"></i> </a>
 
+                        <!-- Icone, apenas Mobile - Flickr -->
+                        <a href="https://www.flickr.com/photos/195032029@N05/" target="_blank"> <i class="fab fa-flickr redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Email -->
+                        <a href="mailto:ngeaalc.uneb@gmail.com" target="_blank"> <i class="far fa-envelope redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Mapa de Localização -->
+                        <a href="https://www.google.com.br/maps/@-12.9508849,-38.4596341,3a,75y,177.97h,94.79t/data=!3m6!1e1!3m4!1sPhzUwpG8MlAkie-v1q5B3w!2e0!7i16384!8i8192" target="_blank"> <i class="fas fa-map redes-sociais-mobile"></i> </a>
+                        <!-- Icone, apenas Mobile - Telefone -->
+                        <a href="" target="_blank"> <i class="fas fa-phone redes-sociais-mobile"></i> </a>
+                    </div>
+                </div>
+                <!--  Reuniões - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc centralizar-elementos-mobile fundo-reuniao">
+                    <!-- Coluna 2 - Reuniões -->
+                    <div class="container">
+                        <!-- Propriedade Coluna - Reuniões -->
+                        <div class="row">
+                            <!-- Propriedade para deixar em diferentes linhas - Reuniões -->
+                            <div class=" col-lg-auto">
+                                <!-- Coluna - Reuniões -->
+                                <label class="texto-rodape-reuniao">Reuniões - Terças: 14 às 16 horas</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  Endereço - MOBILE APENAS -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc">
+                    <div class="container">
+                        <!-- Propriedade Coluna - Endereço -->
+                        <div class="row">
+                            <!-- Coluna - Endereço -->
+                            <div class="col col-lg-auto centralizar-elementos-mobile">
+                                <label class="texto-rodape-endereco">1º Andar - Prédio do Centro de Pesquisa, Educação e Desenvolvimento Regional (CPEDR/UNEB)</label>
+                                <label class="texto-rodape-endereco">Rua Silveira Martins, 2555, Cabula / Salvador-BA</label>
+                                <label class="texto-rodape-endereco">CEP: 41.150-000</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                                            TEXTO ABAIXO DO RODAPE - MOBILE                                                             -->
+                <div class="mostrar-texto-rodape apagar-elementos-pc">
+                    <div class="texto-rodape">
+                        <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href="https://github.com/Kuilua"> Tatakae </a></strong></label>
+                        <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
+                    </div>
+                </div>
+                <!--                                            TEXTO ABAIXO DO RODAPE                                                              -->
+                <div class="apagar-elementos-mobile">
+                    <div class="texto-rodape">
+                        <label class="texto-rodape-esquerda"><strong> Desenvolvido por <a class=" " href="https://github.com/Kuilua"> Tatakae </a></strong></label>
+                        <label class="texto-rodape-direita"><strong> Universidade do Estado da Bahia - © Todos os Direitos Reservados</strong></label>
+                    </div>
+                </div>
+            </div>
         </div>
 </body>
 
