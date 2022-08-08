@@ -292,7 +292,7 @@
             /* Menu Principal Inicial */
             
             .menu-h {
-                margin-top: 3%;
+                margin-top: 3rem;
                 display: inline-block;
                 position: relative;
                 align-items: center;
@@ -315,7 +315,7 @@
                 text-decoration: none;
                 transition: background .3s;
                 border: none;
-                border-radius: 5px;
+                background-color: #c66744;
             }
             
             .menu-h li a:hover {
@@ -718,6 +718,7 @@
                 align-items: center;
                 border-radius: 10px;
             }
+            /* FIM - ENVIO DE MENSAGEM PARA O GRUPO - IDE NAO DISPONIVEL - IMPLEMENTACAO FUTURA - PAGINA FALE CONOSCO */
             
             .campo {
                 text-align: center;
@@ -952,7 +953,7 @@
             /* PUBLICAÇOES - MENU DE SELEÇÃO */
             
             .menu-h-publicacoes {
-                margin-top: 3%;
+                margin-top: 2rem;
                 display: list-item;
                 position: absolute;
                 align-items: center;
@@ -965,8 +966,8 @@
             
             .menu-h-publicacoes ul li {
                 display: inline-block;
-                margin-left: 2vh;
-                margin-right: 2vh;
+                margin-left: 2rem;
+                margin-right: 2rem;
             }
             
             .menu-h-publicacoes ul li a {
@@ -976,17 +977,17 @@
                 transition: background .3s;
                 border: none;
                 border-radius: 5px;
-                margin-left: 2vh;
-                margin-right: 2vh;
+                margin-left: 2rem;
+                margin-right: 2rem;
             }
             
             .menu-h-publicacoes li a:hover {
                 color: #d1e1fb;
                 background-color: #e4a583;
-                margin-left: 2vh;
-                margin-right: 2vh;
-                margin-top: 2vh;
-                margin-bottom: 2vh;
+                margin-left: 2rem;
+                margin-right: 2rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
             }
             
             .div-around {

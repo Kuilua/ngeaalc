@@ -1,6 +1,67 @@
             /* CABEÇA DA PAGINA INICIAL  -  OQ FICA OU NAO NAS PAGINAS NO PC */
             
-            @media (max-width: 1280px) and (max-height: 720px) {
+            @media (min-width: 821px) and (max-width: 992px) {
+                .nome-site-821-922px {
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    color: #d1e1fb;
+                    font-size: xx-large;
+                    align-items: center;
+                    text-align: center;
+                    width: 70vw;
+                }
+                .logo-ngeaalc-pc-821-922px {
+                    margin-top: 3vh;
+                    width: 200px;
+                    height: 105.3px;
+                    display: flex;
+                    position: relative;
+                    align-items: right;
+                    margin-right: 1rem;
+                }
+                .logo-uneb-pc-821-922px {
+                    width: 179.7px;
+                    height: 99.4px;
+                    margin-left: 1rem;
+                    margin-top: 10%;
+                    position: relative;
+                    display: flex;
+                    align-items: left;
+                }
+                .coluna-1-inicio {
+                    display: inline-block;
+                    position: relative;
+                    margin-left: -1rem;
+                }
+                .coluna-1-inicio-1 {
+                    display: grid;
+                    margin-top: 2vh;
+                }
+                .coluna-1-inicio-2 {
+                    display: grid;
+                    margin-left: -1rem;
+                }
+                .coluna-1-inicio-3 {
+                    display: grid;
+                    margin-left: -1rem;
+                }
+                .coluna-icone-inicio {
+                    display: grid;
+                    float: right;
+                    margin-left: -1rem;
+                }
+                .apagar-elementos-pc-821-922px {
+                    display: none;
+                }
+                .mostrar-elemento-pc-821-922px {
+                    display: inline-block;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            
+            @media (max-width: 1024px) and (max-height: 720px) {
                 body::-webkit-scrollbar {
                     width: 15px;
                     /* width of the entire scrollbar */
@@ -26,6 +87,69 @@
                     background-image: url(../img/446.jpg);
                     background-color: rgb(102, 25, 126);
                 }
+                .container1 {
+                    display: block;
+                    margin-left: 1%;
+                    margin-right: 1%;
+                }
+                .container2 {
+                    display: block;
+                    margin-left: 1%;
+                    margin-right: 1%;
+                }
+                .container3 {
+                    display: block;
+                    margin-left: 1%;
+                    margin-right: 1%;
+                }
+                .container-apresentacao {
+                    display: block;
+                    align-items: center;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+                /* Trio de elementos da Pagina Inicial */
+                .inicio-3-inline {
+                    display: block;
+                    margin-top: 2rem;
+                    border-radius: 15px;
+                    margin-left: -5rem;
+                }
+                .inicio-3-inline-ajuste {
+                    display: inline-flex;
+                    width: 20rem;
+                    height: 20rem;
+                }
+                .inicio-3-inline-ajuste-2 {
+                    width: 30rem;
+                    height: 30rem;
+                }
+                .inicio-3-inline-ajuste-3 {
+                    margin-top: 5%;
+                    width: 30rem;
+                    height: 30rem;
+                }
+                .inicio-3-inline-esquerda {
+                    width: 30rem;
+                    height: 30rem;
+                    background-color: #c85314;
+                    border-radius: 5px;
+                }
+                .inicio-3-inline-centro {
+                    margin-top: -3px;
+                    width: 30rem;
+                    height: 30rem;
+                    justify-content: center;
+                    background-color: #e8b16e;
+                    border-radius: 5px;
+                }
+                .inicio-3-inline-direita {
+                    width: 30rem;
+                    height: 30rem;
+                    background-color: #c85314;
+                    border-radius: 5px;
+                }
+                /* FIM - Trio de elementos da Pagina Inicial */
             }
             
             @media (min-width: 726px) {
@@ -80,6 +204,8 @@
                 }
                 .nome-site {
                     margin-top: 2%;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
                     color: #d1e1fb;
                     font-size: xx-large;
                     align-items: center;
@@ -359,7 +485,7 @@
                 }
                 .texto-colaboradores:hover {
                     display: flex;
-                    margin-left: 1%;
+                    margin-left: 1rem;
                     background-color: rgb(83, 25, 2);
                     border-radius: 15px;
                 }
