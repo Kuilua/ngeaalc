@@ -152,7 +152,7 @@
                 /* FIM - Trio de elementos da Pagina Inicial */
             }
             
-            @media (min-width: 726px) {
+            @media (min-width: 920px) {
                 body {
                     margin: 0;
                     padding: 0;
@@ -775,6 +775,20 @@
                 .margem-eventos {
                     margin-top: -185px;
                     margin-left: 165px;
+                }
+                .barra-eventos {
+                    text-emphasis-color: none;
+                    padding: 15;
+                    background-color: rgb(233, 144, 61);
+                    text-align: center;
+                    align-self: center;
+                    border-bottom: solid #e38d46;
+                    border-top: solid #e38d46;
+                }
+                .barra-eventos:hover {
+                    opacity: 80%;
+                    background-color: #eebf8a;
+                    color: rgb(0, 0, 0);
                 }
                 /* FIM - Eventos */
                 /* Regimento */
